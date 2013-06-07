@@ -1,0 +1,27 @@
+extends ../layouts/default
+
+block main
+  h1 Essays
+
+block content
+  each essay in essays
+    .essay
+      a.title(href='/essays/'+essay._id, title=essay.title) #{essay.title}
+      p=essay.body
+      .author
+        span= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
+        span &nbsp;| Author :&nbsp;
+        a(href="/users/"+essay.user._id)=essay.user.name
+        | &nbsp;|&nbsp;
+        if (essay.tags)
+          span.tags
+            span Tags :&nbsp;
+            each tag in essay.tags.split(',')
+              a.tag(href="/tags/"+tag)
+                i.icon-tags
+                |  #{tag}
+
+  if (pages > 1)
+    .pagination
+      ul
+        != createPagination(pages, page)

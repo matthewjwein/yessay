@@ -9,15 +9,15 @@ var mongoose = require('mongoose')
   , app = require('../server')
   , context = describe
   , User = mongoose.model('User')
-  , Article = mongoose.model('Article')
+  , Essay = mongoose.model('Essay')
 
 var count, cookies
 
 /**
- * Articles tests
+ * Essays tests
  */
 
-describe('Articles', function () {
+describe('Essays', function () {
   before(function (done) {
     // create a user
     var user = new User({
@@ -29,22 +29,22 @@ describe('Articles', function () {
     user.save(done)
   })
 
-  describe('GET /articles', function () {
+  describe('GET /essays', function () {
     it('should respond with Content-Type text/html', function (done) {
       request(app)
-      .get('/articles')
+      .get('/essays')
       .expect('Content-Type', /html/)
       .expect(200)
-      .expect(/List of Articles/)
+      .expect(/List of Essays/)
       .end(done)
     })
   })
 
-  describe('GET /articles/new', function () {
+  describe('GET /essays/new', function () {
     context('When not logged in', function () {
       it('should redirect to /login', function (done) {
         request(app)
-        .get('/articles/new')
+        .get('/essays/new')
         .expect('Content-Type', /plain/)
         .expect(302)
         .expect('Location', '/login')
@@ -68,22 +68,22 @@ describe('Articles', function () {
       })
 
       it('should respond with Content-Type text/html', function (done) {
-        var req = request(app).get('/articles/new')
+        var req = request(app).get('/essays/new')
         req.cookies = cookies
         req
         .expect('Content-Type', /html/)
         .expect(200)
-        .expect(/New Article/)
+        .expect(/New Essay/)
         .end(done)
       })
     })
   })
 
-  describe('POST /articles', function () {
+  describe('POST /essays', function () {
     context('When not logged in', function () {
       it('should redirect to /login', function (done) {
         request(app)
-        .get('/articles/new')
+        .get('/essays/new')
         .expect('Content-Type', /plain/)
         .expect(302)
         .expect('Location', '/login')
@@ -108,26 +108,26 @@ describe('Articles', function () {
 
       describe('Invalid parameters', function () {
         before(function (done) {
-          Article.count(function (err, cnt) {
+          Essay.count(function (err, cnt) {
             count = cnt
             done()
           })
         })
 
         it('should respond with error', function (done) {
-          var req = request(app).post('/articles')
+          var req = request(app).post('/essays')
           req.cookies = cookies
           req
           .field('title', '')
           .field('body', 'foo')
           .expect('Content-Type', /html/)
           .expect(200)
-          .expect(/Article title cannot be blank/)
+          .expect(/Essay title cannot be blank/)
           .end(done)
         })
 
         it('should not save to the database', function (done) {
-          Article.count(function (err, cnt) {
+          Essay.count(function (err, cnt) {
             count.should.equal(cnt)
             done()
           })
@@ -136,43 +136,43 @@ describe('Articles', function () {
 
       describe('Valid parameters', function () {
         before(function (done) {
-          Article.count(function (err, cnt) {
+          Essay.count(function (err, cnt) {
             count = cnt
             done()
           })
         })
 
-        it('should redirect to the new article page', function (done) {
-          var req = request(app).post('/articles')
+        it('should redirect to the new essay page', function (done) {
+          var req = request(app).post('/essays')
           req.cookies = cookies
           req
           .field('title', 'foo')
           .field('body', 'bar')
           .expect('Content-Type', /plain/)
-          .expect('Location', /\/articles\//)
+          .expect('Location', /\/essays\//)
           .expect(302)
           .expect(/Moved Temporarily/)
           .end(done)
         })
 
         it('should insert a record to the database', function (done) {
-          Article.count(function (err, cnt) {
+          Essay.count(function (err, cnt) {
             cnt.should.equal(count + 1)
             done()
           })
         })
 
-        it('should save the article to the database', function (done) {
-          Article
+        it('should save the essay to the database', function (done) {
+          Essay
           .findOne({ title: 'foo'})
           .populate('user')
-          .exec(function (err, article) {
+          .exec(function (err, essay) {
             should.not.exist(err)
-            article.should.be.an.instanceOf(Article)
-            article.title.should.equal('foo')
-            article.body.should.equal('bar')
-            article.user.email.should.equal('foobar@example.com')
-            article.user.name.should.equal('Foo bar')
+            essay.should.be.an.instanceOf(Essay)
+            essay.title.should.equal('foo')
+            essay.body.should.equal('bar')
+            essay.user.email.should.equal('foobar@example.com')
+            essay.user.name.should.equal('Foo bar')
             done()
           })
         })

@@ -22,24 +22,24 @@ module.exports = function (app, passport, auth) {
 
   app.param('userId', users.user)
 
-  // article routes
-  var articles = require('../app/controllers/articles')
-  app.get('/articles', articles.index)
-  app.get('/articles/new', auth.requiresLogin, articles.new)
-  app.post('/articles', auth.requiresLogin, articles.create)
-  app.get('/articles/:id', articles.show)
-  app.get('/articles/:id/edit', auth.requiresLogin, auth.article.hasAuthorization, articles.edit)
-  app.put('/articles/:id', auth.requiresLogin, auth.article.hasAuthorization, articles.update)
-  app.del('/articles/:id', auth.requiresLogin, auth.article.hasAuthorization, articles.destroy)
+  // essay routes
+  var essays = require('../app/controllers/essays')
+  app.get('/essays', essays.index)
+  app.get('/essays/new', auth.requiresLogin, essays.new)
+  app.post('/essays', auth.requiresLogin, essays.create)
+  app.get('/essays/:id', essays.show)
+  app.get('/essays/:id/edit', auth.requiresLogin, auth.essay.hasAuthorization, essays.edit)
+  app.put('/essays/:id', auth.requiresLogin, auth.essay.hasAuthorization, essays.update)
+  app.del('/essays/:id', auth.requiresLogin, auth.essay.hasAuthorization, essays.destroy)
 
-  app.param('id', articles.article)
+  app.param('id', essays.essay)
 
   // home route
-  app.get('/', articles.index)
+  app.get('/', essays.index)
 
   // comment routes
   var comments = require('../app/controllers/comments')
-  app.post('/articles/:id/comments', auth.requiresLogin, comments.create)
+  app.post('/essays/:id/comments', auth.requiresLogin, comments.create)
 
   // tag routes
   var tags = require('../app/controllers/tags')

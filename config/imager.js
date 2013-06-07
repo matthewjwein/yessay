@@ -1,6 +1,6 @@
 module.exports = {
   variants: {
-    article: {
+    essay: {
       resize: {
         detail: "x440"
       },

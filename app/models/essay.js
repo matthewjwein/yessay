@@ -27,10 +27,10 @@ var setTags = function (tags) {
 }
 
 /**
- * Article Schema
+ * Essay Schema
  */
 
-var ArticleSchema = new Schema({
+var EssaySchema = new Schema({
   title: {type : String, default : '', trim : true},
   body: {type : String, default : '', trim : true},
   user: {type : Schema.ObjectId, ref : 'User'},
@@ -51,26 +51,26 @@ var ArticleSchema = new Schema({
  * Validations
  */
 
-ArticleSchema.path('title').validate(function (title) {
+EssaySchema.path('title').validate(function (title) {
   return title.length > 0
-}, 'Article title cannot be blank')
+}, 'Essay title cannot be blank')
 
-ArticleSchema.path('body').validate(function (body) {
+EssaySchema.path('body').validate(function (body) {
   return body.length > 0
-}, 'Article body cannot be blank')
+}, 'Essay body cannot be blank')
 
 /**
  * Pre-remove hook
  */
 
-ArticleSchema.pre('remove', function (next) {
+EssaySchema.pre('remove', function (next) {
   var imager = new Imager(imagerConfig, 'S3')
   var files = this.image.files
 
   // if there are files associated with the item, remove from the cloud too
   imager.remove(files, function (err) {
     if (err) return next(err)
-  }, 'article')
+  }, 'essay')
 
   next()
 })
@@ -79,10 +79,10 @@ ArticleSchema.pre('remove', function (next) {
  * Methods
  */
 
-ArticleSchema.methods = {
+EssaySchema.methods = {
 
   /**
-   * Save article and upload image
+   * Save essay and upload image
    *
    * @param {Object} images
    * @param {Function} cb
@@ -101,7 +101,7 @@ ArticleSchema.methods = {
         self.image = { cdnUri : cdnUri, files : files }
       }
       self.save(cb)
-    }, 'article')
+    }, 'essay')
   },
 
   /**
@@ -122,7 +122,7 @@ ArticleSchema.methods = {
     })
 
     notify.comment({
-      article: this,
+      essay: this,
       currentUser: user,
       comment: comment.body
     })
@@ -136,10 +136,10 @@ ArticleSchema.methods = {
  * Statics
  */
 
-ArticleSchema.statics = {
+EssaySchema.statics = {
 
   /**
-   * Find article by id
+   * Find essay by id
    *
    * @param {ObjectId} id
    * @param {Function} cb
@@ -154,7 +154,7 @@ ArticleSchema.statics = {
   },
 
   /**
-   * List articles
+   * List essays
    *
    * @param {Object} options
    * @param {Function} cb
@@ -174,4 +174,4 @@ ArticleSchema.statics = {
 
 }
 
-mongoose.model('Article', ArticleSchema)
+mongoose.model('Essay', EssaySchema)

@@ -55,7 +55,7 @@ describe('Users', function () {
         })
       })
 
-      it('should redirect to /articles', function (done) {
+      it('should redirect to /essays', function (done) {
         request(app)
         .post('/users')
         .field('name', 'Foo bar')

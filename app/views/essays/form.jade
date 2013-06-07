@@ -1,9 +1,9 @@
 extends ../layouts/default
 
 block content
-  - var action = '/articles'
-  if (!article.isNew)
-    - action += '/'+article.id
+  - var action = '/essays'
+  if (!essay.isNew)
+    - action += '/'+essay.id
 
   if (typeof errors !== 'undefined')
     .fade.in.alert.alert-block.alert-error
@@ -15,13 +15,13 @@ block content
   .row
     .span7
       form.form-horizontal(method="post", action=action, enctype="multipart/form-data")
-        if (!article.isNew)
+        if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
 
         .control-group
           label.control-label(for='title') Title
           .controls
-            input#title.input-xlarge(type='text', name="title", value=article.title, placeholder='Enter the title')
+            input#title.input-xlarge(type='text', name="title", value=essay.title, placeholder='Enter the title')
 
         .control-group
           label.control-label(for='title') Image
@@ -31,17 +31,17 @@ block content
         .control-group
           label.control-label(for='desc') Body
           .controls
-            textarea#desc.input-xlarge(type='text', rows="5", name="body", placeholder='Enter the article description')=article.body
+            textarea#desc.input-xlarge(type='text', rows="5", name="body", placeholder='Enter the essay description')=essay.body
 
         .control-group
           label.control-label(for='desc') Tags
           .controls
-            input#tags(type='text', name="tags", value=article.tags, placeholder='Enter the tags')
+            input#tags(type='text', name="tags", value=essay.tags, placeholder='Enter the tags')
 
         .form-actions
           button.btn.btn-primary(type='submit') Save changes
           &nbsp;
-          a.btn(href='/articles', title="cancel") Cancel
+          a.btn(href='/essays', title="cancel") Cancel
     .span5
-      if (!article.isNew && article.image && article.image.files && article.image.files.length)
-        img(src=article.image.cdnUri + '/mini_' + article.image.files[0])
+      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
+        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])

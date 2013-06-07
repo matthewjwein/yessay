@@ -1,12 +1,12 @@
 [![Build Status](https://travis-ci.org/madhums/nodejs-express-mongoose-demo.png)](https://travis-ci.org/madhums/nodejs-express-mongoose-demo)
 
-# Nodejs Express Mongoose Demo
+# Yessay
 
 **Blog post 1:** [Breaking down app.js file - nodejs, express, mongoose](http://madhums.me/2012/07/19/breaking-down-app-js-file-nodejs-express-mongoose/)
 
 **Blog post 2:** Coming soon!
 
-This is a demo node.js application illustrating various features used in everyday web development, with a fine touch of best practices. The demo app is a blog application where users (signing up using facebook, twitter, github and simple registrations) can create an article, delete an article and add comments on the article.
+This is a demo node.js application illustrating various features used in everyday web development, with a fine touch of best practices. The demo app is a blog application where users (signing up using facebook, twitter, github and simple registrations) can create an essay, delete an essay and add comments on the essay.
 
 ## Install
 

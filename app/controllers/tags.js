@@ -4,7 +4,7 @@
  */
 
 var mongoose = require('mongoose')
-  , Article = mongoose.model('Article')
+  , Essay = mongoose.model('Essay')
 
 /**
  * List items tagged with a tag
@@ -20,12 +20,12 @@ exports.index = function (req, res) {
     criteria: criteria
   }
 
-  Article.list(options, function(err, articles) {
+  Essay.list(options, function(err, essays) {
     if (err) return res.render('500')
-    Article.count(criteria).exec(function (err, count) {
-      res.render('articles/index', {
-        title: 'List of Articles',
-        articles: articles,
+    Essay.count(criteria).exec(function (err, count) {
+      res.render('essays/index', {
+        title: 'List of Essays',
+        essays: essays,
         page: page,
         pages: count / perPage
       })

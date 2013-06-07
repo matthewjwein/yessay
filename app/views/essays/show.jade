@@ -1,0 +1,38 @@
+extends ../layouts/default
+
+block main
+  h1= essay.title
+
+block content
+  .row
+    .span9
+      p=essay.body
+      p.author
+        span Author :&nbsp;
+        a(href="/users/"+essay.user._id)=essay.user.name
+      .date= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
+      if (essay.tags)
+        .tags
+          | Tags :&nbsp;
+          each tag in essay.tags.split(',')
+            a.tag(href="/tags/"+tag)
+              i.icon-tags
+              |  #{tag}
+    .span3
+      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
+        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
+
+  p
+    br
+    form.center.form-inline.confirm(action="/essays/"+essay.id, method="post")
+      a.btn(href='/essays/'+essay._id+'/edit', title="edit") Edit
+      &nbsp;&nbsp;
+      input(type="hidden", name="_method", value="DELETE")
+      button.btn.btn-danger(type="submit") delete
+
+  p
+    br
+    h2 Comments
+    each comment in essay.comments
+      include ../comments/comment
+    include ../comments/form
