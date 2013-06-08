@@ -5,13 +5,12 @@ header#header
       .container
         a.brand(href='/') Yessay
         .nav-collapse.collapse
-          ul.nav
-            li
-              a(href='/essays', title="essay listing") Essays
-            li
-              a(href="/essays/new", title="new essay") New
           ul.nav.pull-right
             if (req.isAuthenticated())
+              li
+                a(href='/essays', title="essay listing") Essays
+              li
+                a(href="/essays/new", title="new essay") New
               li
                 a(href="/users/"+req.user.id, title="Profile") Profile
               li
