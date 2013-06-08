@@ -8,10 +8,6 @@ header#header
           ul.nav.pull-right
             if (req.isAuthenticated())
               li
-                a(href='/essays', title="essay listing") Essays
-              li
-                a(href="/essays/new", title="new essay") New
-              li
                 a(href="/users/"+req.user.id, title="Profile") Profile
               li
                 a(href="/logout", title="logout") Logout
@@ -20,3 +16,13 @@ header#header
                 a(href="/login", title="Log In") Log In
               li
                 a(href="/signup", title="Sign Up") Sign Up
+        if (req.isAuthenticated())
+          ul.nav
+            li.dropdown
+              a(data-toggle='dropdown', href='#menu1', role='button').dropdown-toggle File
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href="/essays/new", title="new essay") New Essay
+                li
+                  a(href='/essays', title="essay listing") Open Essay

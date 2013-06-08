@@ -8,7 +8,6 @@ block content
     .span9
       p=essay.body
       p.author
-        span Author :&nbsp;
         a(href="/users/"+essay.user._id)=essay.user.name
       .date= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
       if (essay.tags)
@@ -25,12 +24,12 @@ block content
   p
     br
     form.center.form-inline.confirm(action="/essays/"+essay.id, method="post")
-      a.btn(href='/essays/'+essay._id+'/edit', title="edit") Edit
+      a.btn(href='/essays/'+essay._id+'/edit', title="edit") Edit Essay
       &nbsp;&nbsp;
       input(type="hidden", name="_method", value="DELETE")
-      button.btn.btn-danger(type="submit") delete
+      button.btn.btn-danger(type="submit") Delete Essay
 
-  p
+//-p
     br
     h2 Comments
     each comment in essay.comments
