@@ -128,10 +128,10 @@ UserSchema.methods = {
 
   encryptPassword: function (password) {
     if (!password) return ''
-    var encrypred
+    var encrypted
     try {
-      encrypred = crypto.createHmac('sha1', this.salt).update(password).digest('hex')
-      return encrypred
+      encrypted = crypto.createHmac('sha1', this.salt).update(password).digest('hex')
+      return encrypted
     } catch (err) {
       return ''
     }

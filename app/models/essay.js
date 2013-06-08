@@ -164,6 +164,7 @@ EssaySchema.statics = {
   list: function (options, cb) {
     var criteria = options.criteria || {}
 
+
     this.find(criteria)
       .populate('user', 'name')
       .sort({'createdAt': -1}) // sort by date
