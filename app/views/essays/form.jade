@@ -1,6 +1,13 @@
 extends ../layouts/default
 
 block content
+  ul
+    li Brainstorming
+    li Description
+    li Orientation
+    li Reflection
+    li Organization
+    li Final Draft
   - var action = '/essays'
   if (!essay.isNew)
     - action += '/'+essay.id
@@ -24,19 +31,9 @@ block content
             input#title.input-xlarge(type='text', name="title", value=essay.title, placeholder='Enter the title')
 
         .control-group
-          label.control-label(for='title') Image
-          .controls
-            input(type='file', name="image[]")
-
-        .control-group
           label.control-label(for='desc') Body
           .controls
             textarea#desc.input-xlarge(type='text', rows="5", name="body", placeholder='Enter the essay description')=essay.body
-
-        .control-group
-          label.control-label(for='desc') Tags
-          .controls
-            input#tags(type='text', name="tags", value=essay.tags, placeholder='Enter the tags')
 
         .form-actions
           button.btn.btn-primary(type='submit') Save changes

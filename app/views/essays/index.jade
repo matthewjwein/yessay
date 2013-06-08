@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block main
-  h1 Essays
+  h1 Your current essays will show up here
 
 block content
   each essay in essays
@@ -9,10 +9,11 @@ block content
       a.title(href='/essays/'+essay._id, title=essay.title) #{essay.title}
       p=essay.body
       .author
+        span Started on&nbsp;
         span= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
-        span &nbsp;| Author :&nbsp;
-        a(href="/users/"+essay.user._id)=essay.user.name
-        | &nbsp;|&nbsp;
+        //- span &nbsp;|&nbsp;
+        //- a(href="/users/"+essay.user._id)=essay.user.name
+        //- | &nbsp;|&nbsp;
         if (essay.tags)
           span.tags
             span Tags :&nbsp;

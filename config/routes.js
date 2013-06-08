@@ -23,7 +23,7 @@ module.exports = function (app, passport, auth) {
   app.param('userId', users.user)
 
   // essay routes
-  var essays = require('../app/controllers/essays')
+  var essays = require('../app/controllers/essays');
   app.get('/essays', essays.index)
   app.get('/essays/new', auth.requiresLogin, essays.new)
   app.post('/essays', auth.requiresLogin, essays.create)
@@ -35,7 +35,8 @@ module.exports = function (app, passport, auth) {
   app.param('id', essays.essay)
 
   // home route
-  app.get('/', essays.index)
+  var home = require('../app/controllers/home');
+  app.get('/', home.index)
 
   // comment routes
   var comments = require('../app/controllers/comments')
