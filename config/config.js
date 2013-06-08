@@ -26,9 +26,9 @@ module.exports = {
       callbackURL: "http://yessay.herokuapp.com/auth/facebook/callback"
     },
     twitter: {
-      clientID: "CONSUMER_KEY",
-      clientSecret: "CONSUMER_SECRET",
-      callbackURL: "http://localhost:3000/auth/twitter/callback"
+      clientID: "0FY8lCz1NerOIu3sioPe2w",
+      clientSecret: "b4kjkEpcA2Uf1sLRsQiI72n071DJGgNW92yjhy1lxjY",
+      callbackURL: "http://yessay.herokuapp.com/auth/twitter/callback"
     },
     github: {
       clientID: 'APP_ID',
