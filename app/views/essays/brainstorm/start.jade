@@ -1,0 +1,39 @@
+extends ../../layouts/default
+
+block main
+  h1 Brainstorm
+  hr
+
+block content
+  - var action = 'save'
+  if (!essay.isNew)
+    - action += '/'+essay.id
+
+  if (typeof errors !== 'undefined')
+    .fade.in.alert.alert-block.alert-error
+      a.close(data-dismiss="alert", href="javascript:void(0)") x
+      ul
+        each error in errors
+          li= error.type
+  .row Below is a sample form for testing purposes
+    hr
+    .row
+      .span7
+        form.form-horizontal(method="post", action=action, enctype="multipart/form-data")
+          if (!essay.isNew)
+            input(type="hidden", name="_method", value="PUT")
+          .control-group
+            label.control-label(for='title') Title
+            .controls
+              input#title.input-xlarge(type='text', name="title", value=essay.title, placeholder='Enter the title')
+          .control-group
+            label.control-label(for='desc') Essay Text
+            .controls
+              textarea#desc.input-xlarge(type='text', rows="5", name="body", placeholder='Enter the essay description')=essay.body
+          .form-actions
+            button.btn.btn-primary(type='submit') Save changes
+            &nbsp;
+            a.btn(href='/essays', title="cancel") Cancel
+      .span5
+        if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
+          img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])

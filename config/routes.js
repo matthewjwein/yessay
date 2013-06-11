@@ -25,8 +25,33 @@ module.exports = function (app, passport, auth) {
   // essay routes
   var essays = require('../app/controllers/essays');
   app.get('/essays', essays.index)
-  app.get('/essays/new', auth.requiresLogin, essays.new)
+  app.get('/essays/intro', auth.requiresLogin, essays.intro)
+  app.get('/essays/brainstorm/intro', auth.requiresLogin, essays.brainstorm.intro)
+  app.get('/essays/brainstorm/samples', auth.requiresLogin, essays.brainstorm.samples)
+  app.get('/essays/brainstorm/start', auth.requiresLogin, essays.brainstorm.start)
   app.post('/essays', auth.requiresLogin, essays.create)
+  app.post('/essays/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
+
+  app.get('/essays/:id/description/intro', auth.requiresLogin, essays.description.intro)
+  app.get('/essays/:id/description/samples', auth.requiresLogin, essays.description.samples)
+  app.get('/essays/:id/description/start', auth.requiresLogin, essays.description.start)
+  app.post('/essays/:id/description/save', auth.requiresLogin, essays.description.save)
+
+  app.get('/essays/:id/context/intro', auth.requiresLogin, essays.context.intro)
+  app.get('/essays/:id/context/samples', auth.requiresLogin, essays.context.samples)
+  app.get('/essays/:id/context/start', auth.requiresLogin, essays.context.start)
+  app.post('/essays/:id/context/save', auth.requiresLogin, essays.context.save)
+
+  app.get('/essays/:id/organization/intro', auth.requiresLogin, essays.organization.intro)
+  app.get('/essays/:id/organization/samples', auth.requiresLogin, essays.organization.samples)
+  app.get('/essays/:id/organization/start', auth.requiresLogin, essays.organization.start)
+  app.post('/essays/:id/organization/save', auth.requiresLogin, essays.organization.save)
+
+  app.get('/essays/:id/reflection/intro', auth.requiresLogin, essays.reflection.intro)
+  app.get('/essays/:id/reflection/samples', auth.requiresLogin, essays.reflection.samples)
+  app.get('/essays/:id/reflection/start', auth.requiresLogin, essays.reflection.start)
+  app.post('/essays/:id/reflection/save', auth.requiresLogin, essays.reflection.save)
+
   app.get('/essays/:id', essays.show)
   app.get('/essays/:id/edit', auth.requiresLogin, auth.essay.hasAuthorization, essays.edit)
   app.put('/essays/:id', auth.requiresLogin, auth.essay.hasAuthorization, essays.update)

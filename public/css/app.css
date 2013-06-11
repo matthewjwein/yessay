@@ -46,3 +46,12 @@ a.tag {
 .error {
   color: #FF2602;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.login-icon {
+    padding: 10px;
+}

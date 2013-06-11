@@ -28,11 +28,162 @@ exports.essay = function(req, res, next, id){
  * New essay
  */
 
-exports.new = function(req, res){
-  res.render('essays/new', {
-    title: 'New Essay',
-    essay: new Essay({})
-  })
+exports.intro = function(req, res){
+  res.render('essays/intro', {
+    title: 'New Essay'
+  });
+}
+
+exports.brainstorm = {
+  intro: function(req, res){
+      res.render('essays/brainstorm/intro', {
+         title: 'Brainstorm Intro'
+      });
+  },
+  samples: function(req, res){
+      res.render('essays/brainstorm/samples', {
+         title: 'Brainstorm Samples'
+      });
+  },
+  start: function(req, res){
+    res.render('essays/brainstorm/start', {
+       essay: new Essay({}),
+       title: 'Brainstorm'
+    });
+  },
+  save: function(req, res){
+    var essay = new Essay(req.body)
+    essay.user = req.user
+
+    essay.uploadAndSave(req.files.image, function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+            title: 'New Essay',
+            essay: essay,
+            errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/description/intro')
+      }
+    })
+  }
+}
+
+exports.description = {
+  intro: function(req, res){
+    res.render('essays/description/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  samples: function(req, res){
+    res.render('essays/description/samples', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  start: function(req, res){
+    res.render('essays/description/start', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  save: function(req, res){
+    var essay = req.essay.title;
+    essay.user = req.user;
+    res.redirect('/essays/'+req.essay._id+'/context/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    })
+  }
+}
+
+exports.context = {
+  intro: function(req, res){
+    res.render('essays/context/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  samples: function(req, res){
+    res.render('essays/context/samples', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  start: function(req, res){
+    res.render('essays/context/start', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  save: function(req, res){
+    var essay = req.essay.title;
+    essay.user = req.user;
+    res.redirect('/essays/'+req.essay._id+'/reflection/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    })
+  }
+}
+
+exports.reflection = {
+  intro: function(req, res){
+    res.render('essays/reflection/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  samples: function(req, res){
+    res.render('essays/reflection/samples', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  start: function(req, res){
+    res.render('essays/reflection/start', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  save: function(req, res){
+    var essay = req.essay.title;
+    essay.user = req.user;
+    res.redirect('/essays/'+req.essay._id+'/organization/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    })
+  }
+}
+
+exports.organization = {
+  intro: function(req, res){
+    res.render('essays/organization/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  samples: function(req, res){
+    res.render('essays/organization/samples', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  start: function(req, res){
+    res.render('essays/organization/start', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  save: function(req, res){
+    var essay = req.essay.title;
+    essay.user = req.user;
+    res.redirect('/essays/'+req.essay._id+'/organization/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    })
+  }
 }
 
 /**
@@ -45,14 +196,14 @@ exports.create = function (req, res) {
 
   essay.uploadAndSave(req.files.image, function (err) {
     if (err) {
-      res.render('essays/new', {
+      res.render('essays/intro', {
         title: 'New Essay',
         essay: essay,
         errors: err.errors
       })
     }
     else {
-      res.redirect('/essays/'+essay._id)
+      res.redirect('/essays/'+essay._id+'/description/intro')
     }
   })
 }
