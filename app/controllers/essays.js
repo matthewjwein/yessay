@@ -54,8 +54,7 @@ exports.brainstorm = {
   save: function(req, res){
     var essay = new Essay(req.body)
     essay.user = req.user
-
-    essay.uploadAndSave(req.files.image, function (err) {
+    essay.save(function (err) {
       if (err) {
         res.render('essays/brainstorm/start', {
             title: 'New Essay',
@@ -90,7 +89,7 @@ exports.description = {
     });
   },
   save: function(req, res){
-    var essay = req.essay.title;
+    var essay = req.essay;
     essay.user = req.user;
     res.redirect('/essays/'+req.essay._id+'/context/intro', {
       title: req.essay.title,

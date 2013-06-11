@@ -55,3 +55,10 @@ iframe {
 .login-icon {
     padding: 10px;
 }
+
+.brainstorm-questions {
+    width: 300px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+}

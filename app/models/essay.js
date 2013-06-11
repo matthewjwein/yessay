@@ -32,6 +32,11 @@ var setTags = function (tags) {
 
 var EssaySchema = new Schema({
   title: {type : String, default : '', trim : true},
+  brainstorm: {type : String, default : '', trim: true},
+  description: {type : String, default : '', trim: true},
+  context: {type : String, default : '', trim: true},
+  reflection: {type : String, default : '', trim: true},
+  organization: {type : String, default : '', trim: true},
   body: {type : String, default : '', trim : true},
   user: {type : Schema.ObjectId, ref : 'User'},
   comments: [{
@@ -54,6 +59,10 @@ var EssaySchema = new Schema({
 EssaySchema.path('title').validate(function (title) {
   return title.length > 0
 }, 'Essay title cannot be blank')
+
+EssaySchema.path('brainstorm').validate(function (brainstorm) {
+  return brainstorm.length > 0
+}, 'Brainstorm results cannot be blank')
 
 EssaySchema.path('body').validate(function (body) {
   return body.length > 0
