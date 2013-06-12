@@ -6,7 +6,11 @@ block main
 block content
   .row
     .span9
-      p=essay.body
+      p=essay.title
+      p=essay.brainstorm
+      p=essay.description
+      p=essay.context
+      p=essay.reflection
       p.author
         a(href="/users/"+essay.user._id)=essay.user.name
       .date= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")

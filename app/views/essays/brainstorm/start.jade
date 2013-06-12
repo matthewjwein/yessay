@@ -15,23 +15,21 @@ block content
       ul
         each error in errors
           li= error.type
-  .row Below is a sample form for testing purposes
-    hr
-    .row
-      .span7.brainstorm-questions
-        form(method="post", action=action, enctype="multipart/form-data")
-          if (!essay.isNew)
-            input(type="hidden", name="_method", value="PUT")
-          .control-group
-            label.control-label(for='title') What was a pivotal point in your life?
-            .controls
-              input#title.input-xlarge(type='text', name="title", placeholder='Enter text here')
-          .control-group
-            label.control-label(for='brainstorm') What images stand out to you?
-            .controls
-              input#brainstorm.input-xlarge(type='text', name="brainstorm", placeholder='Enter text here')
-          .form-actions
-            button.btn.btn-primary(type='submit') Save & Continue
-      .span5
-        if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
-          img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
+  .row
+    .span7.brainstorm-questions
+      form(method="post", action=action, enctype="multipart/form-data")
+        if (!essay.isNew)
+          input(type="hidden", name="_method", value="PUT")
+        .control-group
+          label.control-label(for='title') What was a pivotal point in your life?
+          .controls
+            input#title.input-xlarge(type='text', name="title", placeholder='Enter text here')
+        .control-group
+          label.control-label(for='brainstorm') What images stand out to you?
+          .controls
+            input#brainstorm.input-xlarge(type='text', name="brainstorm", placeholder='Enter text here')
+        .form-actions
+          button.btn.btn-primary(type='submit') Save & Continue
+    .span5
+      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
+        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])

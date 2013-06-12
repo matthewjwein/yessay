@@ -89,11 +89,19 @@ exports.description = {
     });
   },
   save: function(req, res){
-    var essay = req.essay;
-    essay.user = req.user;
-    res.redirect('/essays/'+req.essay._id+'/context/intro', {
-      title: req.essay.title,
-      essay: req.essay
+    var essay = req.essay
+    essay = _.extend(essay, req.body)
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/context/intro')
+      }
     })
   }
 }
@@ -118,11 +126,19 @@ exports.context = {
     });
   },
   save: function(req, res){
-    var essay = req.essay.title;
-    essay.user = req.user;
-    res.redirect('/essays/'+req.essay._id+'/reflection/intro', {
-      title: req.essay.title,
-      essay: req.essay
+    var essay = req.essay
+    essay = _.extend(essay, req.body)
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/reflection/intro')
+      }
     })
   }
 }
@@ -147,11 +163,19 @@ exports.reflection = {
     });
   },
   save: function(req, res){
-    var essay = req.essay.title;
-    essay.user = req.user;
-    res.redirect('/essays/'+req.essay._id+'/organization/intro', {
-      title: req.essay.title,
-      essay: req.essay
+    var essay = req.essay
+    essay = _.extend(essay, req.body)
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/organization/intro')
+      }
     })
   }
 }
@@ -176,11 +200,19 @@ exports.organization = {
     });
   },
   save: function(req, res){
-    var essay = req.essay.title;
-    essay.user = req.user;
-    res.redirect('/essays/'+req.essay._id+'/organization/intro', {
-      title: req.essay.title,
-      essay: req.essay
+    var essay = req.essay
+    essay = _.extend(essay, req.body)
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id)
+      }
     })
   }
 }

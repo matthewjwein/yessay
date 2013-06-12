@@ -64,10 +64,6 @@ EssaySchema.path('brainstorm').validate(function (brainstorm) {
   return brainstorm.length > 0
 }, 'Brainstorm results cannot be blank')
 
-EssaySchema.path('body').validate(function (body) {
-  return body.length > 0
-}, 'Essay body cannot be blank')
-
 /**
  * Pre-remove hook
  */
@@ -137,6 +133,15 @@ EssaySchema.methods = {
     })
 
     this.save(cb)
+  },
+
+  answerQuestion: function (q, cb) {
+    this.brainstorm.push({
+      question: q.question,
+      answer:q.answer
+    });
+
+    this.save(cb);
   }
 
 }

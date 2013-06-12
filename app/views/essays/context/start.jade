@@ -3,8 +3,32 @@ extends ../../layouts/default
 block main
   h1= essay.title
   h1 Context
+  h3 Brainstorm Data:
+    h4= essay.brainstorm
+  h3 Description Data:
+    h4= essay.description
   hr
 
 block content
-  h3 Here we will add the context
-  a.btn.btn-info(href='../reflection/intro') Move on to reflection
+  - var action = 'save'
+
+  if (typeof errors !== 'undefined')
+    .fade.in.alert.alert-block.alert-error
+      a.close(data-dismiss="alert", href="javascript:void(0)") x
+      ul
+        each error in errors
+          li= error.type
+  .row
+    .span7
+      form(method="post", action=action, enctype="multipart/form-data")
+        if (!essay.isNew)
+          input(type="hidden", name="_method", value="PUT")
+        .control-group
+          label.control-label(for='context') What is the context?:
+          .controls
+            textarea#context.input-xlarge(type='text', rows="5", name="context", placeholder='Enter the essay context')=essay.context
+        .form-actions
+          button.btn.btn-primary(type='submit') Save & Continue
+    .span5
+      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
+        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
