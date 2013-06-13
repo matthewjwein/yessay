@@ -1,13 +1,21 @@
 extends ../../layouts/default
 
 block main
-  h1= essay.title
-  h1 Context
-  h3 Brainstorm Data:
-    h4= essay.brainstorm
-  h3 Description Data:
-    h4= essay.description
-  hr
+  ul#myTab.nav.nav-tabs
+    li
+      a(href='#brainstorm', data-toggle='tab') Brainstorm
+    li.active
+      a(href='#description', data-toggle='tab') Description
+  .tab-content
+    #brainstorm.tab-pane
+      - for (item in essay.brainstorm)
+        - if (essay.brainstorm[item].question)
+          div.muted= essay.brainstorm[item].question
+          h4.text-info= essay.brainstorm[item].answer
+    #description.tab-pane.active
+      h4 Description
+      p= essay.description
+
 
 block content
   - var action = 'save'
@@ -18,17 +26,17 @@ block content
       ul
         each error in errors
           li= error.type
-  .row
-    .span7
+  #editor.row
+    .span7.main
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='context') What is the context?:
+          label.control-label(for='context') What was the context?
           .controls
-            textarea#context.input-xlarge(type='text', rows="5", name="context", placeholder='Enter the essay context')=essay.context
+            textarea#input.desc.input-xlarge(type='text', rows="5", name="context")=essay.context
         .form-actions
-          button.btn.btn-primary(type='submit') Save & Continue
-    .span5
-      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
-        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
+          button.btn.btn-primary.pull-right(type='submit') Save & Continue
+
+  script
+    document.ready = function() { $('#input').focus(); }

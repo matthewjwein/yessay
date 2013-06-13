@@ -32,7 +32,11 @@ var setTags = function (tags) {
 
 var EssaySchema = new Schema({
   title: {type : String, default : '', trim : true},
-  brainstorm: {type : String, default : '', trim: true},
+  brainstorm: [{
+    question: { type : String, default : '', trim: true},
+    answer: { type : String, default : '', trim: true},
+    time: { type : Date, default : Date.now }
+  }],
   description: {type : String, default : '', trim: true},
   context: {type : String, default : '', trim: true},
   reflection: {type : String, default : '', trim: true},
@@ -135,11 +139,13 @@ EssaySchema.methods = {
     this.save(cb)
   },
 
-  answerQuestion: function (q, cb) {
-    this.brainstorm.push({
-      question: q.question,
-      answer:q.answer
-    });
+  answerQuestions: function (questions, cb) {
+    for (var question in questions) {
+      this.brainstorm.push({
+        question: question,
+        answer: questions[question]
+      });
+    }
 
     this.save(cb);
   }

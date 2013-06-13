@@ -1,11 +1,15 @@
 extends ../../layouts/default
 
 block main
-  h1= essay.title
-  h1 Describe
-  h3 Brainstorm Data:
-    h4= essay.brainstorm
-  hr
+  ul#prompts.nav.nav-tabs
+    li.active
+      a(href='#brainstorm') Brainstorm
+  .tab-content
+    #brainstorm.tab-pane.active
+      - for (item in essay.brainstorm)
+        - if (essay.brainstorm[item].question)
+          div.muted= essay.brainstorm[item].question
+          h4.text-info= essay.brainstorm[item].answer
 
 block content
   - var action = 'save'
@@ -16,17 +20,17 @@ block content
       ul
         each error in errors
           li= error.type
-  .row
-    .span7
+  #editor.row
+    .span7.main
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
           label.control-label(for='description') Describe this event in more detail:
           .controls
-            textarea#desc.input-xlarge(type='text', rows="5", name="description", placeholder='Enter the essay description')=essay.description
+            textarea#input.desc.input-xlarge(type='text', rows="5", name="description")=essay.description
         .form-actions
-          button.btn.btn-primary(type='submit') Save & Continue
-    .span5
-      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
-        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
+          button.btn.btn-primary.pull-right(type='submit') Save & Continue
+
+  script
+    document.ready = function() { $('#input').focus(); }

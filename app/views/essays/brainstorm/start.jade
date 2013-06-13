@@ -1,7 +1,7 @@
 extends ../../layouts/default
 
 block main
-  h1 Brainstorm
+  h3 Brainstorm
   hr
 
 block content
@@ -21,15 +21,20 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='title') What was a pivotal point in your life?
+          label.control-label(for='Who is someone you trust?') Who is someone you trust?
           .controls
-            input#title.input-xlarge(type='text', name="title", placeholder='Enter text here')
+            input.question.input-xlarge(type='text', name="Who is someone you trust?", placeholder='Type answer here')
         .control-group
-          label.control-label(for='brainstorm') What images stand out to you?
+          label.control-label(for='List three adjectives that describe him/her') List three adjectives that describe him/her
           .controls
-            input#brainstorm.input-xlarge(type='text', name="brainstorm", placeholder='Enter text here')
+            input.question.input-xlarge(type='text', name="List three adjectives that describe him/her", placeholder='Type answer here')
+        .control-group
+          label.control-label(for='Is there an event or image that stands our immediately?') Is there an event or image that stands our immediately?
+          .controls
+            input.question.input-xlarge(type='text', name="Is there an event or image that stands our immediately?", placeholder='Type answer here')
+        .control-group
+          label.control-label(for='In one sentence, what does trust mean to you?') In one sentence, what does trust mean to you?
+          .controls
+            input.question.input-xlarge(type='text', name="In one sentence, what does trust mean to you?", placeholder='Type answer here')
         .form-actions
-          button.btn.btn-primary(type='submit') Save & Continue
-    .span5
-      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
-        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
+          button#submit.btn.btn-primary.pull-right(type='submit') Save & Continue

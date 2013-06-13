@@ -7,7 +7,11 @@ block content
   .row
     .span9
       p=essay.title
-      p=essay.brainstorm
+      p
+        - for (item in essay.brainstorm)
+          - if (essay.brainstorm[item].question)
+            div.muted= essay.brainstorm[item].question
+            h4.text-info= essay.brainstorm[item].answer
       p=essay.description
       p=essay.context
       p=essay.reflection

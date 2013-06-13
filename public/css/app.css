@@ -57,8 +57,48 @@ iframe {
 }
 
 .brainstorm-questions {
-    width: 300px;
+    width: 600px;
     float: none;
     display: block;
     margin: 0 auto;
+}
+
+.brainstorm-questions .question {
+    width: 100%;
+}
+
+.gsfn-widget-tab:hover {
+    text-decoration: underline;
+}
+
+/* Custom Styles */
+#editor {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border: 1px solid #aaa;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+#editor .main {
+    width: 940px;
+    float: none;
+    margin: 0 auto;
+}
+
+#editor .desc {
+    width: 100%;
+    padding: 10px;
+}
+
+#editor .form-actions {
+    margin: 0;
+    padding: 0;
+}
+
+.btn.pull-right {
+    margin-bottom:50px;
 }

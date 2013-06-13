@@ -36,3 +36,8 @@ block content
     .span5
       if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
         img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
+
+  #getsat-widget-6071
+  script(src='https://loader.engage.gsfn.us/loader.js')
+  script
+    if (typeof GSFN !== "undefined"){ GSFN.loadWidget(6071,{"containerId":"getsat-widget-6071"});}

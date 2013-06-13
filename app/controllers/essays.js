@@ -52,19 +52,20 @@ exports.brainstorm = {
     });
   },
   save: function(req, res){
-    var essay = new Essay(req.body)
+    var essay = new Essay({title: "New Essay"})
     essay.user = req.user
-    essay.save(function (err) {
-      if (err) {
-        res.render('essays/brainstorm/start', {
+
+    essay.answerQuestions(req.body, function(err){
+        if (err) {
+          res.render('essays/brainstorm/start', {
             title: 'New Essay',
             essay: essay,
             errors: err.errors
-        })
-      }
-      else {
-        res.redirect('/essays/'+essay._id+'/description/intro')
-      }
+          })
+        }
+        else {
+          res.redirect('/essays/'+essay._id+'/description/intro')
+        }
     })
   }
 }
