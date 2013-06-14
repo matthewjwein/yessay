@@ -6,7 +6,13 @@ block main
 block content
   each essay in essays
     .essay
-      a.title(href='/essays/'+essay._id, title=essay.title) #{essay.title}
+      - var progress = 'brainstorm'
+      - if (!essay.description) progress = 'description'
+      - else if (!essay.context) progress = 'context'
+      - else if (!essay.reflection) progress = 'reflection'
+      - else if (!essay.organization) progress = 'organization'
+
+      a.title(href='/essays/'+essay._id+'/'+progress+'/intro', title=essay.title) #{essay.title}
       p=essay.body
       .author
         span Started on&nbsp;
