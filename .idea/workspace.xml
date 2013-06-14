@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/users/auth.jade" description=".row" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/index.jade" afterPath="$PROJECT_DIR$/app/views/essays/index.jade" />
-    </list>
+    <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="" />
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +35,7 @@
       <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/essays/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.037783377">
+            <state line="6" column="22" selection-start="127" selection-end="127" vertical-scroll-proportion="0.22670025">
               <folding />
             </state>
           </provider>
@@ -518,7 +515,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.037783377">
+        <state line="6" column="22" selection-start="127" selection-end="127" vertical-scroll-proportion="0.22670025">
           <folding />
         </state>
       </provider>
