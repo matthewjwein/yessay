@@ -2,66 +2,78 @@ extends ../layouts/default
 
 include ../users/auth.jade
 block content
-  .row
-    .span7.home-title
-      p.intro-title Thanks for participating in the Yessay writing contest!
-      hr
-      p.intro-content Yessay was designed to help students write compelling college application essays. Because you've already gone through the college application process, we value your feedback. We'll be asking you to watch a series of short videos, read sample excerpts, and complete specific writing exercises.
-    .span4
-      form.well.signup(action="/users", method="post")
-        fieldset
-          a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
-            img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
-            span.provider-separator
-            span.provider-signup-text
-              | Sign in with Facebook
+  if (req.isAuthenticated())
+    center.row
+      .home-title
+        p.intro-title Thanks for participating in the&nbsp;
+          span.brand(style='font-size: 40px') yessay&nbsp;
+          writing contest!
         hr
-        h5.text-info Sign up with Yessay
-        if (typeof errors !== 'undefined')
-          each error in errors
-            if (error.type == 'Password cannot be blank')
-              style
-                #password {
-                  border: 1px solid #cd5c5c;
-                }
-            if (error.type == 'Username cannot be blank')
-              style
-                #username {
-                  border: 1px solid #cd5c5c;
-                }
-            if (error.type == 'Email cannot be blank')
-              style
-                #email {
-                  border: 1px solid #cd5c5c;
-                }
-            if (error.type == 'Name cannot be blank')
-              style
-                #name {
-                  border: 1px solid #cd5c5c;
-                }
-        .control-group
-          .control-group
-            label.control-label(for='name')
-            .controls
-              input#name(type='text', name="name", placeholder='Full name')
-                .control-group
-            label.control-label(for='email')
-            .controls
-              input#email(type='text', name="email", placeholder='Email')
-                .control-group
-            label.control-label(for='username')
-            .controls
-              input#username(type='text', name="username", placeholder='Username')
-                .control-group
-            label.control-label(for='password')
-            .controls
-              input#password(type='password', name="password", placeholder='Password')
-          .control-group
-            .controls.signin-control
-              button#submit.btn.btn-primary.button-loading(type='submit', data-loading-text='Loading...') Sign up
-              &nbsp;
-              | or&nbsp;
-              a.show-signup(href="/login") sign in
-          span.tos-agreement
-            p.text-info We will not share your personal information with anyone.
-            p.text-info By participating, you accept that we may feature your writing on our site.
+        p.intro-content Yessay was designed to help students write compelling college application essays. Because you've already gone through the college application process, we value your feedback. We'll be asking you to watch a series of short videos, read sample excerpts, and complete specific writing exercises.
+        a.btn(href='essays/brainstorm/intro') Start writing your essay now
+  else
+    .row
+      .span7.home-title
+        p.intro-title Thanks for participating in the&nbsp;
+          span.brand(style='font-size: 40px') yessay&nbsp;
+          writing contest!
+        hr
+        p.intro-content Yessay was designed to help students write compelling college application essays. Because you've already gone through the college application process, we value your feedback. We'll be asking you to watch a series of short videos, read sample excerpts, and complete specific writing exercises.
+      .span4
+          form.well.signup(action="/users", method="post")
+            fieldset
+              a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
+                img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
+                span.provider-separator
+                span.provider-signup-text
+                  | Sign in with Facebook
+            hr
+            h5.text-info Sign up with Yessay
+            if (typeof errors !== 'undefined')
+              each error in errors
+                if (error.type == 'Password cannot be blank')
+                  style
+                    #password {
+                      border: 1px solid #cd5c5c;
+                    }
+                if (error.type == 'Username cannot be blank')
+                  style
+                    #username {
+                      border: 1px solid #cd5c5c;
+                    }
+                if (error.type == 'Email cannot be blank')
+                  style
+                    #email {
+                      border: 1px solid #cd5c5c;
+                    }
+                if (error.type == 'Name cannot be blank')
+                  style
+                    #name {
+                      border: 1px solid #cd5c5c;
+                    }
+            .control-group
+              .control-group
+                label.control-label(for='name')
+                .controls
+                  input#name(type='text', name="name", placeholder='Full name')
+                    .control-group
+                label.control-label(for='email')
+                .controls
+                  input#email(type='text', name="email", placeholder='Email')
+                    .control-group
+                label.control-label(for='username')
+                .controls
+                  input#username(type='text', name="username", placeholder='Username')
+                    .control-group
+                label.control-label(for='password')
+                .controls
+                  input#password(type='password', name="password", placeholder='Password')
+              .control-group
+                .controls.signin-control
+                  button#submit.btn.btn-primary.button-loading(type='submit', data-loading-text='Loading...') Sign up
+                  &nbsp;
+                  | or&nbsp;
+                  a.show-signup(href="/login") sign in
+              span.tos-agreement
+                p.text-info We will not share your personal information with anyone.
+                p.text-info By participating, you accept that we may feature your writing on our site.

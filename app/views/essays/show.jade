@@ -20,7 +20,8 @@ block content
     .span3
       if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
         img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
-
+    p Would you like to have a portion of your essay anonymously reviewed?
+    button.btn.btn-info Request Review
  // p
     br
     form.center.form-inline.confirm(action="/essays/"+essay.id, method="post")

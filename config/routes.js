@@ -26,6 +26,7 @@ module.exports = function (app, passport, auth) {
   var essays = require('../app/controllers/essays');
   app.get('/essays', essays.index)
   app.get('/essays/intro', auth.requiresLogin, essays.intro)
+
   app.get('/essays/brainstorm/intro', auth.requiresLogin, essays.brainstorm.intro)
   app.get('/essays/brainstorm/samples', auth.requiresLogin, essays.brainstorm.samples)
   app.get('/essays/brainstorm/start', auth.requiresLogin, essays.brainstorm.start)
@@ -56,8 +57,11 @@ module.exports = function (app, passport, auth) {
   app.get('/essays/:id/organization/samples-annotated', auth.requiresLogin, essays.organization.samples_annotated)
   app.get('/essays/:id/organization/idea-prompt', auth.requiresLogin, essays.organization.idea_prompt)
   app.put('/essays/:id/organization/save-idea-prompt', auth.requiresLogin, essays.organization.save_idea_prompt)
+  app.put('/essays/:id/organization/save-review', auth.requiresLogin, essays.organization.save_review)
   app.get('/essays/:id/organization/start', auth.requiresLogin, essays.organization.start)
   app.put('/essays/:id/organization/save', auth.requiresLogin, essays.organization.save)
+
+  app.get('/essays/:id/review', auth.requiresLogin, essays.review)
 
   app.get('/essays/:id', essays.show)
   app.get('/essays/:id/edit', auth.requiresLogin, auth.essay.hasAuthorization, essays.edit)

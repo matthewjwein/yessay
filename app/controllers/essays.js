@@ -228,7 +228,7 @@ exports.organization = {
       }
     })
   },
-  save: function(req, res){
+  save_review: function(req, res){
     var essay = req.essay
     essay = _.extend(essay, req.body)
     essay.save(function (err) {
@@ -241,6 +241,22 @@ exports.organization = {
       }
       else {
         res.redirect('/essays/'+essay._id)
+      }
+    })
+  },
+  save: function(req, res){
+    var essay = req.essay
+    essay = _.extend(essay, req.body)
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/review')
       }
     })
   }
@@ -263,7 +279,7 @@ exports.create = function (req, res) {
       })
     }
     else {
-      res.redirect('/essays/'+essay._id+'/description/intro')
+      res.redirect('/essays/'+essay._id+'/organization/intro')
     }
   })
 }
@@ -298,6 +314,12 @@ exports.update = function(req, res){
     else {
       res.redirect('/essays/' + essay._id)
     }
+  })
+}
+
+exports.review = function(req, res){
+  res.render('essays/organization/review', {
+    title: "Review"
   })
 }
 

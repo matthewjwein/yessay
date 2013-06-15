@@ -42,6 +42,7 @@ var EssaySchema = new Schema({
   reflection: {type : String, default : '', trim: true},
   organization: {type : String, default : '', trim: true},
   ideaPrompt: {type : String, default : '', trim: true},
+  review: {type : String, default : '', trim: true},
   body: {type : String, default : '', trim : true},
   user: {type : Schema.ObjectId, ref : 'User'},
   comments: [{
