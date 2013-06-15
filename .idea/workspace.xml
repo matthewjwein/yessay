@@ -4,27 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/users/auth.jade" description=".row" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/facebook.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users.js" afterPath="$PROJECT_DIR$/app/controllers/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/brainstorm/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/brainstorm/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/context/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/context/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/context/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/context/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/samples.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/samples.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/reflection/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/reflection/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.jade" afterPath="$PROJECT_DIR$/app/views/home/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/header.jade" afterPath="$PROJECT_DIR$/app/views/includes/header.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/login.jade" afterPath="$PROJECT_DIR$/app/views/users/login.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/signup.jade" afterPath="$PROJECT_DIR$/app/views/users/signup.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-    </list>
+    <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="" />
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
