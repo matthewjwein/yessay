@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/review.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/review.jade" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,15 +39,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/essays.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="231" column="0" selection-start="5167" selection-end="5167" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="essay.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/essay.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="35" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="review.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="review.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/essays/organization/review.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="15" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+            <state line="15" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="0.6">
               <folding />
             </state>
           </provider>
@@ -106,10 +98,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32608697">
+            <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="idea-prompt.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="1087" selection-end="1106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/app/views/essays/organization/samples.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/organization/start.jade" />
@@ -139,11 +139,12 @@
         <option value="$PROJECT_DIR$/app/views/essays/review.jade" />
         <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/app/controllers/essays.js" />
-        <option value="$PROJECT_DIR$/app/views/essays/organization/review.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/show.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/context/intro.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/context/samples.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
+        <option value="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" />
+        <option value="$PROJECT_DIR$/app/views/essays/organization/review.jade" />
       </list>
     </option>
   </component>
@@ -362,24 +363,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yessay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yessay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -473,11 +456,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24941725" sideWeight="0.3264" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24708624" sideWeight="0.6144" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3856" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24708624" sideWeight="0.6784" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3856" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -564,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="0" selection-end="915" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="47" selection-start="3807" selection-end="3807" vertical-scroll-proportion="-7.769231">
@@ -613,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/essays/organization/review.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/show.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="23" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
@@ -650,7 +619,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32608697">
+        <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="1087" selection-end="1106" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/essays/organization/review.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="0.6">
           <folding />
         </state>
       </provider>

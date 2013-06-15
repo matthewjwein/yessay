@@ -10,11 +10,13 @@ block content
       if (!essay.isNew)
         input(type="hidden", name="_method", value="PUT")
       .control-group
-        p Before you begin to organize your own essay, it helps to get an idea of where you're headed. This sentence may or may not show up in your final essay, but it is the compass that should continually orient your essay.
-        p So, challenge yourself to complete this sentence...
+        p Before you begin to organize your own essay, it helps to get an idea of where you're headed. Challenge yourself to write down the idea of your essay in a sentence or two.  This sentence may or may not show up in your final essay, but it is the compass that should continually orient your writing.
+        br
+        p Complete the following sentence
         p "The larger idea I seem to be interested in is:
         br
         .controls
           textarea.prompt-content.input-xlarge(rows=3, type='text', name="ideaPrompt")
+        h6 (Example: How we create the illusion of order and control in our lives; The fact that competition makes us feel alive; That we try to make meaning of difficult situations, etc.)
       .form-actions
         button.btn.btn-info.pull-right(type='submit') Save & Continue
