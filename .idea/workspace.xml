@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/review.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/review.jade" />
     </list>
     <ignored path="yessay.iws" />
@@ -80,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="review.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="review.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/essays/organization/review.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="0.6">
+            <state line="3" column="16" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="intro.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+            <state line="7" column="3" selection-start="358" selection-end="358" vertical-scroll-proportion="0.29005525">
               <folding />
             </state>
           </provider>
@@ -142,9 +142,9 @@
         <option value="$PROJECT_DIR$/app/views/essays/show.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/context/intro.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/context/samples.jade" />
-        <option value="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/organization/review.jade" />
+        <option value="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
       </list>
     </option>
   </component>
@@ -617,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="1087" selection-end="1106" vertical-scroll-proportion="0.0">
@@ -633,7 +626,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/organization/review.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="0.6">
+        <state line="3" column="16" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="358" selection-end="358" vertical-scroll-proportion="0.29005525">
           <folding />
         </state>
       </provider>
