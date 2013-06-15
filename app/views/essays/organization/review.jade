@@ -1,7 +1,9 @@
 extends ../../layouts/default
 
 block main
-  p.prompt-title
+  p.prompt-title(style='font-size: 25px')
+    span.text-warning(style='font-style: italic') sk8topia2004&nbsp;
+    span has requested your help on his description section.
 
 block content
   - var action = 'organization/save-review'
@@ -10,9 +12,10 @@ block content
       if (!req.essay.isNew)
         input(type="hidden", name="_method", value="PUT")
       .control-group
-        h3 Do you think my description is okay? - Michael
-        p
-        |
+        h3 Would you like to provide some constructive feedback for&nbsp;
+          span.text-warning(style='font-style: italic') sk8topia2004
+          span ?
+        h5.text-info(style='font-style:italic') "Looking back, something about this pancake was really special. It was simple with not many ingredients, but no one else could make it like my dad.  The golden brown texture and gooey inside was just the start.  The pancake was also very thin, so what I used to do is roll it up like a blanket and add some sugar to the top. As the sugar melted, I would slice the roll into thin slices.  Each slice would start unraveling reminiscent of thick spaghetti."
         br
         br
         .controls

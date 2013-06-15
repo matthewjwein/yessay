@@ -5,12 +5,14 @@ block content
   if (req.isAuthenticated())
     center.row
       .home-title
-        p.intro-title Thanks for participating in the&nbsp;
+        p.intro-title Thank you&nbsp;
+          span=req.user.name.split(' ')[0]
+          span &nbsp;for participating in the&nbsp;
           span.brand(style='font-size: 40px') yessay&nbsp;
           writing contest!
         hr
-        p.intro-content Yessay was designed to help students write compelling college application essays. Because you've already gone through the college application process, we value your feedback. We'll be asking you to watch a series of short videos, read sample excerpts, and complete specific writing exercises.
-        a.btn(href='essays/brainstorm/intro') Start writing your essay now
+        p.intro-content Yessay was designed to help students write compelling college application essays. We really appreciate you testing out yessay, and we really value your feedback.
+        a.btn(href='essays/brainstorm/intro') If you haven't written an essay yet, start writing your essay now
   else
     .row
       .span7.home-title
