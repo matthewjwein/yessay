@@ -54,6 +54,8 @@ module.exports = function (app, passport, auth) {
   app.get('/essays/:id/organization/intro', auth.requiresLogin, essays.organization.intro)
   app.get('/essays/:id/organization/samples', auth.requiresLogin, essays.organization.samples)
   app.get('/essays/:id/organization/samples-annotated', auth.requiresLogin, essays.organization.samples_annotated)
+  app.get('/essays/:id/organization/idea-prompt', auth.requiresLogin, essays.organization.idea_prompt)
+  app.put('/essays/:id/organization/save-idea-prompt', auth.requiresLogin, essays.organization.save_idea_prompt)
   app.get('/essays/:id/organization/start', auth.requiresLogin, essays.organization.start)
   app.put('/essays/:id/organization/save', auth.requiresLogin, essays.organization.save)
 

@@ -200,11 +200,33 @@ exports.organization = {
       essay: req.essay
     });
   },
+  idea_prompt: function(req, res){
+    res.render('essays/organization/idea-prompt', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
   start: function(req, res){
     res.render('essays/organization/start', {
       title: req.essay.title,
       essay: req.essay
     });
+  },
+  save_idea_prompt: function(req, res){
+    var essay = req.essay
+    essay = _.extend(essay, req.body)
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/organization/start')
+      }
+    })
   },
   save: function(req, res){
     var essay = req.essay

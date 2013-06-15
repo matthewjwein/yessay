@@ -1,18 +1,5 @@
 extends ../../layouts/default
 
-block main
-  h1= essay.title
-  h1 Organize
-  h3 Brainstorm Data:
-    h4= essay.brainstorm
-  h3 Description Data:
-    h4= essay.description
-  h3 Context Data:
-    h4= essay.context
-  h3 Reflection Data:
-    h4= essay.reflection
-  hr
-
 block content
   - var action = 'save'
 
@@ -22,21 +9,25 @@ block content
       ul
         each error in errors
           li= error.type
-  .row
-    .span7
+  .row.well
+    .span5
+      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
+        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
+      h4= essay.description
+      h4= essay.context
+      h4= essay.reflection
+      hr
+    .span6
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='context') Organize:
+          label.control-label(for='context') It’s time to weave together the components of your essay. You may need to add, cut, or include transitions. Let the larger idea of the essay guide your decisions. You may begin with description and build suspense, or lead in slowly with context, or make an impact with reflection. However you decide to begin, your first sentence should hook your readers from the get-go.
+          p Using the existing writing you've already done, piece together your final essay here:
           .controls
-            textarea#org.input-xlarge(type='text', rows="5", name="organization", placeholder='Reflect')=essay.organization
+            textarea#org.input-xlarge(type='text', rows="50", name="organization")=essay.organization
         .form-actions
-          button.btn.btn-primary(type='submit') Save & Continue
-    .span5
-      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
-        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
-
+          button.btn.btn-success.pull-right(type='submit') Submit Final Draft
   #getsat-widget-6071
   script(src='https://loader.engage.gsfn.us/loader.js')
   script
