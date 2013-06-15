@@ -53,6 +53,7 @@ module.exports = function (app, passport, auth) {
   // essay organize routes
   app.get('/essays/:id/organization/intro', auth.requiresLogin, essays.organization.intro)
   app.get('/essays/:id/organization/samples', auth.requiresLogin, essays.organization.samples)
+  app.get('/essays/:id/organization/samples-annotated', auth.requiresLogin, essays.organization.samples_annotated)
   app.get('/essays/:id/organization/start', auth.requiresLogin, essays.organization.start)
   app.put('/essays/:id/organization/save', auth.requiresLogin, essays.organization.save)
 

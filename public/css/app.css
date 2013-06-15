@@ -1,6 +1,6 @@
 body {
   padding-top: 60px;
-  background-color: #8e4c9b;
+  background-color: #009999;
 }
 
 .date {
@@ -44,6 +44,8 @@ a.tag {
   margin: 0 10px 0 0;
 }
 
+.brand {font: 25px 'Lobster', cursive;}
+
 .error {
   color: #FF2602;
 }
@@ -84,7 +86,6 @@ iframe {
     font-size: 35px;
     line-height: 45px;
     color: white;
-    text-shadow: 1px 2px 0 #8e4c9b;
 }
 
 .prompt-title {
@@ -93,17 +94,15 @@ iframe {
     font-size: 35px;
     line-height: 45px;
     color: white;
-    text-shadow: 1px 2px 0 #8e4c9b;
 }
 
 .prompt-content {
     font-family: "MuseoSans300",sans-serif;
     font-size: 17px;
     line-height: 23px;
-    color: white;
-    text-shadow: 1px 2px 0 #8e4c9b;
     width: 655px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .intro-content {

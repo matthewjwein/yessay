@@ -1,7 +1,8 @@
 extends ../../layouts/default
 
 block main
-  p.prompt-title Brainstorming
+  p.prompt-title Brainstorming Stage
+
 
 block content
   - var action = 'save'
@@ -21,8 +22,7 @@ block content
           input(type="hidden", name="_method", value="PUT")
         div#main-question
          h3 Remember a time that you lost something that was important to you.
-         button#ready.btn.btn-primary.pull-right Ready?
-        div#questions(style='display:none;')
+        div
           div#questions-one
             .control-group
               label.control-label(for='Describe in a few words what happened. ') Describe in a few words what happened.
@@ -38,7 +38,6 @@ block content
                 input.question.input-xlarge(type='text', name="Before it was lost, what did it represent to you?")
           div#main-question-two(style='display:none;')
             h3 Think about a challenge that you took a lot of pride in overcoming.
-            button#ready-two.btn.btn-primary.pull-right Ready?
           div#questions-two(style='display:none;')
             .control-group
               label.control-label(for='What was the challenge?') What was the challenge?
@@ -53,10 +52,9 @@ block content
               .controls
                 input.question.input-xlarge(type='text', name="Of all the challenges you've faced, why did this one stand out?")
             div
-              button#next-question-three.btn.btn-primary.pull-right Save & Continue
+              button#next-question-three.btn.btn-info.pull-right Continue
           div#main-question-three(style='display:none;')
             h3 Remember a summer in which you experienced significant personal growth.
-            button#ready-three.btn.btn-primary.pull-right Ready?
             div#questions-three(style='display:none;')
               .control-group
                 label.control-label(for='What did you do that summer?') What did you do that summer?
@@ -71,6 +69,6 @@ block content
                 .controls
                   input.question.input-xlarge(type='text', name="What changed for you over that summer?")
               div
-                button.btn.btn-primary.pull-right(type='submit') Save & Continue
+                button.btn.btn-info.pull-right(type='submit') Save & Continue
           div
-            button#next-question-two.btn.btn-primary.pull-right Save & Continue
+            button#next-question-two.btn.btn-info.pull-right Continue

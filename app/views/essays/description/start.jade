@@ -47,7 +47,7 @@ block content
           .controls
             textarea#textbox.desc.input-xlarge(type='text', rows="10", name="description")=essay.description
         .form-actions
-          button.btn.btn-primary.pull-right(type='submit') Save & Continue
+          button.btn.btn-info.pull-right(type='submit') Save & Continue
 
   script
-    document.ready = function() { $('#input').focus(); }
+    document.ready = function() { $('#textbox').focus(); }

@@ -1,25 +1,41 @@
 extends ../../layouts/default
 
 block main
-  ul#myTab.nav.nav-tabs
-    li
-      a(href='#brainstorm', data-toggle='tab') Brainstorm
-    li
-      a(href='#description', data-toggle='tab') Description
-    li.active
-      a(href='#context', data-toggle='tab') Context
-  .tab-content
-    #brainstorm.tab-pane
-      - for (item in essay.brainstorm)
-        - if (essay.brainstorm[item].question)
-          div.muted= essay.brainstorm[item].question
-          h4.text-info= essay.brainstorm[item].answer
-    #description.tab-pane
-      h4 Description
-      p= essay.description
-    #context.tab-pane.active
-      h4 Context
-      p= essay.context
+  div.well(style='min-height:300px')
+    ul#myTab.nav.nav-tabs
+      li
+        a(href='#brainstorm', data-toggle='tab') Brainstorm
+      li
+        a(href='#description', data-toggle='tab') Description
+      li.active
+        a(href='#context', data-toggle='tab') Context
+    .tab-content
+      #brainstorm.tab-pane
+        div.span3.offset1
+          div.muted= essay.brainstorm[1].question
+          h5.text-info= essay.brainstorm[1].answer
+          div.muted= essay.brainstorm[0].question
+          h4.text-info= essay.brainstorm[0].answer
+          div.muted= essay.brainstorm[2].question
+          h4.text-info= essay.brainstorm[2].answer
+        div.span3
+          div.muted= essay.brainstorm[4].question
+          h4.text-info= essay.brainstorm[4].answer
+          div.muted= essay.brainstorm[3].question
+          h4.text-info= essay.brainstorm[3].answer
+          div.muted= essay.brainstorm[5].question
+          h4.text-info= essay.brainstorm[5].answer
+        div.span3
+          div.muted= essay.brainstorm[7].question
+          h4.text-info= essay.brainstorm[7].answer
+          div.muted= essay.brainstorm[6].question
+          h4.text-info= essay.brainstorm[6].answer
+          div.muted= essay.brainstorm[8].question
+          h4.text-info= essay.brainstorm[8].answer
+      #description.tab-pane
+        p= essay.description
+      #context.tab-pane.active
+        p= essay.context
 
 block content
   - var action = 'save'
@@ -36,9 +52,9 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='reflection') What is the bigger picture:
+          label.control-label(for='reflection') To begin writing reflection, look back over your description and context and ask yourself, why did this event mean so much to me? What does it reveal about the way I think or feel? And then, what does it reveal about people, or the world, or the way things work? (*Remember:Keep it in your own voice and you'll steer clear of cliches.)
           .controls
-            textarea#input.desc.input-xlarge(type='text', rows="5", name="reflection")=essay.reflection
+            textarea#textbox.desc.input-xlarge(type='text', rows="10", name="reflection")=essay.reflection
         .form-actions
           button.btn.btn-primary.pull-right(type='submit') Save & Continue
 

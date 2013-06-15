@@ -194,6 +194,12 @@ exports.organization = {
       essay: req.essay
     });
   },
+  samples_annotated: function(req, res){
+    res.render('essays/organization/samples-annotated', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
   start: function(req, res){
     res.render('essays/organization/start', {
       title: req.essay.title,

@@ -28,9 +28,10 @@ $(document).ready(function () {
   $("#next-question-two").click(function(e) {
     e.preventDefault();
     $(this).fadeOut(400);
-    $("#questions-one").fadeOut(400);
-    $("#main-question").fadeOut(400);
-    $("#main-question-two").delay(600).fadeIn(400);
+    $("#questions-one").fadeOut(380);
+    $("#main-question").fadeOut(380);
+    $("#main-question-two").delay(420).fadeIn(400);
+    $("#questions-two").delay(420).fadeIn(400);
     return false;
   })
 
@@ -44,10 +45,10 @@ $(document).ready(function () {
   $("#next-question-three").click(function(e) {
     e.preventDefault();
     $(this).fadeOut(400);
-    $("#questions-two").fadeOut(400);
-    $("#main-question-two").fadeOut(400);
-    $("#questions-three").hide();
-    $("#main-question-three").delay(600).fadeIn(400);
+    $("#questions-two").fadeOut(380);
+    $("#main-question-two").fadeOut(380);
+    $("#questions-three").fadeIn();
+    $("#main-question-three").delay(420).fadeIn(400);
     return false;
   })
 

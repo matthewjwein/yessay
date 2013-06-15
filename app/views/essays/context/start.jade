@@ -1,14 +1,14 @@
 extends ../../layouts/default
 
 block main
-  div.well
-    ul#prompts.nav.nav-tabs
+  div.well(style='min-height:300px')
+    ul#myTab.nav.nav-tabs
       li
-        a(href='#brainstorm') Brainstorm
+        a(href='#brainstorm', data-toggle='tab') Brainstorm
       li.active
         a(href='#description', data-toggle='tab') Description
     .tab-content
-      #brainstorm.tab-pane.active
+      #brainstorm.tab-pane
         div.span3.offset1
           div.muted= essay.brainstorm[1].question
           h5.text-info= essay.brainstorm[1].answer
@@ -31,8 +31,8 @@ block main
           div.muted= essay.brainstorm[8].question
           h4.text-info= essay.brainstorm[8].answer
       #description.tab-pane.active
-        h4 Description
         p= essay.description
+
 block content
   - var action = 'save'
 
@@ -48,11 +48,11 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='context') What was the context?
+          label.control-label(for='context') Based on the description you've already begun, write a paragraph or two of context. Remember, you want to orient your reader in the story by explaining where the memory took place, what led up to it, who was involved, how long it lasted, etc.  (Write more now, edit later.)
           .controls
-            textarea#input.desc.input-xlarge(type='text', rows="5", name="context")=essay.context
+            textarea#textbox.desc.input-xlarge(type='text', rows="10", name="context")=essay.context
         .form-actions
-          button.btn.btn-primary.pull-right(type='submit') Save & Continue
+          button.btn.btn-info.pull-right(type='submit') Save & Continue
 
   script
     document.ready = function() { $('#input').focus(); }
