@@ -13,7 +13,7 @@ exports.signin = function (req, res) {}
  */
 
 exports.authCallback = function (req, res, next) {
-  res.redirect('/')
+  res.redirect('/essays/brainstorm/intro')
 }
 
 /**
@@ -52,7 +52,7 @@ exports.logout = function (req, res) {
  */
 
 exports.session = function (req, res) {
-  res.redirect('/')
+  res.redirect('/essays/brainstorm/intro')
 }
 
 /**
@@ -68,7 +68,7 @@ exports.create = function (req, res) {
     }
     req.logIn(user, function(err) {
       if (err) return next(err)
-      return res.redirect('/')
+      return res.redirect('/essays/brainstorm/intro')
     })
   })
 }

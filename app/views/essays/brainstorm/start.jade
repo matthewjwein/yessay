@@ -1,8 +1,7 @@
 extends ../../layouts/default
 
 block main
-  h3 Brainstorm
-  hr
+  p.prompt-title Brainstorming
 
 block content
   - var action = 'save'
@@ -15,26 +14,63 @@ block content
       ul
         each error in errors
           li= error.type
-  .row
+  .row.well.brainstorm-wrapper
     .span7.brainstorm-questions
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
-        .control-group
-          label.control-label(for='Who is someone you trust?') Who is someone you trust?
-          .controls
-            input.question.input-xlarge(type='text', name="Who is someone you trust?", placeholder='Type answer here')
-        .control-group
-          label.control-label(for='List three adjectives that describe him/her') List three adjectives that describe him/her
-          .controls
-            input.question.input-xlarge(type='text', name="List three adjectives that describe him/her", placeholder='Type answer here')
-        .control-group
-          label.control-label(for='Is there an event or image that stands our immediately?') Is there an event or image that stands our immediately?
-          .controls
-            input.question.input-xlarge(type='text', name="Is there an event or image that stands our immediately?", placeholder='Type answer here')
-        .control-group
-          label.control-label(for='In one sentence, what does trust mean to you?') In one sentence, what does trust mean to you?
-          .controls
-            input.question.input-xlarge(type='text', name="In one sentence, what does trust mean to you?", placeholder='Type answer here')
-        .form-actions
-          button#submit.btn.btn-primary.pull-right(type='submit') Save & Continue
+        div#main-question
+         h3 Remember a time that you lost something that was important to you.
+         button#ready.btn.btn-primary.pull-right Ready?
+        div#questions(style='display:none;')
+          div#questions-one
+            .control-group
+              label.control-label(for='Describe in a few words what happened. ') Describe in a few words what happened.
+              .controls
+                input.question.input-xlarge(type='text', name="Describe in a few words what happened.")
+            .control-group
+              label.control-label(for='List three adjectives that describe him/her') What images do you associate with that loss?
+              .controls
+                input.question.input-xlarge(type='text', name="List three adjectives that describe him/her")
+            .control-group
+              label.control-label(for='Before it was lost, what did it represent to you?') Before it was lost, what did it represent to you?
+              .controls
+                input.question.input-xlarge(type='text', name="Before it was lost, what did it represent to you?")
+          div#main-question-two(style='display:none;')
+            h3 Think about a challenge that you took a lot of pride in overcoming.
+            button#ready-two.btn.btn-primary.pull-right Ready?
+          div#questions-two(style='display:none;')
+            .control-group
+              label.control-label(for='What was the challenge?') What was the challenge?
+              .controls
+                input.question.input-xlarge(type='text', name="What was the challenge?")
+            .control-group
+              label.control-label(for='What specific moment stands out to you?') What specific moment stands out to you?
+              .controls
+                input.question.input-xlarge(type='text', name="What specific moment stands out to you?")
+            .control-group
+              label.control-label(for="Of all the challenges you've faced, why did this one stand out?") Of all the challenges you've faced, why did this one stand out?
+              .controls
+                input.question.input-xlarge(type='text', name="Of all the challenges you've faced, why did this one stand out?")
+            div
+              button#next-question-three.btn.btn-primary.pull-right Save & Continue
+          div#main-question-three(style='display:none;')
+            h3 Remember a summer in which you experienced significant personal growth.
+            button#ready-three.btn.btn-primary.pull-right Ready?
+            div#questions-three(style='display:none;')
+              .control-group
+                label.control-label(for='What did you do that summer?') What did you do that summer?
+                .controls
+                  input.question.input-xlarge(type='text', name="What did you do that summer?")
+              .control-group
+                label.control-label(for='What three visuals have stuck with you from that summer?') What three visuals have stuck with you from that summer?
+                .controls
+                  input.question.input-xlarge(type='text', name="What three visuals have stuck with you from that summer?")
+              .control-group
+                label.control-label(for="What changed for you over that summer?") What changed for you over that summer?
+                .controls
+                  input.question.input-xlarge(type='text', name="What changed for you over that summer?")
+              div
+                button.btn.btn-primary.pull-right(type='submit') Save & Continue
+          div
+            button#next-question-two.btn.btn-primary.pull-right Save & Continue

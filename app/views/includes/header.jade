@@ -1,6 +1,6 @@
 
 header#header
-  .navbar.navbar-fixed-top(role='navigation')
+  .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
     .navbar-inner
       .container
         a.brand(href='/') Yessay
@@ -8,18 +8,4 @@ header#header
           ul.nav.pull-right
             if (req.isAuthenticated())
               li
-                a(href="/users/"+req.user.id, title="Profile") Profile
-              li
-                a(href="/logout", title="logout") Logout
-            else
-              li
-                a#login(href="/login", title="Log In") Log In
-              li
-                a(href="/signup", title="Sign Up") Sign Up
-        if (req.isAuthenticated())
-          ul.nav
-            li
-              a(href="/essays/brainstorm/intro", title="new essay") New Essay
-          ul.nav
-            li
-              a(href='/essays', title="view your essays") Your Essays
+                a(href="/logout", title="logout")=req.user.username

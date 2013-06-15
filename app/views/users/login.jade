@@ -1,20 +1,45 @@
-extends auth
+extends ../layouts/default
 
-block auth
-  form.login.form-horizontal(action="/users/session", method="post")
-    p.error= message
-    .control-group
-      label.control-label(for='email') Email
-      .controls
-        input#email(type='text', name="email", placeholder='Email')
+include ../users/auth.jade
+block content
+  .row
+    .span7.home-title
+      p.intro-title Thanks for participating in the Yessay writing contest!
+      hr
+      p.intro-content Yessay was designed to help students write compelling college application essays. Because you've already gone through the college application process, we value your feedback. We'll be asking you to watch a series of short videos, read sample excerpts, and complete specific writing exercises.
+    .span4
+      if (typeof errors !== 'undefined')
+        .fade.in.alert.alert-block.alert-error
+          a.close(data-dismiss="alert", href="javascript:void(0)") x
+          ul
+            each error in errors
+              li= error.type
 
-    .control-group
-      label.control-label(for='password') Password
-      .controls
-        input#password(type='password', name="password", placeholder='Password')
-
-    .form-actions
-      button.btn.btn-primary(type='submit') Login
-      &nbsp;
-      | or&nbsp;
-      a.show-signup(href="/signup") sign up
+      form.well(action="/users/session", method="post")
+        fieldset
+          a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
+            img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
+            span.provider-separator
+            span.provider-signup-text
+              | Sign in with Facebook
+        hr
+        h5.text-info Sign in with Yessay
+        p.error= message
+        .control-group
+          label.control-label(for='email')
+          .controls
+            input#email.input-large(type='text', name="email", placeholder='Email')
+          .control-group
+            label.control-label(for='password')
+            .controls
+              input#password.input-large(type='password', name="password", placeholder='Password')
+          .control-group
+            .controls.signin-control
+              button#submit.btn.btn-primary.button-loading(type='submit', data-loading-text='Loading...') Sign in
+              &nbsp;
+              | or&nbsp;
+              a.show-signup(href="/signup") sign up
+          hr
+        div.tos-agreement
+          p.text-info We will not share your personal information with anyone.
+          p.text-info By participating, you accept that we may feature your writing on our site.

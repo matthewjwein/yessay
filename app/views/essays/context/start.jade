@@ -1,22 +1,38 @@
 extends ../../layouts/default
 
 block main
-  ul#myTab.nav.nav-tabs
-    li
-      a(href='#brainstorm', data-toggle='tab') Brainstorm
-    li.active
-      a(href='#description', data-toggle='tab') Description
-  .tab-content
-    #brainstorm.tab-pane
-      - for (item in essay.brainstorm)
-        - if (essay.brainstorm[item].question)
-          div.muted= essay.brainstorm[item].question
-          h4.text-info= essay.brainstorm[item].answer
-    #description.tab-pane.active
-      h4 Description
-      p= essay.description
-
-
+  div.well
+    ul#prompts.nav.nav-tabs
+      li
+        a(href='#brainstorm') Brainstorm
+      li.active
+        a(href='#description', data-toggle='tab') Description
+    .tab-content
+      #brainstorm.tab-pane.active
+        div.span3.offset1
+          div.muted= essay.brainstorm[1].question
+          h5.text-info= essay.brainstorm[1].answer
+          div.muted= essay.brainstorm[0].question
+          h4.text-info= essay.brainstorm[0].answer
+          div.muted= essay.brainstorm[2].question
+          h4.text-info= essay.brainstorm[2].answer
+        div.span3
+          div.muted= essay.brainstorm[4].question
+          h4.text-info= essay.brainstorm[4].answer
+          div.muted= essay.brainstorm[3].question
+          h4.text-info= essay.brainstorm[3].answer
+          div.muted= essay.brainstorm[5].question
+          h4.text-info= essay.brainstorm[5].answer
+        div.span3
+          div.muted= essay.brainstorm[7].question
+          h4.text-info= essay.brainstorm[7].answer
+          div.muted= essay.brainstorm[6].question
+          h4.text-info= essay.brainstorm[6].answer
+          div.muted= essay.brainstorm[8].question
+          h4.text-info= essay.brainstorm[8].answer
+      #description.tab-pane.active
+        h4 Description
+        p= essay.description
 block content
   - var action = 'save'
 

@@ -1,18 +1,9 @@
 extends ../../layouts/default
 
 block main
-  h1 Context
-  hr
+  p.prompt-title Context Stage
 
 block content
-  iframe(src='http://player.vimeo.com/video/42160298', width='500', height='281', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
-    p
-      a(href='http://vimeo.com/42160298') Knowledge is Power (EDUC 5385/LAL 6300 Final Presentation)
-      | from
-      a(href='http://vimeo.com/user11721451') Alicja Tamowski
-      | on
-      a(href='http://vimeo.com') Vimeo
-      | .
-
-  hr
-  a.btn.btn-info.pull-right(href='samples') Continue
+  iframe.well(src='http://player.vimeo.com/video/68256972?title=0&amp;byline=0&amp;portrait=0', width='500', height='300', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+  p.prompt-content You've written description, but the admissions committee still needs some background information in order to understand the larger context of this memory. Orient your reader by stepping back from the immediacy of description and help set the scene.
+    a.btn.btn-info.pull-right(href='start') Continue

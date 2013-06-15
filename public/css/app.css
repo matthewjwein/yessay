@@ -1,5 +1,6 @@
 body {
   padding-top: 60px;
+  background-color: #8e4c9b;
 }
 
 .date {
@@ -24,7 +25,7 @@ body {
 
 .main-head {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .btn {
@@ -72,10 +73,55 @@ iframe {
 }
 
 /* Custom Styles */
+.home-intro {
+    margin-right: 70px;
+}
+
+.home-title {
+    padding: 10px 110px 0px 0px;
+    width: 500px;
+    font-family: "MuseoSans300",sans-serif;
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    text-shadow: 1px 2px 0 #8e4c9b;
+}
+
+.prompt-title {
+    padding: 10px 0 0 0;
+    font-family: "MuseoSans300",sans-serif;
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    text-shadow: 1px 2px 0 #8e4c9b;
+}
+
+.prompt-content {
+    font-family: "MuseoSans300",sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    color: white;
+    text-shadow: 1px 2px 0 #8e4c9b;
+    width: 655px;
+    margin: 0 auto;
+}
+
+.intro-content {
+    padding: 10px 110px 0px 0px;
+    width: 500px;
+    font-family: "MuseoSans300",sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+}
+
+#email, #password, #name, #username {
+    padding-right: 42px;
+}
+
 #editor {
     position: absolute;
     width: 100%;
-    bottom: 0;
     border: 1px solid #aaa;
     left: 0;
     margin: 0;
@@ -99,6 +145,73 @@ iframe {
     padding: 0;
 }
 
-.btn.pull-right {
-    margin-bottom:50px;
+#login-facebook {
+    border-radius: 3px;
+    padding: 6px;
+    background: #1a60a2;
+    border-color: #1a60a2!important;
+    border-bottom-color: #05121e!important;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: #1b65ab;
+    background-image: -moz-linear-gradient(top,#217ace,#134676);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#217ace),to(#134676));
+    background-image: -webkit-linear-gradient(top,#217ace,#134676);
+    background-image: -o-linear-gradient(top,#217ace,#134676);
+    background-image: linear-gradient(to bottom,#217ace,#134676);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff217ace',endColorstr='#ff134676',GradientType=0);
+    border-color: #134676 #134676 #081f34;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    text-shadow: 0 -1px 0 #0c2c4a;
+}
+
+#login-facebook:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #134676;
+
+}
+
+.brainstorm-wrapper {
+    width: 630px;
+    margin: 0 auto;
+}
+
+.signin-control {
+    text-align: center;
+}
+
+.simple-button.provider-signup img {
+    position: relative;
+    top: 7px;
+}
+
+.simple-button.provider-signup {
+    color: white!important;
+    display: block;
+    font-family: "MuseoSans300",sans-serif;
+    height: 40px;
+}
+
+.simple-button.provider-signup .provider-separator {
+    background-color: white;
+    border-right: 1px solid #999;
+    float: left;
+    height: 50px;
+    left: 36px;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    position: relative;
+    top: -5px;
+    width: 1px;
+}
+
+.simple-button.provider-signup .provider-signup-text {
+    display: inline;
+    font-size: 20px;
+    left: 23px;
+    position: relative;
+    top: 10px;
 }
