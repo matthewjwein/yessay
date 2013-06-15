@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/context/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/context/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/context/samples.jade" afterPath="$PROJECT_DIR$/app/views/essays/context/samples.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samples.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="samples.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/essays/context/samples.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="54" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.65217394">
+            <state line="14" column="54" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="intro.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="618" vertical-scroll-proportion="0.0">
+            <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32608697">
               <folding />
             </state>
           </provider>
@@ -129,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/essays/organization/samples-annotated.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/organization/idea-prompt.jade" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/app/views/essays/organization/samples.jade" />
@@ -145,6 +143,7 @@
         <option value="$PROJECT_DIR$/app/views/essays/show.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/context/intro.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/context/samples.jade" />
+        <option value="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
       </list>
     </option>
   </component>
@@ -607,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="618" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/organization/intro.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -651,7 +643,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/context/samples.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="54" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.65217394">
+        <state line="14" column="54" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="115" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32608697">
           <folding />
         </state>
       </provider>
