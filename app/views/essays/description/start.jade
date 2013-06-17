@@ -7,27 +7,27 @@ block main
         a(href='#brainstorm') Brainstorm
     .tab-content
       #brainstorm.tab-pane.active
-        div.span3.offset1
+        div.span3
           div.muted= essay.brainstorm[1].question
           h5.text-info= essay.brainstorm[1].answer
           div.muted= essay.brainstorm[0].question
-          h4.text-info= essay.brainstorm[0].answer
+          h5.text-info= essay.brainstorm[0].answer
           div.muted= essay.brainstorm[2].question
-          h4.text-info= essay.brainstorm[2].answer
+          h5.text-info= essay.brainstorm[2].answer
         div.span3
           div.muted= essay.brainstorm[4].question
-          h4.text-info= essay.brainstorm[4].answer
+          h5.text-info= essay.brainstorm[4].answer
           div.muted= essay.brainstorm[3].question
-          h4.text-info= essay.brainstorm[3].answer
+          h5.text-info= essay.brainstorm[3].answer
           div.muted= essay.brainstorm[5].question
-          h4.text-info= essay.brainstorm[5].answer
+          h5.text-info= essay.brainstorm[5].answer
         div.span3
           div.muted= essay.brainstorm[7].question
-          h4.text-info= essay.brainstorm[7].answer
+          h5.text-info= essay.brainstorm[7].answer
           div.muted= essay.brainstorm[6].question
-          h4.text-info= essay.brainstorm[6].answer
+          h5.text-info= essay.brainstorm[6].answer
           div.muted= essay.brainstorm[8].question
-          h4.text-info= essay.brainstorm[8].answer
+          h5.text-info= essay.brainstorm[8].answer
 block content
   - var action = 'save'
 
@@ -45,9 +45,39 @@ block content
         .control-group
           label.control-label(for='description') Choose one of your brainstorms above to turn into an essay. Write a paragraph or two of description to bring that memory to life. (Note, it's easier to write more now and edit later, so get as much description out as you can.)
           .controls
-            textarea#textbox.desc.input-xlarge(type='text', rows="10", name="description")=essay.description
-        .form-actions
+            textarea.desc.input-xlarge(type='text', rows="10", name="description")=essay.description
+        div
+          .btn-group
+            a.btn.btn-small(href="#videoModal", data-toggle="modal")
+              i.icon-facetime-video
+              | Video
+            a.btn.btn-small(href="#sampleModal", data-toggle="modal")
+              i.icon-facetime-video
+              | Samples
           button.btn.btn-info.pull-right(type='submit') Save & Continue
 
   script
     document.ready = function() { $('#textbox').focus(); }
+
+  #videoModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-header
+      button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      h3#myModalLabel Description Video
+    .modal-body
+      iframe.well(src='http://player.vimeo.com/video/68254280?title=0&amp;byline=0&amp;portrait=0', width='500', height='300', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+      h5 Description brings your story to life. Through concrete and specific imagery you pull your reader in, and for a brief moment, allow them to see what you saw and feel what you felt.
+    .modal-footer
+      button.btn(data-dismiss='modal', aria-hidden='true') Dismiss
+  #sampleModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-header
+      button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      h3#myModalLabel Description Samples
+    .modal-body
+      h4 My Brother (description)
+      p The waiting room was large and surprisingly unsanitary for a hospital. The television on the wall was running static. Or perhaps I only misremember it that way. The whole event is couched in so much confusion and haze that it’s hard to distinguish the way things were from the way I constructed them after the fact. I know for sure that my brother had been wheeled into the back two hours prior, and that we had not seen or heard a word from anyone since he had disappeared down that long corridor. My mother was crying. My father paced back and forth. When that army of uniformed hospital staff closed in around my brother’s gurney, we were simply edged out of the way. It would be hours before anyone came back around.
+      hr
+      h4 Swimming (description)
+      p I was standing on the block, waiting for the gun. One one-thousand, two one-thousand, three one-thousand. C’mon. Let’s move! The water gently lapped the side of the pool, tranquil and unassuming against the mounting energy of the breaststrokers, all of us, lined up waiting for that sound. The gun goes off. Within seconds, we hit the water. Long streamlined glide and then short, staccato strokes. Arms pulling down toward the body, then flying out again. Always reaching for the edge. I turn the first lap of the race. Our line has broken up. Some breaststrokers push to the lead, others linger behind. Natural ability and varying levels of practice stagger us in our lanes. And then, there’s the wall. It’s so close, I can already feel it. My hand reaches for it. Did I hit first? Did she hit first? Only a millisecond of difference.
+      hr
+    .modal-footer
+      button.btn(data-dismiss='modal', aria-hidden='true') Dismiss

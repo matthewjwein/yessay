@@ -66,6 +66,27 @@ $(document).ready(function () {
     return false;
   })
 
+  $('.question').keyup(function(){
+    var charLeft = 140 - $(this).val().length
+    $(this).parent().prev().html(charLeft)
+  })
+
+  $('.org').keyup(function(){
+    var text = $(this).val()
+    $('#words').html(calculateWordCount(text))
+  })
+
+  function calculateWordCount(text) {
+    var items = $.trim(text).split(' ')
+    var words = 0
+    for (var i = 0; i < items.length; i++) {
+      if (items[i]) {
+        words++;
+      }
+    }
+    return words
+  }
+
   $(document).delegate('#textbox', 'keydown', function(e) {
     var keyCode = e.keyCode || e.which;
 

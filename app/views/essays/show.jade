@@ -6,7 +6,8 @@ block main
 block content
   .row.well
     .span9
-      p=essay.organization
+      pre
+        p=essay.organization
       p.author
         a(href="/users/"+essay.user._id)=essay.user.name
       .date= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
@@ -20,7 +21,7 @@ block content
     .span3
       if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
         img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
-    p Would you like to have a portion of your essay anonymously reviewed?
+    p Would you like to have your essay reviewed?
     a.btn.btn-info(href='/') Request Review
  // p
     br

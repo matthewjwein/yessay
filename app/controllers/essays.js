@@ -256,7 +256,7 @@ exports.organization = {
         })
       }
       else {
-        res.redirect('/essays/'+essay._id+'/review')
+        res.redirect('/essays/'+essay._id)
       }
     })
   }

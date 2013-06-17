@@ -8,6 +8,10 @@ body {
   color: #aaa;
 }
 
+.question, .prompt-content {
+    resize: none;
+}
+
 .author {
   color: #aaa;
 }
@@ -23,8 +27,22 @@ body {
   border-top: 1px solid #e8e8e8;
 }
 
-textarea#org {
+textarea.org {
     width: 100%;
+}
+
+.span3 {
+    overflow: hidden;
+}
+
+pre {
+    border: none;
+}
+
+.wordcount {
+    position: fixed;
+    top: 57px;
+    right: 8px;
 }
 
 .main-head {

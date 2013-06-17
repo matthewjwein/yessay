@@ -11,27 +11,27 @@ block main
         a(href='#context', data-toggle='tab') Context
     .tab-content
       #brainstorm.tab-pane
-        div.span3.offset1
+        div.span3
           div.muted= essay.brainstorm[1].question
           h5.text-info= essay.brainstorm[1].answer
           div.muted= essay.brainstorm[0].question
-          h4.text-info= essay.brainstorm[0].answer
+          h5.text-info= essay.brainstorm[0].answer
           div.muted= essay.brainstorm[2].question
-          h4.text-info= essay.brainstorm[2].answer
+          h5.text-info= essay.brainstorm[2].answer
         div.span3
           div.muted= essay.brainstorm[4].question
-          h4.text-info= essay.brainstorm[4].answer
+          h5.text-info= essay.brainstorm[4].answer
           div.muted= essay.brainstorm[3].question
-          h4.text-info= essay.brainstorm[3].answer
+          h5.text-info= essay.brainstorm[3].answer
           div.muted= essay.brainstorm[5].question
-          h4.text-info= essay.brainstorm[5].answer
+          h5.text-info= essay.brainstorm[5].answer
         div.span3
           div.muted= essay.brainstorm[7].question
-          h4.text-info= essay.brainstorm[7].answer
+          h5.text-info= essay.brainstorm[7].answer
           div.muted= essay.brainstorm[6].question
-          h4.text-info= essay.brainstorm[6].answer
+          h5.text-info= essay.brainstorm[6].answer
           div.muted= essay.brainstorm[8].question
-          h4.text-info= essay.brainstorm[8].answer
+          h5.text-info= essay.brainstorm[8].answer
       #description.tab-pane
         p= essay.description
       #context.tab-pane.active
@@ -54,9 +54,38 @@ block content
         .control-group
           label.control-label(for='reflection') To begin writing reflection, look back over your description and context and ask yourself, why did this event mean so much to me? What does it reveal about the way I think or feel? And then, what does it reveal about people, or the world, or the way things work? (*Remember:Keep it in your own voice and you'll steer clear of cliches.)
           .controls
-            textarea#textbox.desc.input-xlarge(type='text', rows="10", name="reflection")=essay.reflection
-        .form-actions
+            textarea.desc.input-xlarge(type='text', rows="10", name="reflection")=essay.reflection
+        div
+          a.btn.btn-small(href="#videoModal", data-toggle="modal")
+            i.icon-facetime-video
+            | Video
+          a.btn.btn-small(href="#sampleModal", data-toggle="modal")
+            i.icon-facetime-video
+            | Samples
           button.btn.btn-primary.pull-right(type='submit') Save & Continue
 
   script
     document.ready = function() { $('#input').focus(); }
+
+  #videoModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-header
+      button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      h3#myModalLabel Reflection Video
+    .modal-body
+      iframe.well(src='http://player.vimeo.com/video/68258156?title=0&amp;byline=0&amp;portrait=0', width='500', height='300', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+      h5 Reflection is all about going deep, trying to figure out what the memory, event, or experience really means to you. Any memory--however large or small--lends itself to this kind of reflective thinking. It's where you show the admissions committee that you are a critical thinker.
+    .modal-footer
+      button.btn(data-dismiss='modal', aria-hidden='true') Dismiss
+  #sampleModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-header
+      button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      h3#myModalLabel Reflection Samples
+    .modal-body
+      h4 My Brother (reflection)
+      p The experience of seeing someone in pain—someone you know and love—is difficult to explain. In part, it is the obvious feeling of helplessness. You can only watch from the outside. Your interventions are meager, in spite of every good intention. But it’s also more than this. In some way, I felt like seeing my brother in the hospital, so out of context like that, was a glimpse into something even more disturbing. It meant that the calm and order of everyday life—all those things we always take for granted—was really very thin, like a delicate skin barely stretched over some deeper and more profound chaos. Maybe pain always works like this, revealing something cosmic and unsettling, even if it only lasts for a brief moment and life resumes again to cover over its traces.
+      hr
+      h4 Swimming (reflection)
+      p When I was young, I remember being taught that “it’s not whether you win or lose, but how you play the game” that matters. I want to say I believe in this. It sounds nice and comforting, something to soothe yourself on those occasions where things don’t go as planned, when you don’t take home the metal, when your team walks off the field heads hung low. And maybe in some deeper way, this is true. Maybe it doesn’t matter in the grand scheme of things. But if you’ve ever felt the rush of adrenaline, the raw force of physical competition, then you know that winning is more than the icing on the cake. In the midst of competition, there is no grand scheme of things. The desire to win is primal, it’s all you can see and feel, and the animal part of you knows this intuitively.
+      hr
+    .modal-footer
+      button.btn(data-dismiss='modal', aria-hidden='true') Dismiss

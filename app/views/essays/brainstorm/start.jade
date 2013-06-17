@@ -21,53 +21,62 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         div#main-question
-         h3 Remember a time that you lost something that was important to you.
+         h4 Remember a time that you lost something that was important to you.
         div
           div#questions-one
             .control-group
-              label.control-label(for='Describe in a few words what happened. ') Describe in a few words what happened.
+              label.pull-left.control-label(for='Describe in a few words what happened. ') Describe in a few words what happened.
+              span.muted.pull-right 140
               .controls
-                input.question.input-xlarge(type='text', name="Describe in a few words what happened.")
+                textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Describe in a few words what happened.")
             .control-group
-              label.control-label(for='List three adjectives that describe him/her') What images do you associate with that loss?
+              label.pull-left.control-label(for='List three adjectives that describe him/her') What images do you associate with that loss?
+              span.muted.pull-right 140
               .controls
-                input.question.input-xlarge(type='text', name="List three adjectives that describe him/her")
+                textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="List three adjectives that describe him/her")
             .control-group
-              label.control-label(for='Before it was lost, what did it represent to you?') Before it was lost, what did it represent to you?
+              label.pull-left.control-label(for='Before it was lost, what did it represent to you?') Before it was lost, what did it represent to you?
+              span.muted.pull-right 140
               .controls
-                input.question.input-xlarge(type='text', name="Before it was lost, what did it represent to you?")
+                textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Before it was lost, what did it represent to you?")
           div#main-question-two(style='display:none;')
-            h3 Think about a challenge that you took a lot of pride in overcoming.
+            h4 Think of something that most people would probably think is trivial, but is very important to you.
           div#questions-two(style='display:none;')
             .control-group
-              label.control-label(for='What was the challenge?') What was the challenge?
+              label.pull-left.control-label(for='Describe it in a few words.') Describe it in a few words.
+              span.muted.pull-right 140
               .controls
-                input.question.input-xlarge(type='text', name="What was the challenge?")
+                textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Describe it in a few words.")
             .control-group
-              label.control-label(for='What specific moment stands out to you?') What specific moment stands out to you?
+              label.pull-left.control-label(for='What specifically stands out in your memory?') What specifically stands out in your memory?
+              span.muted.pull-right 140
               .controls
-                input.question.input-xlarge(type='text', name="What specific moment stands out to you?")
+                textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What specifically stands out in your memory?")
             .control-group
-              label.control-label(for="Of all the challenges you've faced, why did this one stand out?") Of all the challenges you've faced, why did this one stand out?
+              label.pull-left.control-label(for="Briefly, why do you think it made such a lasting impression on you?") Briefly, why do you think it made such a lasting impression on you?
+              span.muted.pull-right 140
               .controls
-                input.question.input-xlarge(type='text', name="Of all the challenges you've faced, why did this one stand out?")
+                textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Briefly, why do you think it made such a lasting impression on you?")
             div
               button#next-question-three.btn.btn-info.pull-right Continue
           div#main-question-three(style='display:none;')
-            h3 Remember a summer in which you experienced significant personal growth.
+            h4 Remember a summer in which you experienced significant personal growth.
             div#questions-three(style='display:none;')
               .control-group
-                label.control-label(for='What did you do that summer?') What did you do that summer?
+                label.pull-left.control-label(for='What did you do that summer?') What did you do that summer?
+                span.muted.pull-right 140
                 .controls
-                  input.question.input-xlarge(type='text', name="What did you do that summer?")
+                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What did you do that summer?")
               .control-group
-                label.control-label(for='What three visuals have stuck with you from that summer?') What three visuals have stuck with you from that summer?
+                label.pull-left.control-label(for='What three visuals have stuck with you from that summer?') What three visuals have stuck with you from that summer?
+                span.muted.pull-right 140
                 .controls
-                  input.question.input-xlarge(type='text', name="What three visuals have stuck with you from that summer?")
+                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What three visuals have stuck with you from that summer?")
               .control-group
-                label.control-label(for="What changed for you over that summer?") What changed for you over that summer?
+                label.pull-left.control-label(for="What changed for you over that summer?") What changed for you over that summer?
+                span.muted.pull-right 140
                 .controls
-                  input.question.input-xlarge(type='text', name="What changed for you over that summer?")
+                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What changed for you over that summer?")
               div
                 button.btn.btn-info.pull-right(type='submit') Save & Continue
           div
