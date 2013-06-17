@@ -56,12 +56,13 @@ block content
           .controls
             textarea.desc.input-xlarge(type='text', rows="10", name="reflection")=essay.reflection
         div
-          a.btn.btn-small(href="#videoModal", data-toggle="modal")
-            i.icon-facetime-video
-            | Video
-          a.btn.btn-small(href="#sampleModal", data-toggle="modal")
-            i.icon-facetime-video
-            | Samples
+          .btn-group
+            a.btn.btn-small(href="#videoModal", data-toggle="modal")
+              i.icon-facetime-video
+              | Video
+            a.btn.btn-small(href="#sampleModal", data-toggle="modal")
+              i.icon-facetime-video
+              | Samples
           button.btn.btn-primary.pull-right(type='submit') Save & Continue
 
   script

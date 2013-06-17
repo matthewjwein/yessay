@@ -43,7 +43,7 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='description') Choose one of your brainstorms above to turn into an essay. Write a paragraph or two of description to bring that memory to life. (Note, it's easier to write more now and edit later, so get as much description out as you can.)
+          label.control-label(for='description') Lets start the description.  This is not an essay, but an exercise to help you bring your memory to life.  Write a paragraph or two of description focusing primarily on the five senses (note the more description you provide, the easier the essay writing will be to write later)
           .controls
             textarea.desc.input-xlarge(type='text', rows="10", name="description")=essay.description
         div
