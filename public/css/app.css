@@ -8,6 +8,13 @@ body {
   color: #aaa;
 }
 
+#progress {
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 200px;
+}
+
 .question, .prompt-content {
     resize: none;
 }
