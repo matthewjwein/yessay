@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/google-analytics.js" afterPath="$PROJECT_DIR$/public/js/google.analytics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/foot.jade" afterPath="$PROJECT_DIR$/app/views/includes/foot.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/google.analytics.js" afterPath="$PROJECT_DIR$/public/js/google.analytics.js" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foot.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="foot.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/includes/foot.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="52" selection-start="370" selection-end="370" vertical-scroll-proportion="0.20833333">
+            <state line="8" column="52" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google.analytics.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="google.analytics.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/google.analytics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="14" column="9" selection-start="766" selection-end="766" vertical-scroll-proportion="0.36458334">
               <folding />
             </state>
           </provider>
@@ -129,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/essays/brainstorm/start.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/description/samples.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/description/start.jade" />
@@ -145,6 +143,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/js/google-analytics.js" />
         <option value="$PROJECT_DIR$/app/views/includes/foot.jade" />
+        <option value="$PROJECT_DIR$/public/js/google.analytics.js" />
       </list>
     </option>
   </component>
@@ -572,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/google.analytics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="5" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
@@ -595,7 +587,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/includes/foot.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="52" selection-start="370" selection-end="370" vertical-scroll-proportion="0.20833333">
+        <state line="8" column="52" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/google.analytics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="766" selection-end="766" vertical-scroll-proportion="0.36458334">
           <folding />
         </state>
       </provider>
