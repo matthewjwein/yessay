@@ -5,79 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/essays/community/intro.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/essays/community/review-intro.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/community.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/.gitignore.orig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/.gitignore.rej" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/examples/pow.js.orig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/examples/pow.js.rej" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/.npmignore" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/essays/organization/review.jade" afterPath="$PROJECT_DIR$/app/views/essays/community/review.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/README.markdown" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/readme.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/essays.js" afterPath="$PROJECT_DIR$/app/controllers/essays.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/essay.js" afterPath="$PROJECT_DIR$/app/models/essay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/brainstorm/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/brainstorm/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/reflection/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/reflection/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.jade" afterPath="$PROJECT_DIR$/app/views/home/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/foot.jade" afterPath="$PROJECT_DIR$/app/views/includes/foot.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/login.jade" afterPath="$PROJECT_DIR$/app/views/users/login.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/signup.jade" afterPath="$PROJECT_DIR$/app/views/users/signup.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/History.md" afterPath="$PROJECT_DIR$/node_modules/mocha/History.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/bin/mocha" afterPath="$PROJECT_DIR$/node_modules/mocha/bin/mocha" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/component.json" afterPath="$PROJECT_DIR$/node_modules/mocha/component.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/lib/browser/tty.js" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/tty.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/lib/interfaces/tdd.js" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/interfaces/tdd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/base.js" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/lib/runnable.js" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/runnable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/lib/runner.js" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/runner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/commander/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/LICENSE" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/Readme.md" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/test.js" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/jade.md" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/jade.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/index.js" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/ms/test/support/jquery.js" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/ms/test/support/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/package.json" afterPath="$PROJECT_DIR$/node_modules/mocha/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mocha/test.js" afterPath="$PROJECT_DIR$/node_modules/mocha/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/History.md" afterPath="$PROJECT_DIR$/node_modules/notifier/History.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/README.md" afterPath="$PROJECT_DIR$/node_modules/notifier/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/lib/notifier.js" afterPath="$PROJECT_DIR$/node_modules/notifier/lib/notifier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/node_modules/node-parse-api/lib/Parse.js" afterPath="$PROJECT_DIR$/node_modules/notifier/node_modules/node-parse-api/lib/Parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/node_modules/node-parse-api/package.json" afterPath="$PROJECT_DIR$/node_modules/notifier/node_modules/node-parse-api/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/node_modules/node-parse-api/readme.md" afterPath="$PROJECT_DIR$/node_modules/notifier/node_modules/node-parse-api/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/node_modules/postmark/package.json" afterPath="$PROJECT_DIR$/node_modules/notifier/node_modules/postmark/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/package.json" afterPath="$PROJECT_DIR$/node_modules/notifier/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/notifier/test/test.js" afterPath="$PROJECT_DIR$/node_modules/notifier/test/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/passport-twitter/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/LICENSE" afterPath="$PROJECT_DIR$/node_modules/passport-twitter/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/lib/passport-twitter/strategy.js" afterPath="$PROJECT_DIR$/node_modules/passport-twitter/lib/passport-twitter/strategy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/node_modules/passport-oauth/node_modules/oauth/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-twitter/node_modules/passport-oauth/node_modules/oauth/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/node_modules/passport-oauth/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-twitter/node_modules/passport-oauth/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-twitter/node_modules/pkginfo/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-twitter/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-twitter/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/view-helpers/History.md" afterPath="$PROJECT_DIR$/node_modules/view-helpers/History.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/view-helpers/README.md" afterPath="$PROJECT_DIR$/node_modules/view-helpers/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/view-helpers/index.js" afterPath="$PROJECT_DIR$/node_modules/view-helpers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/view-helpers/package.json" afterPath="$PROJECT_DIR$/node_modules/view-helpers/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,10 +52,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="review.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="review.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/essays/community/review.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="68" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.9159664">
+            <state line="28" column="68" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="18" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.8277592">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
         <option value="$PROJECT_DIR$/app/views/home/index.jade" />
         <option value="$PROJECT_DIR$/app/views/users/login.jade" />
         <option value="$PROJECT_DIR$/app/views/users/signup.jade" />
@@ -180,6 +125,7 @@
         <option value="$PROJECT_DIR$/app/controllers/essays.js" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/app/views/essays/community/review.jade" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -586,7 +532,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24941725" sideWeight="0.3264" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21367522" sideWeight="0.6144" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3856" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3856" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -662,20 +608,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/signup.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="50" selection-start="2852" selection-end="2852" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/essays/edit.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/organization/start.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="26" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
@@ -769,7 +701,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/community/review.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="68" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.9159664">
+        <state line="28" column="68" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.8277592">
           <folding />
         </state>
       </provider>
