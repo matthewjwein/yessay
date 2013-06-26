@@ -1,0 +1,29 @@
+extends ../../layouts/default
+
+block main
+  p.prompt-title(style='font-size: 25px')
+    span.text-warning(style='font-style: italic') sk8topia2004&nbsp;
+    span would like to push his writing further. Read his description section below.
+    |  Ask him...
+
+block content
+  - var action = 'organization/save-review'
+  div.well(style='width:670px; margin:0 auto;')
+    form(method="post", action=action, enctype="multipart/form-data")
+      if (!req.essay.isNew)
+        input(type="hidden", name="_method", value="PUT")
+      .control-group
+        h3 Would you like to provide some constructive feedback for&nbsp;
+          span.text-warning(style='font-style: italic') sk8topia2004
+          span ?
+        h5.text-info(style='font-style:italic') "---- Description ----"
+        br
+        br
+        .controls
+          textarea.prompt-content.input-xlarge(rows=2, type='text', name="review", placeholder="Enter your review here")
+        .controls
+          textarea.prompt-content.input-xlarge(rows=2, type='text', name="review", placeholder="Enter your review here")
+        .controls
+          textarea.prompt-content.input-xlarge(rows=, type='text', name="review", placeholder="Enter your review here")
+      .form-actions
+        a.btn.btn-info.pull-right(href='../organization/intro') Done

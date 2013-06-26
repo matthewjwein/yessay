@@ -8,8 +8,7 @@ var express = require('express')
   , passport = require('passport');
 
 /**
- * Main application entry file.
- * Please note that the order of loading is important.
+ * Main application
  */
 
 // Load configurations
@@ -17,6 +16,8 @@ var express = require('express')
 var env = process.env.NODE_ENV || 'development'
   , config = require('./config/config')[env]
   , auth = require('./config/middlewares/authorization')
+  , socket = require('socket.io')
+  , http = require('http')
   , mongoose = require('mongoose');
 
 // Bootstrap db connection
@@ -41,8 +42,52 @@ require('./config/routes')(app, passport, auth);
 
 // Start the app by listening on <port>
 var port = process.env.PORT || 3000;
-app.listen(port);
+
+var server = http.Server(app);
+
+var io = socket.listen(server);
+
+server.listen(port);
 console.log('Express app started on port ' + port);
 
 // expose app
 exports = module.exports = app;
+
+io.configure(function () {
+  io.set('transports', ['xhr-polling']);
+  io.set('polling duration', 10);
+});
+
+var usernames = [];
+var rooms = [];
+io.sockets.on('connection', function (socket) {
+
+  socket.on('adduser', function(username) {
+    socket.username = username;
+    usernames[username] = username;
+    socket.join('room1');
+    socket.emit('updatechat', 'SERVER', 'you have connected to room1');
+    socket.broadcast.to('room1').emit('updatechat', 'SERVER', username + ' has connected to this room');
+    socket.emit('updaterooms', rooms, 'room1');
+  });
+
+  socket.on('sendchat', function (data) {
+    io.sockets.in(socket.room).emit('updatechat', socket.username, data);
+  });
+
+  socket.on('switchRoom', function(newroom) {
+    socket.leave(socket.room);
+    socket.join(newroom);
+    socket.emit('updatechat', 'SERVER', 'you have connected to ' + newroom);
+    socket.broadcast.to(socket.room).emit('updatechat', 'SERVER', socket.username + 'has left this room');
+    socket.room = newroom
+    socket.broadcast.to(newroom).emit('updatechat', 'SERVER', socket.username + 'has joined this room');
+    socket.emit('updaterooms', rooms, newroom);
+  });
+
+  socket.on('disconnect', function () {
+    delete usernames[socket.username];
+    io.sockets.emit('updateusers', usernames);
+    socket.broadcast.emit('updatechat', 'SERVER', socket.username + ' has disconnected');
+  });
+});

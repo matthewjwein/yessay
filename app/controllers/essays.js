@@ -37,18 +37,18 @@ exports.intro = function(req, res){
 exports.brainstorm = {
   intro: function(req, res){
       res.render('essays/brainstorm/intro', {
-         title: 'Brainstorm Intro'
+         title: 'Brainstorming Stage'
       });
   },
   samples: function(req, res){
       res.render('essays/brainstorm/samples', {
-         title: 'Brainstorm Samples'
+         title: 'Brainstorming Stage'
       });
   },
   start: function(req, res){
     res.render('essays/brainstorm/start', {
        essay: new Essay({}),
-       title: 'Brainstorm'
+       title: 'Brainstorming Stage'
     });
   },
   save: function(req, res){
@@ -159,6 +159,53 @@ exports.reflection = {
   },
   start: function(req, res){
     res.render('essays/reflection/start', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  save: function(req, res){
+    var essay = req.essay
+    essay = _.extend(essay, req.body)
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/community/intro')
+      }
+    })
+  }
+}
+
+exports.community = {
+  intro: function(req, res){
+    res.render('essays/community/intro', {
+      title: req.essay.title,
+      essay: req.essay
+    });
+  },
+  join_community: function(req, res){
+    var essay = req.essay
+    essay = _.extend(essay, {joined_community: true})
+    essay.save(function (err) {
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/community/review')
+      }
+    })
+  },
+  review: function(req, res){
+    res.render('essays/community/review', {
       title: req.essay.title,
       essay: req.essay
     });
@@ -314,12 +361,6 @@ exports.update = function(req, res){
     else {
       res.redirect('/essays/' + essay._id)
     }
-  })
-}
-
-exports.review = function(req, res){
-  res.render('essays/organization/review', {
-    title: "Review"
   })
 }
 

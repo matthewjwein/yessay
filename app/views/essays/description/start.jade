@@ -43,7 +43,11 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='description') Lets start the description.  This is not an essay, but an exercise to help you bring your memory to life.  Write a paragraph or two of description focusing primarily on the five senses (note the more description you provide, the easier the essay writing will be to write later)
+          label.control-label(for='description') Look back over your brainstorms above and select one that provides insight into
+            | who you are. At this stage, you’ll begin to describe the memory or event by using all
+            | of your senses. Try to recall how it felt to experience it? Again, don’t think of this as
+            | the introduction to your essay. It’s more of an exercise to help you bring your story
+            | to life. (The more description you provide, the easier the essay writing will be to write later)
           .controls
             textarea.desc.input-xlarge(type='text', rows="10", name="description")=essay.description
         div

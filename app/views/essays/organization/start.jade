@@ -16,17 +16,22 @@ block content
     .span5
       if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
         img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
-      h4.text-info= essay.description
-      h4.text-success= essay.context
-      h4.text-warning= essay.reflection
+      h4(style='color:red')= essay.description
+      h4(style='color:green')= essay.context
+      h4(style='color:blue')= essay.reflection
       hr
     .span6
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='context') It’s time to weave together the components of your essay. You may need to add, cut, or include transitions. Let the larger idea of the essay guide your decisions. You may begin with description and build suspense, or lead in slowly with context, or make an impact with reflection. However you decide to begin, your first sentence should hook your readers from the get-go.
-          p Using the existing writing you've already done, piece together your final essay here:
+          label.control-label(for='context') Ok, it’s essay mashup time! You want to weave together the various components
+            | of your writing into a college application essay. You may need to add, cut, or
+            | include transitions. Look back at the larger idea of you essay, and let it guide your
+            | organization decisions. And you have many options open to you: you can begin with
+            | description and build suspense, or lead in slowly with context, or make a big impact
+            | with reflection. However you decide to begin, you should absolutely love your first
+            | sentence. It should be the kind of sentence that makes your reader want more!
           center
             p.text-success(style='font-weight:bold')= essay.ideaPrompt
           .controls

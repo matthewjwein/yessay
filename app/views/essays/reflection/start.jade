@@ -52,7 +52,13 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='reflection') To begin writing reflection, look back over your description and context and ask yourself, why did this event mean so much to me? What does it reveal about the way I think or feel? And then, what does it reveal about people, or the world, or the way things work? (*Remember:Keep it in your own voice and you'll steer clear of cliches.)
+          label.control-label(for='reflection') To begin writing reflection, look back over your description and context and ask
+            | yourself, why was this event so important to me? What did I learn from it? Why
+            | has it made such a lasting impression on me? And then, push yourself even further
+            | and ask, what might I be learning about people in general, or the world, or the way
+            | things work? (Your insights don’t have to be groundbreakingly original, but you’ll find that
+            | if you keep your reflections in your own voice, you'll steer clear of the pitfalls of
+            | cliché.)
           .controls
             textarea.desc.input-xlarge(type='text', rows="10", name="reflection")=essay.reflection
         div
@@ -63,7 +69,7 @@ block content
             a.btn.btn-small(href="#sampleModal", data-toggle="modal")
               i.icon-facetime-video
               | Samples
-          button.btn.btn-primary.pull-right(type='submit') Save & Continue
+          button.btn.btn-primary.pull-right.btn-info(type='submit') Save & Continue
 
   script
     document.ready = function() { $('#input').focus(); }

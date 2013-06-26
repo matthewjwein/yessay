@@ -51,6 +51,11 @@ module.exports = function (app, passport, auth) {
   app.get('/essays/:id/reflection/start', auth.requiresLogin, essays.reflection.start)
   app.put('/essays/:id/reflection/save', auth.requiresLogin, essays.reflection.save)
 
+  // essay community routes
+  app.get('/essays/:id/community/intro', auth.requiresLogin, essays.community.intro)
+  app.put('/essays/:id/community/join', auth.requiresLogin,  essays.community.join_community)
+  app.get('/essays/:id/community/review', auth.requiresLogin, essays.community.review)
+
   // essay organize routes
   app.get('/essays/:id/organization/intro', auth.requiresLogin, essays.organization.intro)
   app.get('/essays/:id/organization/samples', auth.requiresLogin, essays.organization.samples)
@@ -60,8 +65,6 @@ module.exports = function (app, passport, auth) {
   app.put('/essays/:id/organization/save-review', auth.requiresLogin, essays.organization.save_review)
   app.get('/essays/:id/organization/start', auth.requiresLogin, essays.organization.start)
   app.put('/essays/:id/organization/save', auth.requiresLogin, essays.organization.save)
-
-  app.get('/essays/:id/review', auth.requiresLogin, essays.review)
 
   app.get('/essays/:id', essays.show)
   app.get('/essays/:id/edit', auth.requiresLogin, auth.essay.hasAuthorization, essays.edit)

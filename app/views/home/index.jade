@@ -5,22 +5,24 @@ block content
   if (req.isAuthenticated())
     center.row
       .home-title
-        p.intro-title Thank you&nbsp;
+        p.intro-title Thank you,&nbsp;
           span=req.user.name.split(' ')[0]
-          span &nbsp;for participating in the&nbsp;
-          span.brand(style='font-size: 40px') yessay&nbsp;
-          span writing contest!
+          span , for participating in&nbsp;
+          span.brand(style='font-size: 40px') yessay
+          span , the one-stop shop for writing your college application essay!
         hr
-        p.intro-content Yessay was designed to help students write compelling college application essays. We really appreciate you testing out yessay, and we really value your feedback.
         a.btn(href='essays/brainstorm/intro') If you haven't written an essay yet, start writing your essay now
   else
     .row
       .span7.home-title
-        p.intro-title Thanks for participating in the&nbsp;
-          span.brand(style='font-size: 40px') yessay&nbsp;
-          span writing contest!
+        p.intro-title Welcome to&nbsp;
+          span.brand(style='font-size: 40px') yessay
+          span , the one-stop shop for writing your college application essay!
         hr
-        p.intro-content Yessay was designed to help students write compelling college application essays. Because you've already gone through the college application process, we value your feedback. We'll be asking you to watch a series of short videos, read sample excerpts, and complete specific writing exercises.
+        p.intro-content Show the admissions officers who you really are, beyond scores, numbers, and
+          | GPAs. The essay is your chance to tell them something meaningful about yourself,
+          | using your own words and your own stories. We’ll guide you through the writing
+          | process so that you make a strong impression when it matters most.
       .span4
           form.well.signup(action="/users", method="post")
             fieldset

@@ -1,0 +1,19 @@
+extends ../../layouts/default
+
+block main
+  p.prompt-title Yessay Community
+
+block content
+  - var action = 'join'
+  iframe.well(src='http://player.vimeo.com/video/68258156?title=0&amp;byline=0&amp;portrait=0', width='500', height='300', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+  form(method="post", action=action, enctype="multipart/form-data")
+    if (!essay.isNew)
+      input(type="hidden", name="_method", value="PUT")
+    .control-group.well(style='width:500px;margin-left:auto;margin-right:auto')
+      label.control-label(for='join') Yes, let the Yessay community help me go deeper into my essay.
+      div(style='text-align:right')
+        button.btn.btn-info(type='submit') Join the community...
+  div.well(style='width:500px;margin-left:auto;margin-right:auto')
+    p No, I'm ready to go straight to the organization phase.
+    div(style='text-align:right')
+      a.btn.btn-info(href='../organization/intro') Continue to the organization phase...

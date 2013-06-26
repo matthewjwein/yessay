@@ -32,6 +32,7 @@
     , "view-helpers": "latest"
     , "forever": "latest"
     , "socket.io": "latest"
+    , "http": "latest"
   }
   , "devDependencies": {
         "supertest": "latest"

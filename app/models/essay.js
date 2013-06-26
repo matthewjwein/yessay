@@ -45,6 +45,7 @@ var EssaySchema = new Schema({
   review: {type : String, default : '', trim: true},
   body: {type : String, default : '', trim : true},
   user: {type : Schema.ObjectId, ref : 'User'},
+  joined_community: {type : Boolean, default : false},
   comments: [{
     body: { type : String, default : '' },
     user: { type : Schema.ObjectId, ref : 'User' },
