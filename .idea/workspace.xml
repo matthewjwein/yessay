@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/community/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/community/intro.jade" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +62,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.8277592">
+            <state line="34" column="18" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="19" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro.jade" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/essays/community/intro.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="65" selection-start="180" selection-end="180" vertical-scroll-proportion="0.18650089">
               <folding />
             </state>
           </provider>
@@ -113,19 +132,19 @@
         <option value="$PROJECT_DIR$/app/views/home/index.jade" />
         <option value="$PROJECT_DIR$/app/views/users/login.jade" />
         <option value="$PROJECT_DIR$/app/views/users/signup.jade" />
-        <option value="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/description/start.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/reflection/start.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/organization/start.jade" />
         <option value="$PROJECT_DIR$/app/controllers/users.js" />
         <option value="$PROJECT_DIR$/app/models/user.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
-        <option value="$PROJECT_DIR$/app/views/essays/community/intro.jade" />
         <option value="$PROJECT_DIR$/app/models/essay.js" />
         <option value="$PROJECT_DIR$/app/controllers/essays.js" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/app/views/essays/community/review.jade" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade" />
+        <option value="$PROJECT_DIR$/app/views/essays/community/intro.jade" />
       </list>
     </option>
   </component>
@@ -615,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/description/start.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="71" selection-start="1435" selection-end="2636" vertical-scroll-proportion="0.9883721">
@@ -653,13 +665,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/essays/reflection/start.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1450" selection-end="1473" vertical-scroll-proportion="0.1744186">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/essays/community/intro.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="100" selection-start="704" selection-end="704" vertical-scroll-proportion="0.4409938">
           <folding />
         </state>
       </provider>
@@ -715,7 +720,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.8277592">
+        <state line="34" column="18" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/essays/brainstorm/intro.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/essays/community/intro.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="65" selection-start="180" selection-end="180" vertical-scroll-proportion="0.18650089">
           <folding />
         </state>
       </provider>
