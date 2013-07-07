@@ -10,7 +10,8 @@ var mongoose = require('mongoose')
  */
 
 exports.index = function (req, res) {
-    res.render('home/index', {
-        title: 'Welcome to Yessay'
-    })
+  res.redirect('/essays/brainstorm/intro')
+    //res.render('home/index', {
+    //    title: 'Welcome to Yessay'
+    //})
 }
