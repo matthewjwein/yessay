@@ -9,9 +9,11 @@ html(lang='en', xmlns='http://www.w3.org/1999/xhtml', xmlns:fb='https://www.face
           include ../includes/sidebar-left
         .sidebar.right
           include ../includes/sidebar-right
-        .content.well
-          .main-head
-            block main
-          block content
+        .main-content
+          //include ../includes/essay-nav
+          .content.well
+            .main-head
+              block main
+            block content
     include ../includes/footer
     include ../includes/foot

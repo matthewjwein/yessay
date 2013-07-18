@@ -2,34 +2,13 @@ extends ../../layouts/essay
 
 block main
   div.well(style='min-height:300px')
-    ul#myTab.nav.nav-tabs
+    ul#myTab.nav.nav-tabs.phase-tabs
       li
         a(href='#brainstorm', data-toggle='tab') Brainstorm
       li.active
         a(href='#description', data-toggle='tab') Description
     .tab-content
-      #brainstorm.tab-pane
-        div.span3
-          div.muted= essay.brainstorm[1].question
-          h5.text-info= essay.brainstorm[1].answer
-          div.muted= essay.brainstorm[0].question
-          h5.text-info= essay.brainstorm[0].answer
-          div.muted= essay.brainstorm[2].question
-          h5.text-info= essay.brainstorm[2].answer
-        div.span3
-          div.muted= essay.brainstorm[4].question
-          h5.text-info= essay.brainstorm[4].answer
-          div.muted= essay.brainstorm[3].question
-          h5.text-info= essay.brainstorm[3].answer
-          div.muted= essay.brainstorm[5].question
-          h5.text-info= essay.brainstorm[5].answer
-        div.span3
-          div.muted= essay.brainstorm[7].question
-          h5.text-info= essay.brainstorm[7].answer
-          div.muted= essay.brainstorm[6].question
-          h5.text-info= essay.brainstorm[6].answer
-          div.muted= essay.brainstorm[8].question
-          h5.text-info= essay.brainstorm[8].answer
+      include ../includes/brainstorm-tab
       #description.tab-pane.active
         p= essay.description
 

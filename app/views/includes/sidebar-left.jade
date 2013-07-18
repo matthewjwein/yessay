@@ -1,11 +1,33 @@
-.well
-  h5 Sidebar
-  ul
-    li
-      a(href='#') Link
-    li
-      a(href='#') Link
-    li
-      a(href='#') Link
-    li
-      a(href='#') Link
+.well.dashboard
+  h5.essay-title Your Essay
+  ul.nav.nav-tabs.nav-stacked
+    li.brainstorm-tab
+      a(href='../brainstorm/start') Brainstorm
+
+    if (essay.brainstorm && essay.brainstorm.length)
+      li.description-tab
+        a(href='../description/start') Description
+    else
+      li.description-tab.disabled
+        a(href='#') Description
+
+    if (essay.description)
+      li.context-tab
+        a(href='../context/start') Context
+    else
+      li.context-tab.disabled
+        a(href='#') Context
+
+    if (essay.context)
+      li.reflection-tab
+        a(href='../reflection/start') Reflection
+    else
+      li.reflection-tab.disabled
+        a(href='#') Reflection
+
+    if (essay.reflection)
+      li.organization-tab
+        a(href='../organization/start') Organization
+    else
+      li.organization-tab.disabled
+        a(href='#') Organization

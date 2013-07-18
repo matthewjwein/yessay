@@ -2,32 +2,11 @@ extends ../../layouts/essay
 
 block main
   div.well
-    ul#prompts.nav.nav-tabs
+    ul#prompts.nav.nav-tabs.phase-tabs
       li.active
         a(href='#brainstorm') Brainstorm
     .tab-content
-      #brainstorm.tab-pane.active
-        div.span3
-          div.muted= essay.brainstorm[1].question
-          h5.text-info= essay.brainstorm[1].answer
-          div.muted= essay.brainstorm[0].question
-          h5.text-info= essay.brainstorm[0].answer
-          div.muted= essay.brainstorm[2].question
-          h5.text-info= essay.brainstorm[2].answer
-        div.span3
-          div.muted= essay.brainstorm[4].question
-          h5.text-info= essay.brainstorm[4].answer
-          div.muted= essay.brainstorm[3].question
-          h5.text-info= essay.brainstorm[3].answer
-          div.muted= essay.brainstorm[5].question
-          h5.text-info= essay.brainstorm[5].answer
-        div.span3
-          div.muted= essay.brainstorm[7].question
-          h5.text-info= essay.brainstorm[7].answer
-          div.muted= essay.brainstorm[6].question
-          h5.text-info= essay.brainstorm[6].answer
-          div.muted= essay.brainstorm[8].question
-          h5.text-info= essay.brainstorm[8].answer
+      include ../includes/brainstorm-tab
 block content
   - var action = 'save'
 

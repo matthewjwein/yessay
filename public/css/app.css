@@ -1,6 +1,17 @@
 body {
-  padding-top: 60px;
-  background-color: #009999;
+  background-color: #f4f0ea; /* #009999; */
+}
+
+.content {
+    background: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 12px rgba(0,0,0,0.1),1px 1px 4px rgba(0,0,0,0.12);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1),1px 1px 4px rgba(0,0,0,0.12);
+}
+
+.clear-both {
+    clear: both;
 }
 
 .date {
@@ -108,20 +119,15 @@ iframe {
 }
 
 .home-title {
-    padding: 10px 110px 0px 0px;
+    padding: 40px;
     width: 500px;
     font-family: "MuseoSans300",sans-serif;
     font-size: 35px;
     line-height: 45px;
-    color: white;
 }
 
 .prompt-title {
-    padding: 10px 0 0 0;
-    font-family: "MuseoSans300",sans-serif;
     font-size: 35px;
-    line-height: 45px;
-    color: white;
 }
 
 .prompt-content {
@@ -249,8 +255,81 @@ iframe {
     float:right;
 }
 
-.container-fluid > .content {
-    margin: 0 240px;
+.container-fluid > .main-content {
+    margin: 0 230px;
 }
 
 /* end essay layout */
+
+/* essay dashboard */
+.dashboard {
+    padding: 20px 0;
+}
+
+.dashboard .essay-title {
+    margin-left: 15px;
+}
+
+.dashboard .nav .active a{
+    background-color: #258cc6;
+    color: white;
+}
+
+/* end dashboard */
+
+/* essay top-nav */
+.main-content > .tabs {
+    background: #132d45;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#132d45),color-stop(1,#1c4366));
+    background: -webkit-linear-gradient(top,#132d45 0%,#1c4366 100%);
+    background: -moz-linear-gradient(top,#132d45 0%,#1c4366 100%);
+    background: -o-linear-gradient(top,#132d45 0%,#1c4366 100%);
+    background: -ms-linear-gradient(top,#132d45 0%,#1c4366 100%);
+    background: linear-gradient(top,#132d45 0%,#1c4366 100%);
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.14),inset 0 -4px 0 #1f6fd9,inset 0 -4px 5px rgba(0,0,0,0.4);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.14),inset 0 -4px 0 #1f6fd9,inset 0 -4px 5px rgba(0,0,0,0.4);
+    zoom: 1;
+    margin: 0 0 17px 0;
+    padding: 0;
+    position: relative;
+    float: left;
+    width: 100%;
+
+}
+
+.nav-tabs.phase-tabs {
+    height: 38px;
+}
+
+.main-content > .tabs > ul {
+    list-style: none;
+}
+
+.main-content > .tabs li {
+    float: left;
+}
+
+.tall.tabs li {
+    width: 20%;
+}
+
+.tall.tabs li a {
+    box-shadow: inset -1px 0 0 rgba(255,255,255,0.1);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    padding: 1px 16px 14px 16px;
+    text-align: center;
+}
+
+.tall.tabs li a .label {
+    float: none;
+    padding-top: 0;
+}
+.tabs li.all .label {
+    margin-top: 16px;
+    padding-bottom: 3px;
+}
+
+/* end essay top-nav */
