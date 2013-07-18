@@ -175,7 +175,7 @@ exports.reflection = {
         })
       }
       else {
-        res.redirect('/essays/'+essay._id+'/community/intro')
+        res.redirect('/essays/'+essay._id+'/organization/intro')
       }
     })
   }

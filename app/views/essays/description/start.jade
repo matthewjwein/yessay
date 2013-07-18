@@ -1,4 +1,4 @@
-extends ../../layouts/default
+extends ../../layouts/essay
 
 block main
   div.well
@@ -37,8 +37,8 @@ block content
       ul
         each error in errors
           li= error.type
-  #editor.row
-    .span7.main
+  #editor
+    .main
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")

@@ -90,7 +90,6 @@ iframe {
 
 .brainstorm-questions {
     width: 600px;
-    float: none;
     display: block;
     margin: 0 auto;
 }
@@ -148,24 +147,13 @@ iframe {
 }
 
 #editor {
-    position: absolute;
-    width: 100%;
-    border: 1px solid #aaa;
-    left: 0;
     margin: 0;
-    padding: 10px;
-    background-color: #fafafa;
-}
-
-#editor .main {
-    width: 940px;
-    float: none;
-    margin: 0 auto;
 }
 
 #editor .desc {
     width: 100%;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 #editor .form-actions {
@@ -243,3 +231,26 @@ iframe {
     position: relative;
     top: 10px;
 }
+
+/* essay layout - sidebars and content */
+
+.container-fluid > .sidebar {
+    position: relative;
+    top: 0;
+    left:auto;
+    width: 220px;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.container-fluid > .content {
+    margin: 0 240px;
+}
+
+/* end essay layout */
