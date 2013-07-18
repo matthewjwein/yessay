@@ -67,10 +67,6 @@ EssaySchema.path('title').validate(function (title) {
   return title.length > 0
 }, 'Essay title cannot be blank')
 
-EssaySchema.path('brainstorm').validate(function (brainstorm) {
-  return brainstorm.length > 0
-}, 'Brainstorm results cannot be blank')
-
 /**
  * Pre-remove hook
  */
@@ -114,6 +110,16 @@ EssaySchema.methods = {
       }
       self.save(cb)
     }, 'essay')
+  },
+
+  /**
+   * Create essay
+   *
+   * @param {Function} cb
+   * @api private
+   */
+  create: function (cb) {
+      return this.save(cb)
   },
 
   /**

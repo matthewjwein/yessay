@@ -25,13 +25,14 @@ module.exports = function (app, passport, auth) {
   // essay routes
   var essays = require('../app/controllers/essays');
   app.get('/essays', essays.index)
-  app.get('/essays/intro', auth.requiresLogin, essays.intro)
 
-  app.get('/essays/brainstorm/intro', essays.brainstorm.intro)
-  app.get('/essays/brainstorm/samples', essays.brainstorm.samples)
-  app.get('/essays/brainstorm/start', essays.brainstorm.start)
-  app.post('/essays', auth.requiresLogin, essays.create)
-  app.post('/essays/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
+  // create new essay
+  app.post('/essays/new', auth.requiresLogin, essays.create)
+
+  app.get('/essays/:id/brainstorm/intro', essays.brainstorm.intro)
+  app.get('/essays/:id/brainstorm/samples', essays.brainstorm.samples)
+  app.get('/essays/:id/brainstorm/start', essays.brainstorm.start)
+  app.put('/essays/:id/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
 
   // essay description routes
   app.get('/essays/:id/description/intro', auth.requiresLogin, essays.description.intro)

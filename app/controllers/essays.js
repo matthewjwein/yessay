@@ -28,44 +28,60 @@ exports.essay = function(req, res, next, id){
  * New essay
  */
 
-exports.intro = function(req, res){
-  res.render('essays/intro', {
-    title: 'New Essay'
-  });
+/**
+ * Create an essay
+ */
+
+exports.create = function (req, res) {
+  var essay = new Essay({title: "New Essay"})
+  essay.user = req.user
+
+  essay.create(function (err) {
+    if (err) {
+      res.render('/', {
+        errors: err.errors
+      })
+    }
+    else {
+      res.redirect('/essays/'+essay._id+'/brainstorm/intro')
+    }
+  })
 }
 
 exports.brainstorm = {
   intro: function(req, res){
-      res.render('essays/brainstorm/intro', {
-         title: 'Brainstorming Stage'
-      });
+    res.render('essays/brainstorm/intro', {
+      title: 'Brainstorming Stage',
+      essay: req.essay
+    });
   },
   samples: function(req, res){
-      res.render('essays/brainstorm/samples', {
-         title: 'Brainstorming Stage'
-      });
+    res.render('essays/brainstorm/samples', {
+      title: 'Brainstorming Stage',
+      essay: req.essay
+    });
   },
   start: function(req, res){
     res.render('essays/brainstorm/start', {
-       essay: new Essay({}),
-       title: 'Brainstorming Stage'
+      title: 'Brainstorming Stage',
+      essay: req.essay
     });
   },
   save: function(req, res){
-    var essay = new Essay({title: "New Essay"})
+    var essay = req.essay
     essay.user = req.user
 
     essay.answerQuestions(req.body, function(err){
-        if (err) {
-          res.render('essays/brainstorm/start', {
-            title: 'New Essay',
-            essay: essay,
-            errors: err.errors
-          })
-        }
-        else {
-          res.redirect('/essays/'+essay._id+'/description/intro')
-        }
+      if (err) {
+        res.render('essays/brainstorm/start', {
+          title: 'New Essay',
+          essay: essay,
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/essays/'+essay._id+'/description/intro')
+      }
     })
   }
 }
@@ -307,28 +323,6 @@ exports.organization = {
       }
     })
   }
-}
-
-/**
- * Create an essay
- */
-
-exports.create = function (req, res) {
-  var essay = new Essay(req.body)
-  essay.user = req.user
-
-  essay.uploadAndSave(req.files.image, function (err) {
-    if (err) {
-      res.render('essays/intro', {
-        title: 'New Essay',
-        essay: essay,
-        errors: err.errors
-      })
-    }
-    else {
-      res.redirect('/essays/'+essay._id+'/organization/intro')
-    }
-  })
 }
 
 /**

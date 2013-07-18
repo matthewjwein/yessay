@@ -6,8 +6,6 @@ block main
 
 block content
   - var action = 'save'
-  if (!essay.isNew)
-    - action += '/'+essay.id
 
   if (typeof errors !== 'undefined')
     .fade.in.alert.alert-block.alert-error

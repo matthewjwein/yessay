@@ -11,7 +11,11 @@ block content
           span.brand(style='font-size: 40px') yessay
           span , the one-stop shop for writing your college application essay!
         hr
-        a.btn(href='essays/brainstorm/intro') If you haven't written an essay yet, start writing your essay now
+        form(action="/essays/new", method="post")
+          fieldset
+            .control-group
+              .controls.signin-control
+                button#submit.btn.btn-primary(type='submit') Start your essay now
   else
     .row
       .span7.home-title
