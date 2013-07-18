@@ -6,7 +6,8 @@ block main
       li.active
         a(href='#brainstorm') Brainstorm
     .tab-content
-      include ../includes/brainstorm-tab
+      #brainstorm.tab-pane.active
+        include ../includes/brainstorm-tab
 block content
   - var action = 'save'
 

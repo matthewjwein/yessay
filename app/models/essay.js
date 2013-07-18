@@ -112,14 +112,8 @@ EssaySchema.methods = {
     }, 'essay')
   },
 
-  /**
-   * Create essay
-   *
-   * @param {Function} cb
-   * @api private
-   */
   create: function (cb) {
-      return this.save(cb)
+    return this.save(cb)
   },
 
   /**

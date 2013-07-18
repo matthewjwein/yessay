@@ -38,9 +38,8 @@ exports.create = function (req, res) {
 
   essay.create(function (err) {
     if (err) {
-      res.render('/', {
-        errors: err.errors
-      })
+      console.log(err)
+      res.redirect('/');
     }
     else {
       res.redirect('/essays/'+essay._id+'/brainstorm/intro')
