@@ -7,9 +7,18 @@ block content
         h2 How to Write Context?
       p Look at the examples of context below. Notice how the language of context sounds different from the language of description. The authors provide information that helps the reader understand the who, what, when, where, why of the memory.
     div.well
-      h4 My Brother (context)
-      p My brother and I have always been close. He’s only a year younger than I, and when we were little, we did everything together. We shared the same friends, read the same books, played the same sports. Not to say there wasn’t a fair amount of fighting, but even then, we were equally matched. Now, at the hospital, all of that seemed so far in the past. Apparently, they had run a number of tests. Cat scans, MRI’s, peering as far as they could into the recesses of his brain. So far, nothing had come up.
-      h4 Swimming (context)
-      p I have been a competitive swimmer for the past four years. Being part of my team means waking up before the sunrise and staying after school into the evening. It means weekend meets, strengthening drills, and weight lifting sessions. It feels like I am in the water more than I am not. All my dreams are now aquatic. But it’s the race that really keeps me committed, even though I wasn’t always this way. My learning curve was steep. It took practice and effort to learn the correct and precise formation of the breaststroke, how wide or narrow to spread your arms, when to pull down, and with what kind of strength. But once it’s in you, once you feel the stroke become your own, it’s hard to leave it behind. I’m always waiting for the next race.
+      #samples-carousel.carousel.slide
+        // Carousel items
+        .carousel-inner.sample-carousel-inner
+          .item.active
+            h4 My Brother (context)
+            p My brother and I have always been close. He’s only a year younger than I, and when we were little, we did everything together. We shared the same friends, read the same books, played the same sports. Not to say there wasn’t a fair amount of fighting, but even then, we were equally matched. Now, at the hospital, all of that seemed so far in the past. Apparently, they had run a number of tests. Cat scans, MRI’s, peering as far as they could into the recesses of his brain. So far, nothing had come up.
+          .item
+            h4 Swimming (context)
+            p I have been a competitive swimmer for the past four years. Being part of my team means waking up before the sunrise and staying after school into the evening. It means weekend meets, strengthening drills, and weight lifting sessions. It feels like I am in the water more than I am not. All my dreams are now aquatic. But it’s the race that really keeps me committed, even though I wasn’t always this way. My learning curve was steep. It took practice and effort to learn the correct and precise formation of the breaststroke, how wide or narrow to spread your arms, when to pull down, and with what kind of strength. But once it’s in you, once you feel the stroke become your own, it’s hard to leave it behind. I’m always waiting for the next race.
+        // Carousel nav
+        a.carousel-control.left(href='#samples-carousel', data-slide='prev') ‹
+        a.carousel-control.right(href='#samples-carousel', data-slide='next') ›
+
     a.btn.btn-info.pull-right(href='start') Continue
     .clear-both

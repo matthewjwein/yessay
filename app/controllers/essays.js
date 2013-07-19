@@ -50,7 +50,7 @@ exports.create = function (req, res) {
 exports.brainstorm = {
   intro: function(req, res){
     res.render('essays/brainstorm/intro', {
-      title: 'Brainstorming Stage',
+      title: 'Welcome.',
       essay: req.essay
     });
   },

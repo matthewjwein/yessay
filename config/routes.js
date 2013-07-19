@@ -29,9 +29,9 @@ module.exports = function (app, passport, auth) {
   // create new essay
   app.post('/essays/new', auth.requiresLogin, essays.create)
 
-  app.get('/essays/:id/brainstorm/intro', essays.brainstorm.intro)
-  app.get('/essays/:id/brainstorm/samples', essays.brainstorm.samples)
-  app.get('/essays/:id/brainstorm/start', essays.brainstorm.start)
+  app.get('/essays/:id/brainstorm/intro', auth.requiresLogin, essays.brainstorm.intro)
+  app.get('/essays/:id/brainstorm/samples', auth.requiresLogin, essays.brainstorm.samples)
+  app.get('/essays/:id/brainstorm/start', auth.requiresLogin, essays.brainstorm.start)
   app.put('/essays/:id/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
 
   // essay description routes

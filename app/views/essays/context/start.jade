@@ -28,7 +28,7 @@ block content
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='context') Based on the description you've already begun, write a paragraph or two of context. Some context may already have seeped into your description, but challenge yourself to go further. This will help you dive deeper into the memory. For example, think about where the memory took place, what led up to it, who was involved, or maybe how long it took (Write more now, edit later).
+          label.control-label(for='context') Based on the description you've already begun, write a paragraph or two of context. Some context may already have seeped into your description, but challenge yourself to go further. This will help you dive deeper into the memory. For example, think about where the memory took place, what led up to it, who was involved, or maybe how long it took. (Write more now, edit later.)
           .controls
             textarea.desc.input-xlarge(type='text', rows="10", name="context")=essay.context
         div
