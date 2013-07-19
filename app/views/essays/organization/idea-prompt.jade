@@ -1,19 +1,18 @@
 extends ../../layouts/essay
 
 block main
-  p.prompt-title Organization Stage - Idea Prompt
+  p.prompt-title Idea Prompt
 
 block content
   - var action = 'save-idea-prompt'
-  div.well(style='width:670px; margin:0 auto;')
+  div.well
     form(method="post", action=action, enctype="multipart/form-data")
       if (!essay.isNew)
         input(type="hidden", name="_method", value="PUT")
       .control-group
         p Before you begin to organize your own essay, it helps to get an idea of where you're headed. Challenge yourself to write down the idea of your essay in a sentence or two.  This sentence may or may not show up in your final essay, but it is the compass that should continually orient your writing.
         br
-        p Complete the following sentence
-        p "The larger idea I seem to be interested in is:
+        p Complete the following sentence: "The larger idea I seem to be interested in is:
         br
         .controls
           textarea.prompt-content.input-xlarge(rows=3, type='text', name="ideaPrompt")

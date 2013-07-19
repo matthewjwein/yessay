@@ -12,20 +12,19 @@ block content
       ul
         each error in errors
           li= error.type
-  .row.well
+  .row-fluid
     .span5
       if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
         img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
       h4(style='color:red')= essay.description
       h4(style='color:green')= essay.context
       h4(style='color:blue')= essay.reflection
-      hr
-    .span6
+    .span7
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
         .control-group
-          label.control-label(for='context') Ok, it’s essay mashup time! You want to weave together the various components
+          label.control-label(for='organization') Ok, it’s essay mashup time! You want to weave together the various components
             | of your writing into a college application essay. You may need to add, cut, or
             | include transitions. Look back at the larger idea of you essay, and let it guide your
             | organization decisions. And you have many options open to you: you can begin with
@@ -35,7 +34,7 @@ block content
           center
             p.text-success(style='font-weight:bold')= essay.ideaPrompt
           .controls
-            textarea#textbox.org.input-xlarge(type='text', rows="50", name="organization", placeholder="Organize your essay here")=essay.organization
+            textarea#organization.org.input-xlarge(type='text', rows="50", name="organization", placeholder="Organize your essay here")=essay.organization
         div
           .btn-group
             a.btn.btn-small(href="#videoModal", data-toggle="modal")
@@ -45,10 +44,7 @@ block content
               i.icon-facetime-video
               | Samples
           button.btn.btn-success.pull-right(type='submit') Submit Final Draft
-  #getsat-widget-6071
-  script(src='https://loader.engage.gsfn.us/loader.js')
-  script
-    if (typeof GSFN !== "undefined"){ GSFN.loadWidget(6071,{"containerId":"getsat-widget-6071"});}
+  .clear-both
 
   #videoModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
     .modal-header

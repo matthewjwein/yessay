@@ -10,7 +10,8 @@ block main
       li.active
         a(href='#context', data-toggle='tab') Context
     .tab-content
-      include ../includes/brainstorm-tab
+      #brainstorm.tab-pane
+        include ../includes/brainstorm-tab
       #description.tab-pane
         p= essay.description
       #context.tab-pane.active

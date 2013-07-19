@@ -47,6 +47,13 @@ body {
 
 textarea.org {
     width: 100%;
+    box-sizing: border-box;
+}
+
+/* quick fix until media queries are added */
+.container-fluid {
+    min-width: 1040px;
+    max-width: 1300px;
 }
 
 .span3 {
@@ -100,13 +107,14 @@ iframe {
 }
 
 .brainstorm-questions {
-    width: 600px;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
 
 .brainstorm-questions .question {
     width: 100%;
+    box-sizing: border-box;
 }
 
 .gsfn-widget-tab:hover {
@@ -134,9 +142,10 @@ iframe {
     font-family: "MuseoSans300",sans-serif;
     font-size: 17px;
     line-height: 23px;
-    width: 655px;
     margin: 0 auto;
     margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .intro-content {
@@ -196,7 +205,6 @@ iframe {
 }
 
 .brainstorm-wrapper {
-    width: 630px;
     margin: 0 auto;
 }
 
@@ -272,6 +280,14 @@ iframe {
 .dashboard .nav .active a{
     background-color: #258cc6;
     color: white;
+}
+
+.dashboard .nav li a{
+    padding: 20px
+}
+
+.content > .row-fluid > .essay-view {
+    margin: 24px;
 }
 
 /* end dashboard */
