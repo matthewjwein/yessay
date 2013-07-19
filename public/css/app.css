@@ -295,8 +295,12 @@ iframe {
     padding: 0 80px;
 }
 
-.sampel-carousel-inner {
+.sample-carousel-inner {
     height: 475px;
+}
+
+.brainstorm-carousel-inner {
+    height: 300px;
 }
 
 /* end dashboard */
