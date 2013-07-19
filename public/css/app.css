@@ -290,6 +290,15 @@ iframe {
     margin: 24px;
 }
 
+#samples-carousel {
+    line-height: 3;
+    padding: 0 80px;
+}
+
+.sampel-carousel-inner {
+    height: 475px;
+}
+
 /* end dashboard */
 
 /* essay top-nav */
