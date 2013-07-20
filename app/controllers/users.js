@@ -77,7 +77,7 @@ exports.create = function (req, res) {
       )
 
       sendgrid.send({
-        to: 'mwein2009@gmail.com',
+        to: user.email,
         from: 'jackie@yessay.com',
         subject: 'Welcome to Yessay!',
         text: 'Welcome ' + user.name + ', thank you for joining Yessay, the' +
