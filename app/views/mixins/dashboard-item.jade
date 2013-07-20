@@ -1,0 +1,4 @@
+mixin dashboard-item(name, label, enabled, active)
+  if (#{enabled})
+    li.#{name}-tab.#{active}
+      a(href='../#{name}/start') #{label}

@@ -1,0 +1,22 @@
+extends ../layouts/connect
+
+block main
+  p.prompt-title=title
+
+block content
+  - var action = 'save'
+  div.well(style='width:670px; margin:0 auto;')
+    form(method="post", action=action, enctype="multipart/form-data")
+      if (!req.essay.isNew)
+        input(type="hidden", name="_method", value="PUT")
+      .control-group
+        h4 854 students have already revised their essay based on peer feedback!
+        hr
+        p sk8erkid wants YOUR help...
+        p.well Lorum dolor sit amet, consectetur adipiscing elit. Praesent porttitor pharetra ligula, id semper risus vehicula non. Maecenas venenatis vulputate metus quis ultrices. Curabitur vestibulum leo eu lectus bibendum, nec mollis est tincidunt. Morbi est nisi, pulvinar eget massa nec, aliquam cursus ante. Integer ultricies dolor quis nibh dapibus placerat. Nulla gravida erat vel velit pretium, pretium accumsan lorem semper. Donec ut scelerisque felis. Suspendisse potenti. Proin quis ipsum at augue ullamcorper volutpat. Vivamus tempus est sit um dolor sit amet, consectetur adipiscing elit. Praesent porttitor pharetra ligula, id semper risus vehicula non. Maecenas venenatis vulputate metus quis ultrices. Curabitur vestibulum leo eu lectus bibendum, nec mollis est tincidunt. Morbi est nisi, pulvinar eget massa nec, aliquam cursus ante. Integer ultricies dolor quis nibh dapibus placerat. Nulla gravida erat vel velit pretium, pretium accumsan lorem semper. Donec ut scelerisque felis. Suspendisse potenti. Proin quis ipsum at augue ullamcorper volutpat. Vivamus tempus est sit
+        p A great reader is one who can find a kernel of insight in any piece of writing.
+        p.well Find the moment in the passage above that feels particularly powerful to you as a reader. Why did it leave an impression on you. Find what works, not what doesn't!
+        .controls
+          textarea.prompt-content.input-xlarge(rows=, type='text', name="review", placeholder="Enter your review here")
+      .form-actions
+        a.btn.btn-info.pull-right(href='../brainstorm/start') Finish

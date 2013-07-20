@@ -1,8 +1,9 @@
 extends ../../layouts/essay
 
+include ../../mixins/question
+
 block main
   p.prompt-title=title
-
 
 block content
   - var action = 'save'
@@ -22,86 +23,23 @@ block content
          h4 Remember a time that you lost something that was important to you.
         div
           div#questions-one
-            .control-group
-              label.pull-left.control-label(for='Describe in a few words what happened. ') Describe in a few words what happened.
-              span.muted.pull-right 140
-              .controls
-                if (essay.brainstorm[0])
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Describe in a few words what happened.")=essay.brainstorm[0].answer
-                else
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Describe in a few words what happened.")
-            .control-group
-              label.pull-left.control-label(for='List three adjectives that describe him/her') What images do you associate with that loss?
-              span.muted.pull-right 140
-              .controls
-                if (essay.brainstorm[1])
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="List three adjectives that describe him/her")=essay.brainstorm[1].answer
-                else
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="List three adjectives that describe him/her")=essay.brainstorm[1]
-            .control-group
-              label.pull-left.control-label(for='Before it was lost, what did it represent to you?') Before it was lost, what did it represent to you?
-              span.muted.pull-right 140
-              .controls
-                if (essay.brainstorm[2])
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Before it was lost, what did it represent to you?")=essay.brainstorm[2].answer
-                else
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Before it was lost, what did it represent to you?")
+            mixin question('Describe in a few words what happened.', 140)
+            mixin question('List three adjectives that describe him/her.', 140)
+            mixin question('Before it was lost, what did it represent to you?', 140)
           div#main-question-two(style='display:none;')
             h4 Think of something in your life that may seem insignificant to others, but is very meaningful or important to you.
           div#questions-two(style='display:none;')
-            .control-group
-              label.pull-left.control-label(for='Describe it in a few words.') Describe it in a few words.
-              span.muted.pull-right 140
-              .controls
-                if (essay.brainstorm[3])
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Describe it in a few words.")=essay.brainstorm[3].answer
-                else
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Describe it in a few words.")
-            .control-group
-              label.pull-left.control-label(for='What specifically stands out in your memory?') What specifically stands out in your memory?
-              span.muted.pull-right 140
-              .controls
-                if (essay.brainstorm[4])
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What specifically stands out in your memory?")=essay.brainstorm[4].answer
-                else
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What specifically stands out in your memory?")
-            .control-group
-              label.pull-left.control-label(for="Briefly, why do you think it made such a lasting impression on you?") Briefly, why do you think it made such a lasting impression on you?
-              span.muted.pull-right 140
-              .controls
-                if (essay.brainstorm[5])
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Briefly, why do you think it made such a lasting impression on you?")=essay.brainstorm[5].answer
-                else
-                  textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="Briefly, why do you think it made such a lasting impression on you?")
+            mixin question('Describe it in a few words.', 140)
+            mixin question('What specifically stands out in your memory?', 140)
+            mixin question('Briefly, why do you think it made such a lasting impression on you?', 140)
             div
               button#next-question-three.btn.btn-info.pull-right Continue
           div#main-question-three(style='display:none;')
             h4 Remember a summer in which you experienced significant personal growth.
             div#questions-three(style='display:none;')
-              .control-group
-                label.pull-left.control-label(for='What did you do that summer?') What did you do that summer?
-                span.muted.pull-right 140
-                .controls
-                  if (essay.brainstorm[6])
-                    textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What did you do that summer?")=essay.brainstorm[6].answer
-                  else
-                    textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What did you do that summer?")
-              .control-group
-                label.pull-left.control-label(for='What three visuals have stuck with you from that summer?') What three visuals have stuck with you from that summer?
-                span.muted.pull-right 140
-                .controls
-                  if (essay.brainstorm[7])
-                    textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What three visuals have stuck with you from that summer?")=essay.brainstorm[7].answer
-                  else
-                    textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What three visuals have stuck with you from that summer?")
-              .control-group
-                label.pull-left.control-label(for="What changed for you over that summer?") What changed for you over that summer?
-                span.muted.pull-right 140
-                .controls
-                  if (essay.brainstorm[8])
-                    textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What changed for you over that summer?")=essay.brainstorm[8].answer
-                  else
-                    textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="What changed for you over that summer?")
+              mixin question('What did you do that summer?', 140)
+              mixin question('What three visuals have stuck with you from that summer?', 140)
+              mixin question('What changed for you over that summer?', 140)
               div
                 button.btn.btn-info.pull-right(type='submit') Save & Continue
           div

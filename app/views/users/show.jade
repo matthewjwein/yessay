@@ -1,11 +1,19 @@
 extends ../layouts/default
 
 block main
-  h1 We can display user profile information here
-  br
-  br
-  br
   h1= user.name
   p= user.email
+  p Your Essays
+  each essay in essays
+    .essay
+      a.title(href='/essays/'+essay._id+'/brainstorm/start', title=essay.title) Continue
+      div.muted= essay.description
+      .author
+        span Started on&nbsp;
+        span= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
+  if (pages > 1)
+    .pagination
+      ul
+        != createPagination(pages, page)
 
 block content

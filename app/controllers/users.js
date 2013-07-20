@@ -5,6 +5,7 @@
 
 var mongoose = require('mongoose')
   , User = mongoose.model('User')
+  , Essay = mongoose.model('Essay')
 
 exports.signin = function (req, res) {}
 
@@ -78,10 +79,28 @@ exports.create = function (req, res) {
  */
 
 exports.show = function (req, res) {
-  var user = req.profile
-  res.render('users/show', {
-    title: user.name,
-    user: user
+  var user = req.user
+
+  var page = req.param('page') > 0 ? req.param('page') : 0
+  var perPage = 50
+  var options = {
+    perPage: perPage,
+    page: page,
+    criteria: { 'user': user}
+  }
+
+  Essay.list(options, function(err, essays) {
+    if (err) return res.render('500')
+    Essay.find({ 'user': user }).count().exec(function (err, count) {
+      console.log(count)
+      res.render('users/show', {
+        title: 'Profile',
+        user: user,
+        essays: essays,
+        page: page,
+        pages: count / perPage
+      })
+    })
   })
 }
 

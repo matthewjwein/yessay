@@ -196,32 +196,38 @@ exports.reflection = {
   }
 }
 
-exports.community = {
+exports.connect = {
   intro: function(req, res){
-    res.render('essays/community/intro', {
+    res.render('connect/intro', {
       title: req.essay.title,
       essay: req.essay
     });
   },
-  join_community: function(req, res){
+  join: function(req, res){
     var essay = req.essay
     essay = _.extend(essay, {joined_community: true})
     essay.save(function (err) {
       if (err) {
-        res.render('essays/brainstorm/start', {
-          title: 'New Essay',
+        res.render('connect/start', {
+          title: 'Student Writing',
           essay: essay,
           errors: err.errors
         })
       }
       else {
-        res.redirect('/essays/'+essay._id+'/community/review')
+        res.redirect('/essays/'+essay._id+'/connect/review')
       }
     })
   },
   review: function(req, res){
-    res.render('essays/community/review', {
-      title: req.essay.title,
+    res.render('connect/review', {
+      title: 'Student Writing',
+      essay: req.essay
+    });
+  },
+  reviewtwo: function(req, res){
+    res.render('connect/review-two', {
+      title: 'Student Writing',
       essay: req.essay
     });
   },
@@ -302,7 +308,7 @@ exports.organization = {
         })
       }
       else {
-        res.redirect('/essays/'+essay._id)
+        res.redirect('/essays/'+essay._id+'/essay/show')
       }
     })
   },
@@ -318,7 +324,7 @@ exports.organization = {
         })
       }
       else {
-        res.redirect('/essays/'+essay._id)
+        res.redirect('/essays/'+essay._id+'/essay/show')
       }
     })
   }
@@ -352,7 +358,7 @@ exports.update = function(req, res){
       })
     }
     else {
-      res.redirect('/essays/' + essay._id)
+      res.redirect('/essays/'+essay._id+'/essay/show')
     }
   })
 }
@@ -363,7 +369,7 @@ exports.update = function(req, res){
 
 exports.show = function(req, res){
   res.render('essays/show', {
-    title: req.essay.title,
+    title: 'Your Essay',
     essay: req.essay
   })
 }

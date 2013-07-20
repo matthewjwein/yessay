@@ -1,0 +1,6 @@
+mixin question(question, maxlength)
+  .control-group
+    label.pull-left.control-label(for='#{question}') #{question}
+    span.muted.pull-right #{maxlength}
+    .controls
+      textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="#{question}")

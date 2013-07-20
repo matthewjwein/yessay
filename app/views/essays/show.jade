@@ -1,11 +1,11 @@
-extends ../layouts/default
+extends ../layouts/essay
 
 block main
-  h1= essay.ideaPrompt
+  p.prompt-title=title
 
 block content
   .row-fluid
-    .span8.essay-view
+    .essay-view
       pre
         p=essay.organization
       p.author
@@ -18,11 +18,9 @@ block content
             a.tag(href="/tags/"+tag)
               i.icon-tags
               |  #{tag}
-    .span3
-      if (!essay.isNew && essay.image && essay.image.files && essay.image.files.length)
-        img(src=essay.image.cdnUri + '/mini_' + essay.image.files[0])
-    p Would you like to have your essay reviewed?
-    a.btn.btn-info(href='/') Request Review
+  .row-fluid
+    .essay-review
+
  // p
     br
     form.center.form-inline.confirm(action="/essays/"+essay.id, method="post")

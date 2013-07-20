@@ -1,5 +1,14 @@
-//
-  .well
-    ul.nav.nav-tabs.nav-stacked
-      li.connect-tab
-        a(href='../connect') Connect
+.well
+  - var action = '../connect/join'
+  if (typeof errors !== 'undefined')
+    .fade.in.alert.alert-block.alert-error
+      a.close(data-dismiss="alert", href="javascript:void(0)") x
+      ul
+        each error in errors
+          li= error.type
+  form(method="post", action=action, enctype="multipart/form-data")
+    if (!essay.isNew)
+      input(type="hidden", name="_method", value="PUT")
+    .control-group
+      label.control-label(for='review') Would you like to review other students essays?
+      button#review.btn(type='submit') Review

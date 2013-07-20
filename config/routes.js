@@ -53,9 +53,9 @@ module.exports = function (app, passport, auth) {
   app.put('/essays/:id/reflection/save', auth.requiresLogin, essays.reflection.save)
 
   // essay community routes
-  app.get('/essays/:id/community/intro', auth.requiresLogin, essays.community.intro)
-  app.put('/essays/:id/community/join', auth.requiresLogin,  essays.community.join_community)
-  app.get('/essays/:id/community/review', auth.requiresLogin, essays.community.review)
+  app.put('/essays/:id/connect/join', auth.requiresLogin,  essays.connect.join)
+  app.get('/essays/:id/connect/review', auth.requiresLogin, essays.connect.review)
+  app.get('/essays/:id/connect/review2', auth.requiresLogin, essays.connect.reviewtwo)
 
   // essay organize routes
   app.get('/essays/:id/organization/intro', auth.requiresLogin, essays.organization.intro)
@@ -67,7 +67,7 @@ module.exports = function (app, passport, auth) {
   app.get('/essays/:id/organization/start', auth.requiresLogin, essays.organization.start)
   app.put('/essays/:id/organization/save', auth.requiresLogin, essays.organization.save)
 
-  app.get('/essays/:id', essays.show)
+  app.get('/essays/:id/essay/show', essays.show)
   app.get('/essays/:id/edit', auth.requiresLogin, auth.essay.hasAuthorization, essays.edit)
   app.put('/essays/:id', auth.requiresLogin, auth.essay.hasAuthorization, essays.update)
   app.del('/essays/:id', auth.requiresLogin, auth.essay.hasAuthorization, essays.destroy)

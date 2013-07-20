@@ -112,7 +112,7 @@ iframe {
     margin: 0 auto;
 }
 
-.brainstorm-questions .question {
+.question {
     width: 100%;
     box-sizing: border-box;
 }
@@ -124,6 +124,10 @@ iframe {
 /* Custom Styles */
 .home-intro {
     margin-right: 70px;
+}
+
+.centered {
+    margin: 0 auto;
 }
 
 .home-title {
