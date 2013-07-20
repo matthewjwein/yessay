@@ -79,8 +79,9 @@ exports.create = function (req, res) {
       sendgrid.send({
         to: 'mwein2009@gmail.com',
         from: 'jackie@yessay.com',
-        subject: 'Hello World',
-        text: 'Sending email with NodeJS through SendGrid!'
+        subject: 'Welcome to Yessay!',
+        text: 'Welcome ' + user.name + ', thank you for joining Yessay, the' +
+          'one-stop shop for writing your college application essay!'
       }, function(err) {
         console.log(err);
       });
