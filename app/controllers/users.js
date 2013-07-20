@@ -68,7 +68,23 @@ exports.create = function (req, res) {
       return res.render('users/signup', { errors: err.errors, user: user })
     }
     req.logIn(user, function(err) {
-      if (err) return next(err)
+      if (err) return err
+
+      var SendGrid = require('sendgrid').SendGrid;
+      var sendgrid = new SendGrid(
+        process.env.SENDGRID_USERNAME || "app16153775@heroku.com",
+        process.env.SENDGRID_PASSWORD
+      )
+
+      sendgrid.send({
+        to: 'mwein2009@gmail.com',
+        from: 'jackie@yessay.com',
+        subject: 'Hello World',
+        text: 'Sending email with NodeJS through SendGrid!'
+      }, function(err) {
+        console.log(err);
+      });
+
       return res.redirect('/')
     })
   })

@@ -33,6 +33,7 @@
     , "forever": "latest"
     , "socket.io": "latest"
     , "http-server": "latest"
+    , "sendgrid": "0.2.1"
   }
   , "devDependencies": {
         "supertest": "latest"
