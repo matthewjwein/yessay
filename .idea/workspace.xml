@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users.js" afterPath="$PROJECT_DIR$/app/controllers/users.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/header.jade" afterPath="$PROJECT_DIR$/app/views/includes/header.jade" />
     </list>
     <ignored path="yessay.iws" />
@@ -36,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/includes/header.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+            <state line="7" column="25" selection-start="240" selection-end="240" vertical-scroll-proportion="0.2777778">
               <folding />
             </state>
           </provider>
@@ -63,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="50" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.5343915">
+            <state line="82" column="87" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,8 +146,8 @@
         <option value="$PROJECT_DIR$/app/views/connect/review.jade" />
         <option value="$PROJECT_DIR$/app/views/users/show.jade" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/views/includes/header.jade" />
         <option value="$PROJECT_DIR$/app/controllers/users.js" />
+        <option value="$PROJECT_DIR$/app/views/includes/header.jade" />
       </list>
     </option>
   </component>
@@ -564,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/header.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/sendgrid/lib/sendgrid.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="0" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
@@ -580,7 +571,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="50" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.5343915">
+        <state line="82" column="87" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/header.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="240" selection-end="240" vertical-scroll-proportion="0.2777778">
           <folding />
         </state>
       </provider>
