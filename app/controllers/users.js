@@ -80,7 +80,7 @@ exports.create = function (req, res) {
         to: user.email,
         from: 'jackie@yessay.com',
         subject: 'Welcome to Yessay!',
-        text: 'Welcome ' + user.username + ', thank you for joining Yessay, the ' +
+        text: 'Welcome ' + user.username + ', and thank you for joining Yessay, the ' +
           'one-stop shop for writing your college application essay!'
       }, function(err) {
         res.redirect('/')
