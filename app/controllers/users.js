@@ -6,6 +6,11 @@
 var mongoose = require('mongoose')
   , User = mongoose.model('User')
   , Essay = mongoose.model('Essay')
+  , SendGrid = require('sendgrid').SendGrid
+  , sendgrid = new SendGrid(
+      process.env.SENDGRID_USERNAME,
+      process.env.SENDGRID_PASSWORD
+    )
 
 exports.signin = function (req, res) {}
 
@@ -65,16 +70,11 @@ exports.create = function (req, res) {
   user.provider = 'local'
   user.save(function (err) {
     if (err) {
+      console.log(err)
       return res.render('users/signup', { errors: err.errors, user: user })
     }
     req.logIn(user, function(err) {
       if (err) return err
-
-      var SendGrid = require('sendgrid').SendGrid;
-      var sendgrid = new SendGrid(
-        process.env.SENDGRID_USERNAME || "app16153775@heroku.com",
-        process.env.SENDGRID_PASSWORD
-      )
 
       sendgrid.send({
         to: user.email,
@@ -83,7 +83,7 @@ exports.create = function (req, res) {
         text: 'Welcome ' + user.username + ', and thank you for joining Yessay, the ' +
           'one-stop shop for writing your college application essay!'
       }, function(err) {
-        res.redirect('/')
+        return err
       });
 
       return res.redirect('/')
