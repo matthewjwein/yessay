@@ -1,13 +1,13 @@
 link(href='http://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
 
 header#header
-  .navbar.navbar-inverse(role='navigation')
+  .navbar(role='navigation')
     .navbar-inner
       .container
         a.brand(href='/')
-          span#yes yessay
+          img(src='/img/logo.png', alt='yessay', width=225)
         .nav-collapse.collapse
-          ul.nav.pull-right
+          ul.nav.pull-right.nav-top-right
             if (req.isAuthenticated())
               .btn-group
                 a.btn(href='/users/'+req.user.id)=req.user.name + ' '

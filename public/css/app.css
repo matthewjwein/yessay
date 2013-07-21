@@ -14,6 +14,10 @@ body {
     clear: both;
 }
 
+.container > .nav-collapse > .nav-top-right {
+    margin-top: 22px;
+}
+
 .date {
   font-size: 11px;
   color: #aaa;
@@ -134,7 +138,7 @@ iframe {
     padding: 40px;
     width: 500px;
     font-family: "MuseoSans300",sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 45px;
 }
 
@@ -156,7 +160,7 @@ iframe {
     padding: 10px 110px 0px 0px;
     width: 500px;
     font-family: "MuseoSans300",sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 36px;
 }
 
