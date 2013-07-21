@@ -19,7 +19,7 @@ exports.signin = function (req, res) {}
  */
 
 exports.authCallback = function (req, res, next) {
-  res.redirect('/')
+  res.redirect('/users/'+req.user.id)
 }
 
 /**
@@ -58,7 +58,7 @@ exports.logout = function (req, res) {
  */
 
 exports.session = function (req, res) {
-  res.redirect('/')
+  res.redirect('/users/'+req.user.id)
 }
 
 /**
@@ -86,7 +86,7 @@ exports.create = function (req, res) {
         return err
       });
 
-      return res.redirect('/')
+      return res.redirect('/users/'+user.id)
     })
   })
 }
