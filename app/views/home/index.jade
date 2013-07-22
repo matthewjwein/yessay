@@ -1,7 +1,9 @@
 extends ../layouts/default
 
 include ../users/auth.jade
+
 block content
+
   if (req.isAuthenticated())
     center.row
       .home-title
@@ -9,72 +11,10 @@ block content
           span=req.user.name.split(' ')[0]
           span , for participating in yessay the one-stop shop for writing your college application essay!
         hr
-        form(action="/essays/new", method="post")
-          fieldset
-            .control-group
-              .controls.signin-control
-                button#submit.btn.btn-primary(type='submit') Start your Essay now
+        a(href="/brainstorm/question") Let's brainstorm
   else
     .row
       .span7.home-title
-        p.intro-title Welcome to yessay, the one-stop shop for writing your college application essay!
-        hr
-        p.intro-content Show the admissions officers who you really are, beyond scores, numbers, and
-          | GPAs. The essay is your chance to tell them something meaningful about yourself,
-          | using your own words and your own stories. We’ll guide you through the writing
-          | process so that you make a strong impression when it matters most.
+        include ../includes/welcome
       .span4
-          form.well.signup(action="/users", method="post")
-            fieldset
-              a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
-                img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
-                span.provider-separator
-                span.provider-signup-text
-                  | Sign in with Facebook
-            hr
-            h5.text-info Sign up with Yessay
-            if (typeof errors !== 'undefined')
-              each error in errors
-                if (error.type == 'Password cannot be blank')
-                  style.
-                    #password {
-                      border: 1px solid #cd5c5c;
-                    }
-                if (error.type == 'Username cannot be blank')
-                  style.
-                    #username {
-                      border: 1px solid #cd5c5c;
-                    }
-                if (error.type == 'Email cannot be blank')
-                  style.
-                    #email {
-                      border: 1px solid #cd5c5c;
-                    }
-                if (error.type == 'Name cannot be blank')
-                  style.
-                    #name {
-                      border: 1px solid #cd5c5c;
-                    }
-            .control-group
-              .control-group
-                label.control-label(for='name')
-                .controls
-                  input#name(type='text', name="name", placeholder='Full name')
-                    .control-group
-                label.control-label(for='email')
-                .controls
-                  input#email(type='text', name="email", placeholder='Email')
-                    .control-group
-                label.control-label(for='username')
-                .controls
-                  input#username(type='text', name="username", placeholder='Username')
-                    .control-group
-                label.control-label(for='password')
-                .controls
-                  input#password(type='password', name="password", placeholder='Password')
-              .control-group
-                .controls.signin-control
-                  button#submit.btn.btn-primary.button-loading(type='submit', data-loading-text='Loading...') Sign up
-                  &nbsp;
-                  | or&nbsp;
-                  a.show-signup(href="/login") sign in
+        include ../includes/signup

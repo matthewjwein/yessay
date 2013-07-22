@@ -1,0 +1,21 @@
+extends ../layouts/default
+include ../mixins/question
+
+block main
+  p.prompt-title=title
+
+block content
+  - var action = 'save'
+
+  if (typeof errors !== 'undefined')
+    .fade.in.alert.alert-block.alert-error
+      a.close(data-dismiss="alert", href="javascript:void(0)") x
+      ul
+        each error in errors
+          li= error.type
+  .row.well.brainstorm-wrapper
+    .span7.brainstorm-questions
+      form(method="post", action=action, enctype="multipart/form-data")
+        - var q = question
+        mixin question(q.title, q.prompt, q.q1, q.q2, q.q3, 140)
+        button.btn.btn-info.pull-right(type='submit') Next Question

@@ -4,41 +4,6 @@ include ../users/auth.jade
 block content
   .row
     .span7.home-title
-      p.intro-title Welcome to yessay, the one-stop shop for writing your college application essay!
-      hr
-      p.intro-content Show the admissions officers who you really are, beyond scores, numbers, and
-        | GPAs. The essay is your chance to tell them something meaningful about yourself,
-        | using your own words and your own stories. We’ll guide you through the writing
-        | process so that you make a strong impression when it matters most.
+      include ../includes/welcome
     .span4
-      if (typeof errors !== 'undefined')
-        .fade.in.alert.alert-block.alert-error
-          a.close(data-dismiss="alert", href="javascript:void(0)") x
-          ul
-            each error in errors
-              li= error.type
-
-      form.well(action="/users/session", method="post")
-        fieldset
-          a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
-            img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
-            span.provider-separator
-            span.provider-signup-text
-              | Sign in with Facebook
-        hr
-        h5.text-info Sign in with Yessay
-        p.error= message
-        .control-group
-          label.control-label(for='email')
-          .controls
-            input#email.input-large(type='text', name="email", placeholder='Email')
-          .control-group
-            label.control-label(for='password')
-            .controls
-              input#password.input-large(type='password', name="password", placeholder='Password')
-          .control-group
-            .controls.signin-control
-              button#submit.btn.btn-primary.button-loading(type='submit', data-loading-text='Loading...') Sign in
-              &nbsp;
-              | or&nbsp;
-              a.show-signup(href="/signup") sign up
+      include ../includes/login

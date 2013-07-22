@@ -26,13 +26,17 @@ module.exports = function (app, passport, auth) {
   var essays = require('../app/controllers/essays');
   app.get('/essays', essays.index)
 
+  // brainstorm question
+  app.get('/brainstorm/question', auth.requiresLogin, essays.brainstorm.question)
+  app.post('/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
+
   // create new essay
   app.post('/essays/new', auth.requiresLogin, essays.create)
 
-  app.get('/essays/:id/brainstorm/intro', auth.requiresLogin, essays.brainstorm.intro)
-  app.get('/essays/:id/brainstorm/samples', auth.requiresLogin, essays.brainstorm.samples)
-  app.get('/essays/:id/brainstorm/start', auth.requiresLogin, essays.brainstorm.start)
-  app.put('/essays/:id/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
+  //app.get('/essays/:id/brainstorm/intro', auth.requiresLogin, essays.brainstorm.intro)
+  //app.get('/essays/:id/brainstorm/samples', auth.requiresLogin, essays.brainstorm.samples)
+  //app.get('/essays/:id/brainstorm/start', auth.requiresLogin, essays.brainstorm.start)
+  //app.put('/essays/:id/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
 
   // essay description routes
   app.get('/essays/:id/description/intro', auth.requiresLogin, essays.description.intro)

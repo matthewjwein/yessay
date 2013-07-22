@@ -32,11 +32,20 @@ var setTags = function (tags) {
 
 var EssaySchema = new Schema({
   title: {type : String, default : '', trim : true},
-  brainstorm: [{
-    question: { type : String, default : '', trim: true},
-    answer: { type : String, default : '', trim: true},
-    time: { type : Date, default : Date.now }
-  }],
+  brainstorm: {
+    q1: {
+      question: { type : String, default : '', trim: true},
+      answer: { type : String, default : '', trim: true}
+    },
+    q2: {
+      question: { type : String, default : '', trim: true},
+      answer: { type : String, default : '', trim: true}
+    },
+    q3: {
+      question: { type : String, default : '', trim: true},
+      answer: { type : String, default : '', trim: true}
+    }
+  },
   description: {type : String, default : '', trim: true},
   context: {type : String, default : '', trim: true},
   reflection: {type : String, default : '', trim: true},

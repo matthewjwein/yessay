@@ -7,6 +7,7 @@ var mongoose = require('mongoose')
   , Imager = require('imager')
   , async = require('async')
   , Essay = mongoose.model('Essay')
+  , Question = mongoose.model('Question')
   , _ = require('underscore')
 
 /**
@@ -47,7 +48,7 @@ exports.create = function (req, res) {
   })
 }
 
-exports.brainstorm = {
+/*exports.brainstorm = {
   intro: function(req, res){
     res.render('essays/brainstorm/intro', {
       title: 'Welcome.',
@@ -84,25 +85,76 @@ exports.brainstorm = {
     })
   }
 }
+*/
+
+exports.brainstorm = {
+  question: function(req, res){
+    //TODO: get from database
+    var question = {
+      title: "Important Loss",
+      prompt: "Remember a time that you lost something that was important to you.",
+      q1: "Describe in a few words what happened.",
+      q2: "List three adjectives that describe him/her.",
+      q3: "Before it was lost, what did it represent to you?",
+      id: 1
+    }
+    res.render('brainstorm/question', {
+      title: "Brainstorming",
+      question: question
+    })
+  },
+  save: function(req, res){
+    var essay = new Essay();
+
+    essay.title = req.body.title
+    essay.brainstorm = {
+      q1: {
+        question: req.body.q1,
+        answer: req.body.a1
+      },
+      q2: {
+        question: req.body.q2,
+        answer: req.body.a2
+      },
+      q3: {
+        question: req.body.q3,
+        answer: req.body.a3
+      }
+    }
+
+    essay.user = req.user
+
+    essay.save(function (err) {
+      if (err) {
+        res.render('/', {
+          errors: err.errors
+        })
+      }
+      else {
+        res.redirect('/users/'+req.user.id)
+      }
+    })
+  }
+}
 
 exports.description = {
   intro: function(req, res){
     res.render('essays/description/intro', {
       title: req.essay.title,
       essay: req.essay
-    });
+    })
   },
   samples: function(req, res){
     res.render('essays/description/samples', {
       title: req.essay.title,
       essay: req.essay
-    });
+    })
   },
   start: function(req, res){
     res.render('essays/description/start', {
       title: req.essay.title,
       essay: req.essay
-    });
+    })
   },
   save: function(req, res){
     var essay = req.essay
@@ -382,7 +434,7 @@ exports.destroy = function(req, res){
   var essay = req.essay
   essay.remove(function(err){
     // req.flash('notice', 'Deleted successfully')
-    res.redirect('/essays')
+    res.redirect('/users/'+req.user.id)
   })
 }
 
