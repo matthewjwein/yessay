@@ -4,19 +4,47 @@
  */
 
 var mongoose = require('mongoose')
+  , Question = mongoose.model('Question')
 
 /**
- * Answer question
+ * Find question by id
  */
 
-exports.create = function (req, res) {
-  var essay = req.essay
-  var user = req.user
+exports.question = function (req, res, next, id) {
+  Question
+    .findOne({ _id : id })
+    .exec(function (err, question) {
+      if (err) return next(err)
+      if (!question) return next(new Error('Failed to load Question ' + id))
+      req.question = question
+      next()
+    })
+}
 
-  //if (!req.body.body) return res.redirect('/essays/'+ essay.id)
+/**
+ * Fetch question
+ */
 
-  essay.answerQuestion(req.body, function(err) {
-    if (err) return res.render('500')
-    res.redirect('/essays/'+ essay.id)
+exports.fetch = function(req, res){
+  //TODO: get from database
+  Question
+    .findOne()
+    .exec(function (err, question) {
+      if (err) return err
+      if (!question) return new Error('Failed to load Question ' + question.id)
+
+      res.redirect('brainstorm/question/'+question.id)
+    })
+}
+
+/**
+ * Display Question
+ */
+
+exports.display = function(req,res){
+  var question = req.question
+  res.render('brainstorm/question', {
+    title: "Brainstorm",
+    question: question
   })
 }

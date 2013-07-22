@@ -109,7 +109,6 @@ exports.show = function (req, res) {
   Essay.list(options, function(err, essays) {
     if (err) return res.render('500')
     Essay.find({ 'user': user }).count().exec(function (err, count) {
-      console.log(count)
       res.render('users/show', {
         title: 'Profile',
         user: user,

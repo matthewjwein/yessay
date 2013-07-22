@@ -12,6 +12,7 @@ var mongoose = require('mongoose')
 
 var QuestionSchema = new Schema({
   title: {type : String, default : '', trim : true},
+  prompt: {type : String, default : '', trim : true},
   q1: {type : String, default : '', trim : true},
   q2: {type : String, default : '', trim : true},
   q3: {type : String, default : '', trim : true}
@@ -36,7 +37,7 @@ QuestionSchema.methods = {
       .exec(cb)
   },
 
-  create: function (cb) {
+  save: function (cb) {
     return this.save(cb)
   }
 }

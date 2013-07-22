@@ -22,16 +22,18 @@ module.exports = function (app, passport, auth) {
 
   app.param('userId', users.user)
 
+  var questions = require('../app/controllers/questions')
+  app.get('/brainstorm/start', auth.requiresLogin, questions.fetch)
+  app.get('/brainstorm/question/:questionId', auth.requiresLogin, questions.display)
+
+  app.param('questionId', questions.question)
+
   // essay routes
-  var essays = require('../app/controllers/essays');
+  var essays = require('../app/controllers/essays')
   app.get('/essays', essays.index)
 
-  // brainstorm question
-  app.get('/brainstorm/question', auth.requiresLogin, essays.brainstorm.question)
-  app.post('/brainstorm/save', auth.requiresLogin, essays.brainstorm.save)
-
   // create new essay
-  app.post('/essays/new', auth.requiresLogin, essays.create)
+  app.post('/essays/create', auth.requiresLogin, essays.create)
 
   //app.get('/essays/:id/brainstorm/intro', auth.requiresLogin, essays.brainstorm.intro)
   //app.get('/essays/:id/brainstorm/samples', auth.requiresLogin, essays.brainstorm.samples)

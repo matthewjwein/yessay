@@ -1,28 +1,8 @@
-if (essay && essay.brainstorm && essay.brainstorm.length)
-  #samples-carousel.carousel.slide
-    // Carousel items
-    .carousel-inner.brainstorm-carousel-inner
-      .item.active
-        div.muted= essay.brainstorm[1].question
-        h5.text-info= essay.brainstorm[1].answer
-        div.muted= essay.brainstorm[0].question
-        h5.text-info= essay.brainstorm[0].answer
-        div.muted= essay.brainstorm[2].question
-        h5.text-info= essay.brainstorm[2].answer
-      .item
-        div.muted= essay.brainstorm[4].question
-        h5.text-info= essay.brainstorm[4].answer
-        div.muted= essay.brainstorm[3].question
-        h5.text-info= essay.brainstorm[3].answer
-        div.muted= essay.brainstorm[5].question
-        h5.text-info= essay.brainstorm[5].answer
-      .item
-        div.muted= essay.brainstorm[7].question
-        h5.text-info= essay.brainstorm[7].answer
-        div.muted= essay.brainstorm[6].question
-        h5.text-info= essay.brainstorm[6].answer
-        div.muted= essay.brainstorm[8].question
-        h5.text-info= essay.brainstorm[8].answer
-    // Carousel nav
-    a.carousel-control.left(href='#samples-carousel', data-slide='prev') ‹
-    a.carousel-control.right(href='#samples-carousel', data-slide='next') ›
+.item
+  p= essay.brainstorm.prompt
+  .muted= essay.brainstorm.q1.question
+  h5.text-info= essay.brainstorm.q1.answer
+  .muted= essay.brainstorm.q2.question
+  h5.text-info= essay.brainstorm.q2.answer
+  .muted= essay.brainstorm.q3.question
+  h5.text-info= essay.brainstorm.q3.answer

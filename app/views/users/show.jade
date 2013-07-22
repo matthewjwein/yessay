@@ -3,12 +3,12 @@ extends ../layouts/default
 block main
   h1= user.name
   p= user.email
-  a(href="/brainstorm/question") Let's brainstorm
+  a(href="/brainstorm/start") Let's brainstorm
   hr
   p Your Essays
   each essay in essays
     .essay
-      a.title(href='/essays/'+essay._id+'/brainstorm/start', title=essay.title)=essay.title
+      a.title(href='/essays/'+essay._id+'/description/start', title=essay.title)=essay.title
       div.muted= essay.description
       .author
         span Started on&nbsp;

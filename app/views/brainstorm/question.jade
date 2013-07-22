@@ -5,7 +5,7 @@ block main
   p.prompt-title=title
 
 block content
-  - var action = 'save'
+  - var action = '/essays/create'
 
   if (typeof errors !== 'undefined')
     .fade.in.alert.alert-block.alert-error
