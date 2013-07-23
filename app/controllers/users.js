@@ -80,8 +80,11 @@ exports.create = function (req, res) {
         to: user.email,
         from: 'jackie@yessay.com',
         subject: 'Welcome to Yessay!',
-        text: 'Welcome ' + user.username + ', and thank you for joining Yessay, the ' +
-          'one-stop shop for writing your college application essay!'
+        text: 'Welcome to Yessay! We’re here to make the process of writing your' +
+          'college application essay smarter, faster, and less stressful.\n\n' +
+          'If we can provide any more help along the way, don’t hesitate to reach out\n' +
+          '(jabrams@yessay.com).\n\nBest,\n Jacqueline Abrams\n\n' +
+          'Sign in to your account: www.yessay.com/login\nemail: '+user.email
       }, function(err) {
         return err
       });
