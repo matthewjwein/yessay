@@ -27,6 +27,9 @@ exports.authCallback = function (req, res, next) {
  */
 
 exports.login = function (req, res) {
+  if (req.user){
+    return res.redirect('users/'+req.user.id)
+  }
   res.render('users/login', {
     title: 'Login',
     message: req.flash('error')
@@ -38,6 +41,9 @@ exports.login = function (req, res) {
  */
 
 exports.signup = function (req, res) {
+  if (req.user){
+    return res.redirect('users/'+req.user.id)
+  }
   res.render('users/signup', {
     title: 'Sign up',
     user: new User()
