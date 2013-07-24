@@ -1,20 +1,16 @@
-extends ../layouts/default
+extends ../layouts/home
 
 include ../users/auth.jade
 
 block content
-
-  if (req.isAuthenticated())
-    center.row
-      .home-title
-        p.intro-title Thank you,&nbsp;
-          span=req.user.name.split(' ')[0]
-          span , for participating in yessay the one-stop shop for writing your college application essay!
-        hr
-        a(href="/brainstorm/start") Let's brainstorm
-  else
-    .row
-      .span7.home-title
-        include ../includes/welcome
-      .span4
+  // ################ FEATURES SECTION START ################
+  section#features
+    .row-fluid
+      .span7
+        h3 What are admissions officers really looking for?
+        h1 Your own story. In your own words.
+        h4.margintop40 Designed by a writing teacher from NYU and Emory University, Yessay helps you write to your potential when it matters most.
+      .span4.center
         include ../includes/signup
+  // ################ FEATURES SECTION END ################
+  #push
