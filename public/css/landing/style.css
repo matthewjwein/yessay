@@ -61,6 +61,12 @@ a{color: #76858A;}
 
 }
 
+.how-it-works {
+    margin-left: 30px;
+    font-weight: normal;
+    font-size: 45px;
+}
+
 .well {
     background-color: #ffffff !important;
     border: 1px solid #bbb !important;
