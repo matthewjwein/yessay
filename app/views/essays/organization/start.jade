@@ -34,7 +34,7 @@ block content
           center
             p.text-success(style='font-weight:bold')= essay.ideaPrompt
           .controls
-            textarea#organization.org.input-xlarge(type='text', rows="50", name="organization", placeholder="Organize your essay here")=essay.organization
+            textarea#organization.org.input-xlarge(required, type='text', rows="50", name="organization", placeholder="Organize your essay here")=essay.organization
         div
           .btn-group
             a.btn.btn-small(href="#videoModal", data-toggle="modal")

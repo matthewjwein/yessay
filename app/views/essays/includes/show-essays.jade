@@ -1,7 +1,6 @@
 each essay in essays
   .essay
-    a.title(href='/essays/'+essay._id+'/description/start', title=essay.title)=essay.title
-    div.muted= essay.description
+    a.title(href='/essays/'+essay._id+'/brainstorm/start', title=essay.title)=essay.title
     .author
       span Started on&nbsp;
       span= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")

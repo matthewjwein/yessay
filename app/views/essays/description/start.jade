@@ -29,7 +29,7 @@ block content
             | the introduction to your essay. It’s more of an exercise to help you bring your story
             | to life. (The more description you provide, the easier the essay will be to write later)
           .controls
-            textarea.desc.input-xlarge(type='text', rows="10", name="description")=essay.description
+            textarea.desc.input-xlarge(required, type='text', rows="10", name="description")=essay.description
         div
           .btn-group
             a.btn.btn-small(href="#videoModal", data-toggle="modal")

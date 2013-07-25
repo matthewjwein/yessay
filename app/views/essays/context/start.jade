@@ -30,7 +30,7 @@ block content
         .control-group
           label.control-label(for='context') Based on the description you've already begun, write a paragraph or two of context. Some context may already have seeped into your description, but challenge yourself to go further. This will help you dive deeper into the memory. For example, think about where the memory took place, what led up to it, who was involved, or maybe how long it took. (Write more now, edit later.)
           .controls
-            textarea.desc.input-xlarge(type='text', rows="10", name="context")=essay.context
+            textarea.desc.input-xlarge(required, type='text', rows="10", name="context")=essay.context
         div
           .btn-group
             a.btn.btn-small(href="#videoModal", data-toggle="modal")

@@ -85,6 +85,11 @@ exports.description = {
   },
   save: function(req, res){
     var essay = req.essay
+
+    if (!req.body.description) {
+      return res.redirect('/essays/'+essay._id+'/description/start')
+    }
+
     essay = _.extend(essay, req.body)
     essay.save(function (err) {
       if (err) {
@@ -122,6 +127,11 @@ exports.context = {
   },
   save: function(req, res){
     var essay = req.essay
+
+    if (!req.body.context) {
+      return res.redirect('/essays/'+essay._id+'/context/start')
+    }
+
     essay = _.extend(essay, req.body)
     essay.save(function (err) {
       if (err) {
@@ -159,6 +169,11 @@ exports.reflection = {
   },
   save: function(req, res){
     var essay = req.essay
+
+    if (!req.body.reflection) {
+      return res.redirect('/essays/'+essay._id+'/reflection/start')
+    }
+
     essay = _.extend(essay, req.body)
     essay.save(function (err) {
       if (err) {
@@ -293,6 +308,11 @@ exports.organization = {
   },
   save: function(req, res){
     var essay = req.essay
+
+    if (!req.body.organization) {
+      return res.redirect('/essays/'+essay._id+'/organization/start')
+    }
+
     essay = _.extend(essay, req.body)
     essay.save(function (err) {
       if (err) {
