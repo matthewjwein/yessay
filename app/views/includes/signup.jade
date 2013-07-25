@@ -1,10 +1,10 @@
 form.well.signup(action="/users", method="post")
+  if (!user)
+    - var user = { name: '', email: '', username: '' }
   fieldset
-    a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
+    a.btn.btn-primary.btn-large(href='/auth/facebook')
       img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
-      span.provider-separator
-      span.provider-signup-text
-        | Sign in with Facebook
+      span(style="margin-left:5px") Sign in with Facebook
   hr
   h5.text-info Sign up with Yessay
   if (typeof errors !== 'undefined')
