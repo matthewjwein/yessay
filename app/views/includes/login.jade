@@ -7,11 +7,9 @@ if (typeof errors !== 'undefined')
 
 form.well(action="/users/session", method="post")
   fieldset
-    a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
+    a.btn.btn-primary.btn-large(href='/auth/facebook')
       img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
-      span.provider-separator
-      span.provider-signup-text
-        | Sign in with Facebook
+      span(style="margin-left:5px") Sign in with Facebook
   hr
   h5.text-info Sign in with Yessay
   p.error= message

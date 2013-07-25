@@ -107,6 +107,10 @@ exports.create = function (req, res) {
 exports.show = function (req, res) {
   var user = req.user
 
+  if (!user) {
+    return res.redirect('/')
+  }
+
   var page = req.param('page') > 0 ? req.param('page') : 0
   var perPage = 50
   var options = {
