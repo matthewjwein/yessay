@@ -33,19 +33,19 @@ form.well.signup(action="/users", method="post")
     .control-group
       label.control-label(for='name')
       .controls
-        input#name(type='text', name="name", placeholder='Full name',value='#{user.name}')
+        input#name(required, type='text', name="name", placeholder='Full name',value='#{user.name}')
           .control-group
       label.control-label(for='email')
       .controls
-        input#email(type='email', name="email", placeholder='Email',value='#{user.email}')
+        input#email(required, type='email', name="email", placeholder='Email',value='#{user.email}')
           .control-group
       label.control-label(for='username')
       .controls
-        input#username(type='text', name="username", placeholder='Username',value='#{user.username}')
+        input#username(required, type='text', name="username", placeholder='Username',value='#{user.username}')
           .control-group
       label.control-label(for='password')
       .controls
-        input#password(type='password', name="password", placeholder='Password')
+        input#password(required, type='password', name="password", placeholder='Password')
     .control-group
       .controls.signin-control
         button#submit.btn.btn-primary.button-loading(type='submit', data-loading-text='Loading...') Sign up
