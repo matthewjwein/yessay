@@ -17,5 +17,6 @@ block content
     .span7.brainstorm-questions
       form(method="post", action=action, enctype="multipart/form-data")
         - var q = question
+        input(type="hidden", name="id", value="#{q.id}")
         mixin question(q.title, q.prompt, q.q1, q.q2, q.q3, 140)
         button.btn.btn-info.pull-right(type='submit') Next Question

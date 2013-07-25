@@ -24,48 +24,7 @@ exports.essay = function(req, res, next, id){
   })
 }
 
-/**
- * New essay
- */
-
-/**
- * Create an essay
- */
-
-exports.create = function(req, res){
-  var essay = new Essay();
-
-  essay.title = req.body.title
-  essay.brainstorm = {
-    q1: {
-      question: req.body.q1,
-      answer: req.body.a1
-    },
-    q2: {
-      question: req.body.q2,
-      answer: req.body.a2
-    },
-    q3: {
-      question: req.body.q3,
-      answer: req.body.a3
-    }
-  }
-
-  essay.user = req.user
-
-  essay.save(function (err) {
-    if (err) {
-      res.render('/', {
-        errors: err.errors
-      })
-    }
-    else {
-      res.redirect('/users/'+req.user.id)
-    }
-  })
-}
-
-/*exports.brainstorm = {
+exports.brainstorm = {
   intro: function(req, res){
     res.render('essays/brainstorm/intro', {
       title: 'Welcome.',
@@ -86,9 +45,10 @@ exports.create = function(req, res){
   },
   save: function(req, res){
     var essay = req.essay
-    essay.user = req.user
-
-    essay.answerQuestions(req.body, function(err){
+    essay.brainstorm.q1.answer = req.body.a1
+    essay.brainstorm.q2.answer = req.body.a2
+    essay.brainstorm.q3.answer = req.body.a3
+    essay.save(function (err) {
       if (err) {
         res.render('essays/brainstorm/start', {
           title: 'New Essay',
@@ -102,7 +62,7 @@ exports.create = function(req, res){
     })
   }
 }
-*/
+
 
 exports.description = {
   intro: function(req, res){

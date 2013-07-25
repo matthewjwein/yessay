@@ -19,28 +19,6 @@ block content
       form(method="post", action=action, enctype="multipart/form-data")
         if (!essay.isNew)
           input(type="hidden", name="_method", value="PUT")
-        div#main-question
-         h4 Remember a time that you lost something that was important to you.
-        div
-          div#questions-one
-            mixin question('Describe in a few words what happened.', 140)
-            mixin question('List three adjectives that describe him/her.', 140)
-            mixin question('Before it was lost, what did it represent to you?', 140)
-          div#main-question-two(style='display:none;')
-            h4 Think of something in your life that may seem insignificant to others, but is very meaningful or important to you.
-          div#questions-two(style='display:none;')
-            mixin question('Describe it in a few words.', 140)
-            mixin question('What specifically stands out in your memory?', 140)
-            mixin question('Briefly, why do you think it made such a lasting impression on you?', 140)
-            div
-              button#next-question-three.btn.btn-info.pull-right Continue
-          div#main-question-three(style='display:none;')
-            h4 Remember a summer in which you experienced significant personal growth.
-            div#questions-three(style='display:none;')
-              mixin question('What did you do that summer?', 140)
-              mixin question('What three visuals have stuck with you from that summer?', 140)
-              mixin question('What changed for you over that summer?', 140)
-              div
-                button.btn.btn-info.pull-right(type='submit') Save & Continue
-          div
-            button#next-question-two.btn.btn-info.pull-right Continue
+        - var e = essay, b = essay.brainstorm
+        mixin question(e.title, b.prompt, b.q1.question, b.q2.question, b.q3.question, 140)
+        button.btn.btn-info.pull-right(type='submit') Save and Continue

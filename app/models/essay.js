@@ -33,6 +33,7 @@ var setTags = function (tags) {
 var EssaySchema = new Schema({
   title: {type : String, default : '', trim : true},
   brainstorm: {
+    prompt: { type : String, default : '', trim: true},
     q1: {
       question: { type : String, default : '', trim: true},
       answer: { type : String, default : '', trim: true}
@@ -75,6 +76,19 @@ var EssaySchema = new Schema({
 EssaySchema.path('title').validate(function (title) {
   return title.length > 0
 }, 'Essay title cannot be blank')
+
+EssaySchema.path('brainstorm.q1.answer').validate(function (title) {
+  return title.length > 0
+}, 'Answer 1 cannot be blank')
+
+EssaySchema.path('brainstorm.q2.answer').validate(function (title) {
+  return title.length > 0
+}, 'Answer 2 cannot be blank')
+
+EssaySchema.path('brainstorm.q3.answer').validate(function (title) {
+  return title.length > 0
+}, 'Answer 3 cannot be blank')
+
 
 /**
  * Pre-remove hook
@@ -149,19 +163,7 @@ EssaySchema.methods = {
     })
 
     this.save(cb)
-  },
-
-  answerQuestions: function (questions, cb) {
-    for (var question in questions) {
-      this.brainstorm.push({
-        question: question,
-        answer: questions[question]
-      });
-    }
-
-    this.save(cb);
   }
-
 }
 
 /**

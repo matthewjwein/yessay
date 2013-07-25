@@ -1,7 +1,10 @@
 .well.dashboard
   h5.essay-title Your Essay
   ul.nav.nav-tabs.nav-stacked
-    if (essay.brainstorm && essay.brainstorm.length)
+    li.brainstorm-tab
+      a(href='../brainstorm/start') Brainstorm
+
+    if (essay.brainstorm.q1.answer || essay.brainstorm.q2.answer || essay.brainstorm.q3.answer)
       li.description-tab
         a(href='../description/start') Description
     else

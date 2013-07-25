@@ -45,8 +45,11 @@ body {
 }
 
 .essay, .comment {
-  padding: 15px 0;
-  border-top: 1px solid #e8e8e8;
+    padding: 15px 0;
+    border-top: 1px solid #e8e8e8;
+    float: left;
+    width: 50%;
+    outline: 1px solid #eee
 }
 
 textarea.org {

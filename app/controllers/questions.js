@@ -52,6 +52,7 @@ exports.next = function(req, res){
 
   essay.title = req.body.title
   essay.brainstorm = {
+    prompt: req.body.prompt,
     q1: {
       question: req.body.q1,
       answer: req.body.a1
@@ -70,9 +71,7 @@ exports.next = function(req, res){
 
   essay.save(function (err) {
     if (err) {
-      res.render('/', {
-        errors: err.errors
-      })
+      return res.redirect('brainstorm/question/'+req.body.id);
     }
     else {
       Essay.list({ criteria: { 'user': essay.user} }, function(err, essays) {

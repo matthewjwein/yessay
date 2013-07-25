@@ -1,23 +1,29 @@
 mixin question(title, prompt, q1, q2, q3, maxlength)
+  - var a1, a2, a3
+  if (essay)
+    - a1 = essay.brainstorm.q1.answer
+    - a2 = essay.brainstorm.q2.answer
+    - a3 = essay.brainstorm.q3.answer
   .question
-    h4=question.prompt
+    h4=prompt
     input(type='hidden', name='title', value='#{title}')
+    input(type='hidden', name='prompt', value='#{prompt}')
     .questions
       .control-group
         label.pull-left.control-label(for='q1') #{q1}
         span.muted.pull-right #{maxlength}
         .controls
           input(type='hidden', name='q1', value='#{q1}')
-          textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="a1")
+          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="a1")=a1
       .control-group
         label.pull-left.control-label(for='q2') #{q2}
         span.muted.pull-right #{maxlength}
         .controls
           input(type='hidden', name='q2', value='#{q2}')
-          textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="a2")
+          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="a2")=a2
       .control-group
         label.pull-left.control-label(for='q1') #{q3}
         span.muted.pull-right #{maxlength}
         .controls
           input(type='hidden', name='q3', value='#{q3}')
-          textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="a3")
+          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="a3")=a3

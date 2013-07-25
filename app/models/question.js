@@ -19,6 +19,30 @@ var QuestionSchema = new Schema({
 })
 
 /**
+ * Validations
+ */
+
+QuestionSchema.path('q1').validate(function (title) {
+  return title.length > 0
+}, 'Brainstorm must have a question')
+
+QuestionSchema.path('q2').validate(function (title) {
+  return title.length > 0
+}, 'Brainstorm must have a question')
+
+QuestionSchema.path('q3').validate(function (title) {
+  return title.length > 0
+}, 'Brainstorm must have a question')
+
+QuestionSchema.path('title').validate(function (title) {
+  return title.length > 0
+}, 'Brainstorm must have a title')
+
+QuestionSchema.path('prompt').validate(function (title) {
+  return title.length > 0
+}, 'Brainstorm must have a prompt')
+
+/**
  * Methods
  */
 

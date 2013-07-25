@@ -1,0 +1,11 @@
+each essay in essays
+  .essay
+    a.title(href='/essays/'+essay._id+'/description/start', title=essay.title)=essay.title
+    div.muted= essay.description
+    .author
+      span Started on&nbsp;
+      span= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
+    //form.center.form-inline.confirm(action="/essays/"+essay.id, method="post")
+      input(type="hidden", name="_method", value="DELETE")
+      button.btn.btn-danger(type="submit")
+        i.icon-trash.icon-white
