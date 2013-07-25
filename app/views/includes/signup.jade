@@ -1,6 +1,10 @@
 form.well.signup(action="/users", method="post")
   fieldset
-    a.btn.btn-primary(href='/auth/facebook') Sign in with Facebook
+    a#login-facebook.simple-button.provider-signup.facebook(href='/auth/facebook')
+      img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
+      span.provider-separator
+      span.provider-signup-text
+        | Sign in with Facebook
   hr
   h5.text-info Sign up with Yessay
   if (typeof errors !== 'undefined')
@@ -29,15 +33,15 @@ form.well.signup(action="/users", method="post")
     .control-group
       label.control-label(for='name')
       .controls
-        input#name(type='text', name="name", placeholder='Full name')
+        input#name(type='text', name="name", placeholder='Full name',value='#{user.name}')
           .control-group
       label.control-label(for='email')
       .controls
-        input#email(type='text', name="email", placeholder='Email')
+        input#email(type='email', name="email", placeholder='Email',value='#{user.email}')
           .control-group
       label.control-label(for='username')
       .controls
-        input#username(type='text', name="username", placeholder='Username')
+        input#username(type='text', name="username", placeholder='Username',value='#{user.username}')
           .control-group
       label.control-label(for='password')
       .controls
