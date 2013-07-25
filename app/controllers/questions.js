@@ -23,6 +23,13 @@ exports.question = function (req, res, next, id) {
     })
 }
 
+exports.intro = function(req, res){
+  res.render('brainstorm/intro', {
+    title: 'Welcome.',
+    essay: req.essay
+  });
+}
+
 /**
  * Fetch question
  */

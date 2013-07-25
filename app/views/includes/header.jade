@@ -4,8 +4,12 @@ header#header
   .navbar(role='navigation')
     .navbar-inner
       .container
-        a.brand(href='/')
-          img(src='/img/logo.png', alt='yessay', width=200)
+        if (req.isAuthenticated())
+          a.brand(href='/users/'+req.user.id)
+            img(src='/img/logo.png', alt='yessay', width=200)
+        else
+          a.brand(href='/')
+            img(src='/img/logo.png', alt='yessay', width=200)
         .nav-collapse.collapse
           ul.nav.pull-right.nav-top-right
             if (req.isAuthenticated())

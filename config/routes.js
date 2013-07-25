@@ -23,6 +23,7 @@ module.exports = function (app, passport, auth) {
   app.param('userId', users.user)
 
   var questions = require('../app/controllers/questions')
+  app.get('/brainstorm/intro', auth.requiresLogin, questions.intro)
   app.get('/brainstorm/start', auth.requiresLogin, questions.start)
   app.get('/brainstorm/question/:questionId', auth.requiresLogin, questions.display)
   app.post('/brainstorm/question/next', auth.requiresLogin, questions.next)
