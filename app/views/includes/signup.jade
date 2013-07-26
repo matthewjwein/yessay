@@ -5,8 +5,8 @@ form.well.signup(action="/users", method="post")
     a.btn.btn-primary.btn-large(href='/auth/facebook')
       img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
       span(style="margin-left:5px") Sign in with Facebook
-  hr
-  h5.text-info Sign up with Yessay
+  span.or or
+  h5.text-info Sign up with email
   if (typeof errors !== 'undefined')
     each error in errors
       if (error.type == 'Password cannot be blank')
@@ -48,7 +48,7 @@ form.well.signup(action="/users", method="post")
         input#password(required, type='password', name="password", placeholder='Password')
     .control-group
       .controls.signin-control
-        button#submit.btn.btn-primary.button-loading(type='submit', data-loading-text='Loading...') Sign up
+        button#submit.signup-button(type='submit', data-loading-text='Loading...') Get Started Free
         &nbsp;
-        | or&nbsp;
+        span.muted or&nbsp;
         a.show-signup(href="/login") sign in

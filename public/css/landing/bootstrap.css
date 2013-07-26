@@ -277,6 +277,9 @@ a:hover {
 .span8 {
   width: 620px;
 }
+.section1 {
+    width: 800px;
+}
 .span7 {
   width: 540px;
 }
@@ -4896,6 +4899,12 @@ button.close {
   .span8 {
     width: 476px;
   }
+  .section1 {
+      width: 800px;
+  }
+  #top > .home {
+      padding: 85px 0 125px 0;
+  }
   .span7 {
     width: 414px;
   }
@@ -5505,6 +5514,7 @@ button.close {
   .navbar-fixed-bottom {
     position: static;
   }
+
   .navbar-fixed-bottom {
     margin-top: 20px;
   }

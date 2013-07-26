@@ -81,15 +81,14 @@ input[type=text],input[type=password],input[type=email]{
 section{position: relative;}
 
 .navbar .nav > li > a{
-
     text-shadow: none;
-    color: #76858A;
+    color: #384042;
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     vertical-align: middle;
     font-size: 15px !important;
-    padding: 9px 12px 11px 12px !important;
+    padding: 2px 12px 6px 12px !important;
     -webkit-box-shadow: 0 0 0 0 #3A464A;
     -moz-box-shadow: 0 0 0 0 #3a464a;
     box-shadow: 0 0 0 0 #3A464A;
@@ -102,12 +101,74 @@ section{position: relative;}
     -moz-border-radius: 5px;
 
 }
+
+#support .span4.center {
+    width: 230px;
+    margin-left: 80px;
+    background-color: #E6DEDE;
+    padding: 17px;
+    border-radius: 11px;
+    box-shadow: 10px 9px 5px #B8B2B2;
+}
+
+#features h3, #features h4 {
+    color: #555;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+.navbar .nav > li > a.login, .navbar .nav > li > a.signup {
+    color: #FF7400;
+}
+
+.navbar .nav > li > a.login:hover, .navbar .nav > li > a.signup:hover {
+    color: #ffa704;
+}
+
+
 .home h1{font-size: 70px; line-height: 60px; letter-spacing: -3px;color: #76858A;}
 .navbar .nav > li > a:hover{color: #000; background: none; box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
 .navbar .nav > li.active a{background: #455357;color: #fff; box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
 .navbar .nav > li.active a:hover{background:#4E5E62;color: #C6D0D3;box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
 header{background: #009999; padding-top: 10px;}
 #main-media{padding-bottom: 10px;}
+
+.signup-button {
+    -moz-box-shadow:inset 1px 0px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 0px 0px 0px #ffffff;
+    box-shadow:inset 1px 0px 0px 0px #ffffff;
+    background-color:#ff7300;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:8px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:18px;
+    font-weight:normal;
+    padding:15px 47px;
+    text-decoration:none;
+}.signup-button:hover {
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7300), color-stop(1, #ff9036) );
+     background:-moz-linear-gradient( center top, #ff7300 5%, #ff9036 100% );
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7300', endColorstr='#ff9036');
+     background-color:#ff7300;
+ }.signup-button:active {
+      position:relative;
+      top:1px;
+  }
+
+.or {
+    color: rgba(0,0,0,0.25);
+    display: block;
+    font: 600 16px/14px "Myriad Pro","Trebuchet MS","frutiger","Frutiger LT Std",Calibri,"lucida grande","lucida sans unicode",arial,sans-serif;
+    margin: 14px 24px 0 24px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+}
 
 .navbar .nav{margin-top: 10px;}
 
