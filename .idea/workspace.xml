@@ -85,10 +85,8 @@
       <file leaf-file-name="header.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.2356021">
-              <folding>
-                <marker date="1374820594000" expanded="true" signature="110:192" placeholder="..." />
-              </folding>
+            <state line="6" column="121" selection-start="314" selection-end="314" vertical-scroll-proportion="0.2356021">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -588,10 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.2356021">
-          <folding>
-            <marker date="1374820594000" expanded="true" signature="110:192" placeholder="..." />
-          </folding>
+        <state line="6" column="121" selection-start="314" selection-end="314" vertical-scroll-proportion="0.2356021">
+          <folding />
         </state>
       </provider>
     </entry>
