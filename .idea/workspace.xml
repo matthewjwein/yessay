@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.jade" afterPath="$PROJECT_DIR$/app/views/home/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/landing/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/style.css" afterPath="$PROJECT_DIR$/public/css/landing/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/landing/custom.js" afterPath="$PROJECT_DIR$/public/js/landing/custom.js" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/landing/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="14" selection-start="6834" selection-end="6834" vertical-scroll-proportion="0.6938776">
+            <state line="205" column="14" selection-start="6834" selection-end="6834" vertical-scroll-proportion="-9.153846">
               <folding />
             </state>
           </provider>
@@ -74,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
+            <state line="11" column="35" selection-start="560" selection-end="560" vertical-scroll-proportion="0.44715446">
               <folding />
             </state>
           </provider>
@@ -136,9 +132,9 @@
         <option value="$PROJECT_DIR$/app/views/includes/landing/footer.jade" />
         <option value="$PROJECT_DIR$/public/js/landing/custom.js" />
         <option value="$PROJECT_DIR$/app/views/includes/landing/navbar.jade" />
-        <option value="$PROJECT_DIR$/app/views/home/index.jade" />
         <option value="$PROJECT_DIR$/public/css/landing/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/css/landing/style.css" />
+        <option value="$PROJECT_DIR$/app/views/home/index.jade" />
       </list>
     </option>
   </component>
@@ -547,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/navbar.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="670" selection-end="675" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/includes/signup.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="18" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0">
@@ -568,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/landing/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4762" column="20" selection-start="115502" selection-end="115502" vertical-scroll-proportion="-9.692307">
@@ -584,7 +566,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/landing/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="14" selection-start="6834" selection-end="6834" vertical-scroll-proportion="0.6938776">
+        <state line="205" column="14" selection-start="6834" selection-end="6834" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/navbar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="33" selection-start="670" selection-end="675" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="560" selection-end="560" vertical-scroll-proportion="0.44715446">
           <folding />
         </state>
       </provider>
