@@ -7,23 +7,23 @@ mixin question(title, prompt, q1, q2, q3, maxlength)
   .question
     h4=prompt
     input(type='hidden', name='title', value='#{title}')
-    input(type='hidden', name='prompt', value='#{prompt}')
-    .questions
+    input(type='hidden', name='brainstorm[prompt]', value='#{prompt}')
+    #questions
       .control-group
-        label.pull-left.control-label(for='q1') #{q1}
+        label.pull-left.control-label(for='brainstorm[q1][answer]') #{q1}
         span.muted.pull-right #{maxlength}
         .controls
-          input(type='hidden', name='q1', value='#{q1}')
-          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="a1")=a1
+          input(type='hidden', name='brainstorm[q1][question]', value='#{q1}')
+          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="brainstorm[q1][answer]")=a1
       .control-group
-        label.pull-left.control-label(for='q2') #{q2}
+        label.pull-left.control-label(for='brainstorm[q2][answer]') #{q2}
         span.muted.pull-right #{maxlength}
         .controls
-          input(type='hidden', name='q2', value='#{q2}')
-          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="a2")=a2
+          input(type='hidden', name='brainstorm[q2][question]', value='#{q2}')
+          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="brainstorm[q2][answer]")=a2
       .control-group
-        label.pull-left.control-label(for='q1') #{q3}
+        label.pull-left.control-label(for='brainstorm[q3][answer]') #{q3}
         span.muted.pull-right #{maxlength}
         .controls
-          input(type='hidden', name='q3', value='#{q3}')
-          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="a3")=a3
+          input(type='hidden', name='brainstorm[q3][question]', value='#{q3}')
+          textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="brainstorm[q3][answer]")=a3

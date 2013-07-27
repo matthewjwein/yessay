@@ -35,71 +35,85 @@ exports.intro = function(req, res){
  */
 
 exports.start = function(req, res){
-  Essay.list({ criteria: { 'user': req.user} }, function(err, essays) {
-    if (err) return res.render('500')
+  Question
+    .findOne()
+    .exec(function (err, question) {
+      if (err) return res.render('500')
+      if (!question) return res.redirect('users/'+req.user.id)
 
-    var array = []
-    for (var i = 0; i < essays.length; i++) {
-      array.push(essays[i].title)
+      return res.redirect('brainstorm/question/'+question.id)
+    })
+}
+
+exports.answer = function(req, res){
+  var essay = new Essay()
+  _.extend(essay, req.body)
+
+  essay.user = req.user
+
+  essay.save(function (err) {
+    if (err) {
+      return res.redirect('brainstorm/question/'+req.id);
     }
 
-    Question
-      .findOne({ title : { $nin : array } })
-      .exec(function (err, question) {
-        if (err) return res.render('500')
-        if (!question) return res.redirect('users/'+req.user.id)
+    var id = req.body.id;
 
+    Question
+      .findOne({ _id : {$gt: id} })
+      .exec(function (err, question) {
+        if (err) return res.redirect('brainstorm/question/'+id)
+        if (!question) return res.redirect('brainstorm/question/'+id)
         res.redirect('brainstorm/question/'+question.id)
       })
   })
 }
 
 exports.next = function(req, res){
-  var essay = new Essay();
+  var id = req.body.id;
 
-  essay.title = req.body.title
-  essay.brainstorm = {
-    prompt: req.body.prompt,
-    q1: {
-      question: req.body.q1,
-      answer: req.body.a1
-    },
-    q2: {
-      question: req.body.q2,
-      answer: req.body.a2
-    },
-    q3: {
-      question: req.body.q3,
-      answer: req.body.a3
-    }
-  }
+  Question
+    .findOne({ _id : {$gt: id} }).sort({_id: 1 })
+    .exec(function (err, question) {
+      if (err) return res.redirect('brainstorm/question/'+id)
 
-  essay.user = req.user
-
-  essay.save(function (err) {
-    if (err) {
-      return res.redirect('brainstorm/question/'+req.body.id);
-    }
-    else {
-      Essay.list({ criteria: { 'user': essay.user} }, function(err, essays) {
-        if (err) return res.render('500')
-
-        var array = []
-        for (var i = 0; i < essays.length; i++) {
-          array.push(essays[i].title)
-        }
-
+      if (!question) {
         Question
-          .findOne({ title : { $nin : array } })
+          .findOne().sort({_id: 1})
           .exec(function (err, question) {
-            if (err) return res.render('500')
-            if (!question) return res.redirect('users/'+req.user.id)
+            if (err) return res.redirect('brainstorm/question/'+id)
+
+            if (!question) return res.redirect('brainstorm/question/'+id)
 
             res.redirect('brainstorm/question/'+question.id)
           })
-      })
-    }
-  })
+      } else {
+        res.redirect('brainstorm/question/'+question.id)
+      }
+    })
+}
+
+exports.prev = function(req, res){
+  var id = req.body.id;
+
+  Question
+    .findOne({ _id : {$lt: id} }).sort({_id: -1 })
+    .exec(function (err, question) {
+      if (err) return res.redirect('brainstorm/question/'+id)
+
+      if (!question) {
+        Question
+          .findOne().sort({_id: -1})
+          .exec(function (err, question) {
+            if (err) return res.redirect('brainstorm/question/'+id)
+
+            if (!question) return res.redirect('brainstorm/question/'+id)
+
+            return res.redirect('brainstorm/question/'+question.id)
+          })
+      } else {
+        res.redirect('brainstorm/question/'+question.id)
+      }
+    })
 }
 
 /**

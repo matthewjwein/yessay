@@ -1,22 +1,41 @@
 extends ../layouts/default
 include ../mixins/question
 
-block main
+//block main
   p.prompt-title=title
 
 block content
-  - var action = 'next'
-
+  - var action = '../answer'
+  style.
+    #questions {
+      height: 0px;
+      overflow: hidden;
+    }
+    #next-question { display: none; }
   if (typeof errors !== 'undefined')
     .fade.in.alert.alert-block.alert-error
       a.close(data-dismiss="alert", href="javascript:void(0)") x
       ul
         each error in errors
           li= error.type
-  .row.well.brainstorm-wrapper
-    .span7.brainstorm-questions
-      form(method="post", action=action, enctype="multipart/form-data")
-        - var q = question
-        input(type="hidden", name="id", value="#{q.id}")
-        mixin question(q.title, q.prompt, q.q1, q.q2, q.q3, 140)
-        button.btn.btn-info.pull-right(type='submit') Next Question
+  #samples-carousel.carousel.slide
+    // Carousel items
+    .carousel-inner
+      .item.active
+        .row.well.brainstorm-wrapper
+          .span7.brainstorm-questions
+            form(method="post", action=action, enctype="multipart/form-data")
+              - var q = question
+              input(type="hidden", name="id", value="#{q.id}")
+              mixin question(q.title, q.prompt, q.q1, q.q2, q.q3, 140)
+              .clear-both
+              .center
+                button#next-question.btn.btn-info(type='submit') Next Question
+                button#answer-question.btn.btn-info(href='#answer') Answer
+    // Carousel nav
+    form#prev(method="post", action='../prev')
+      input(type='hidden', name='id', value='#{q.id}')
+      a.carousel-control.left(onclick='$("form#prev").submit()', href='#') ‹
+    form#next(method="post", action='../next')
+      input(type='hidden', name='id', value='#{q.id}')
+      a.carousel-control.right(onclick='$("form#next").submit()', href='#') ›
