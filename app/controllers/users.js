@@ -124,6 +124,7 @@ exports.show = function (req, res) {
       res.render('users/show', {
         title: 'Profile',
         user: user,
+        count: count,
         essays: essays,
         page: page,
         pages: count / perPage

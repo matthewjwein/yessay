@@ -5,7 +5,7 @@ mixin question(title, prompt, q1, q2, q3, maxlength)
     - a2 = essay.brainstorm.q2.answer
     - a3 = essay.brainstorm.q3.answer
   .question
-    h4=prompt
+    h4.question-prompt=prompt
     input(type='hidden', name='title', value='#{title}')
     input(type='hidden', name='brainstorm[prompt]', value='#{prompt}')
     #questions

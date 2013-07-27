@@ -45,9 +45,7 @@ exports.brainstorm = {
   },
   save: function(req, res){
     var essay = req.essay
-    essay.brainstorm.q1.answer = req.body.a1
-    essay.brainstorm.q2.answer = req.body.a2
-    essay.brainstorm.q3.answer = req.body.a3
+    _.extend(essay, req.body)
     essay.save(function (err) {
       if (err) {
         res.render('essays/brainstorm/start', {

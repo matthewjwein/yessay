@@ -4,7 +4,10 @@ block main
   h1= user.name
   p= user.email
   hr
-  a.btn.btn-primary(href='/brainstorm/intro') Start Brainstorming
+  if (!count)
+    a.btn.btn-primary(href='/brainstorm/intro') Start Brainstorming
+  else
+    a.btn.btn-primary(href='/brainstorm/start') Continue Brainstorming
   hr
   p Your Essays
   include ../essays/includes/show-essays

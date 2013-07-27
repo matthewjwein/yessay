@@ -28,14 +28,16 @@ block content
               - var q = question
               input(type="hidden", name="id", value="#{q.id}")
               mixin question(q.title, q.prompt, q.q1, q.q2, q.q3, 140)
-              .clear-both
               .center
                 button#next-question.btn.btn-info(type='submit') Next Question
-                button#answer-question.btn.btn-info(href='#answer') Answer
+                button#answer-question.btn.btn-info(href='#answer') Answer Question
+              .clear-both
     // Carousel nav
     form#prev(method="post", action='../prev')
       input(type='hidden', name='id', value='#{q.id}')
-      a.carousel-control.left(onclick='$("form#prev").submit()', href='#') ‹
+      a.carousel-control.left(onclick='$("form#prev").submit()', href='#prev') ‹
     form#next(method="post", action='../next')
       input(type='hidden', name='id', value='#{q.id}')
-      a.carousel-control.right(onclick='$("form#next").submit()', href='#') ›
+      a.carousel-control.right(onclick='$("form#next").submit()', href='#next') ›
+    button#finish.btn.btn-info.pull-right(href='/users/'+req.user.id) Finish
+    .clear-both
