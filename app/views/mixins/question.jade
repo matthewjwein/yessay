@@ -1,4 +1,4 @@
-mixin question(title, prompt, q1, q2, q3, maxlength)
+mixin question(prompt, q1, q2, q3, maxlength)
   - var a1, a2, a3
   if (essay)
     - a1 = essay.brainstorm.q1.answer
@@ -6,7 +6,6 @@ mixin question(title, prompt, q1, q2, q3, maxlength)
     - a3 = essay.brainstorm.q3.answer
   .question
     h4.question-prompt=prompt
-    input(type='hidden', name='title', value='#{title}')
     input(type='hidden', name='brainstorm[prompt]', value='#{prompt}')
     #questions
       .control-group

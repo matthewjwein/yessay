@@ -1,0 +1,29 @@
+extends ../layouts/default
+include ../mixins/question
+
+//block main
+  p.prompt-title=title
+
+block content
+  - var action = 'answer'
+  if (typeof errors !== 'undefined')
+    .fade.in.alert.alert-block.alert-error
+      a.close(data-dismiss="alert", href="javascript:void(0)") x
+      ul
+        each error in errors
+          li= error.type
+  #samples-carousel.carousel.slide
+    // Carousel items
+    .carousel-inner
+      .item.active
+        .row.well.brainstorm-wrapper
+          .span7.brainstorm-questions
+            form(method="post", action=action, enctype="multipart/form-data")
+              .control-group
+                label.pull-left.control-label(for='title') The title of your essay
+                span.muted.pull-right 140
+                .controls
+                  textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="title")
+              mixin question('', 'What three images stand out about it?','Describe it using three different adjectives.','In a sentence, why do you think it holds so much meaning for you?', 140)
+              button.btn.btn-info(type='submit', href='#answer') Answer Question
+              .clear-both

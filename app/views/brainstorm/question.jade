@@ -27,7 +27,8 @@ block content
             form(method="post", action=action, enctype="multipart/form-data")
               - var q = question
               input(type="hidden", name="id", value="#{q.id}")
-              mixin question(q.title, q.prompt, q.q1, q.q2, q.q3, 140)
+              input(type='hidden', name='title', value='#{q.title}')
+              mixin question(q.prompt, q.q1, q.q2, q.q3, 140)
               .center
                 button#next-question.btn.btn-info(type='submit') Next Question
                 button#answer-question.btn.btn-info(href='#answer') Answer Question

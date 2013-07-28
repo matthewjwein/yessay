@@ -58,6 +58,8 @@ exports.answer = function(req, res){
 
     var id = req.body.id;
 
+    if (!id) return exports.start(req,res)
+
     Question
       .findOne({ _id : {$gt: id} })
       .exec(function (err, question) {
@@ -125,5 +127,11 @@ exports.display = function(req,res){
   res.render('brainstorm/question', {
     title: "Brainstorm",
     question: question
+  })
+}
+
+exports.write_your_own = function(req, res){
+  res.render('brainstorm/write-your-own', {
+    title: "Write Your Own"
   })
 }
