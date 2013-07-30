@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/landing/diamond-pattern.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/landing/header.jade" afterPath="$PROJECT_DIR$/app/views/includes/landing/header.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/style.css" afterPath="$PROJECT_DIR$/public/css/landing/style.css" />
     </list>
     <ignored path="yessay.iws" />
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/landing/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="22" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.0">
+            <state line="67" column="1" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.73170733">
               <folding />
             </state>
           </provider>
@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="31" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.7723577">
+            <state line="1" column="10" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -227,7 +227,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,10 +246,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -701,16 +697,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/landing/style.css">
+    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="22" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.0">
+        <state line="1" column="10" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
+    <entry file="file://$PROJECT_DIR$/public/css/landing/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.7723577">
+        <state line="67" column="1" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.73170733">
           <folding />
         </state>
       </provider>

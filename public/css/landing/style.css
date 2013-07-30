@@ -61,6 +61,12 @@ a{color: #76858A;}
     border-radius: 20px;
 }
 
+#top {
+    background-image: url('../../img/landing/diamond-pattern.png');
+    background-repeat: repeat;
+    background-position: center top;
+}
+
 .home{
     padding: 110px 0 80px 0;
     font-size: 18px;
