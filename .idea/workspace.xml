@@ -4,125 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/users/auth.jade" description=".row" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/bootstrap-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/bootstrap-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/chosen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/elfinder.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/elfinder.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/font-awesome-ie7.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/fullcalendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/glyphicons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/halflings.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/ie9.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/jquery-ui-1.10.3.custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/jquery.cleditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/jquery.gritter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/jquery.iphone.toggle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/jquery.noty.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/calendar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/charts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/chat.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/circle-stats.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/colors.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/dashboard-list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/discussions.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/footer.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/header.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/import.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/justgage.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/main.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/navigation.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/notifications_labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/others.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/page-login.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/page-messages.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/page-tasks.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/quick-buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/sliders_progress_bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/smallstats.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/tabs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/tickets.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/todo.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/less/wizard.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/noty_theme_default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/retina.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/style-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/style-responsive.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/style-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/style.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/style.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/uniform.default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout/uploadify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/charts.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/counter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/counter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/fullcalendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/gauge.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery-migrate-1.0.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery-ui-1.10.3.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.autosize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.chosen.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.cleditor.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.dataTables.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.elfinder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.flot.pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.flot.resize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.flot.stack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.flot.time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.gritter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.imagesloaded.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.iphone.toggle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.knob.modified.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.masonry.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.noty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.placeholder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.raty.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.sparkline.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.ui.touch-punch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.uniform.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/jquery.uploadify-3.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/justgage.1.0.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/modernizr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/raphael.2.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/retina.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layout/wizard.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/includes/header.jade" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/brainstorm/intro.jade" afterPath="$PROJECT_DIR$/app/views/brainstorm/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/brainstorm/write-your-own.jade" afterPath="$PROJECT_DIR$/app/views/brainstorm/write-your-own.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/context/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/context/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/context/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/context/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/organization/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/organization/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/reflection/intro.jade" afterPath="$PROJECT_DIR$/app/views/essays/reflection/intro.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/reflection/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/reflection/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.jade" afterPath="$PROJECT_DIR$/app/views/home/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/landing/header.jade" afterPath="$PROJECT_DIR$/app/views/includes/landing/header.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/signup.jade" afterPath="$PROJECT_DIR$/app/views/includes/signup.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/landing/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/style.css" afterPath="$PROJECT_DIR$/public/css/landing/style.css" />
-    </list>
+    <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="" />
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -141,24 +23,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/brainstorm/intro.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="55" selection-start="139" selection-end="177" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/essays/context/intro.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="53" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/essays/reflection/intro.jade">
           <provider selected="true" editor-type-id="text-editor">
@@ -195,37 +59,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="write-your-own.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="write-your-own.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/brainstorm/write-your-own.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="44" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.796748">
+            <state line="27" column="44" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/essays/context/start.jade">
+      <file leaf-file-name="home.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/home.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="57" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.0">
+            <state line="13" column="36" selection-start="0" selection-end="462" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/essays/description/intro.jade">
+      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="53" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+            <state line="12" column="14" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/essays/description/start.jade">
+      <file leaf-file-name="header.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="57" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="0" selection-end="398" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.jade" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/signup.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/includes/signup.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="117" selection-end="333" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -403,7 +285,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="essays" />
+              <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,11 +307,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="essays" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reflection" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -451,11 +329,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="essays" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="organization" />
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,37 +351,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="essays" />
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="description" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yessay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yessay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="essays" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="context" />
+              <option name="myItemId" value="landing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -529,11 +377,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="essays" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brainstorm" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -556,24 +400,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="brainstorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yessay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yessay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -620,7 +446,7 @@
     <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yessay-july-21-2013/app/views/includes/header.jade" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yessay-new-layout" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -795,44 +621,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/footer.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1375154873000" expanded="true" signature="56:12370" placeholder="..." />
-            <marker date="1375154873000" expanded="true" signature="12288:12370" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/head.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/navbar.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="54" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="58" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/brainstorm/start.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -905,7 +693,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/brainstorm/write-your-own.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="44" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.796748">
+        <state line="27" column="44" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/home.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="0" selection-end="462" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="0" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/signup.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="117" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/signup.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
