@@ -221,12 +221,15 @@ footer li {
 }
 
 footer {
+    background: #cfc6c6;
+    background-image: url('../../img/landing/diamond-pattern.png');
+    background-repeat: repeat;
+    background-position: center top;
     font-size: 12px;
     margin-top:30px;
     box-sizing: border-box;
     color: #000;
     display: block;
-    background: #cfc6c6;
     padding: 60px 0 100px 0;
     position: relative;
     width: 100%;
