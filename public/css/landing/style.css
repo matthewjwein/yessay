@@ -53,8 +53,16 @@ a{color: #76858A;}
     -webkit-box-shadow: 0 2px 5px 1px rgba(0,0,0,.2);
     border-bottom: 1px solid #e5e5e5;
 }
+
+.well.signup-form {
+    background-color: #5ccccc !important;
+    border: 5px solid #1D7373!important;
+    box-shadow: none;
+    border-radius: 20px;
+}
+
 .home{
-    padding: 140px 0 125px 0;
+    padding: 110px 0 80px 0;
     font-size: 18px;
     font-weight: 200;
     line-height: 30px;
@@ -165,7 +173,7 @@ header{background: #009999; padding-top: 10px;}
     color: rgba(0,0,0,0.25);
     display: block;
     font: 600 16px/14px "Myriad Pro","Trebuchet MS","frutiger","Frutiger LT Std",Calibri,"lucida grande","lucida sans unicode",arial,sans-serif;
-    margin: 14px 24px 0 24px;
+    margin: 14px 0px;
     text-align: center;
     text-shadow: 0 1px 0 #fff;
 }

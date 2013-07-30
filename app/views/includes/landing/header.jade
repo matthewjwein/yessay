@@ -1,9 +1,20 @@
 // ################ HEADER START ################
 header#top
   .container.home
-    .span6(style="margin-top:60px; margin-bottom:60px;").section1
+    .span7(style="margin-top:60px; margin-bottom:60px;").section1
       a.brand(href='')
         img.icon-white(src='img/landing/logo-large.png',width=500)
       p(style='font-size: 20px;margin-left:20px') Write a Kickass College Application Essay and Stand Out to Admissions.
-    .span5.center
-      include ../signup
+    .span4.center(style='margin-top:30px')
+      .well.signup-form
+        span.text-info Sign up for free!
+        fieldset.margintop20
+          a.btn.btn-primary.btn-large(href='/auth/facebook', style="width: 100%;box-sizing: border-box;")
+            img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
+            span(style="margin-left:5px") Sign in with Facebook
+        fieldset.margintop20
+          a.btn.btn-success.btn-large(href='/signup', style="width: 100%;box-sizing: border-box;")
+            span(style="margin-left:5px") Sign up with Email
+        &nbsp;
+        span.text-info or&nbsp;
+        a.show-signup.text-info(href="/login") sign in
