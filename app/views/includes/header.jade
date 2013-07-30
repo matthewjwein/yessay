@@ -1,0 +1,27 @@
+link(href='http://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
+
+header#header
+  .navbar(role='navigation')
+    .navbar-inner
+      .container
+        if (req.isAuthenticated())
+          a.brand(href='/users/'+req.user.id)
+            img(src='/img/logo.png', alt='yessay', width=200)
+        else
+          a.brand(href='/')
+            img(src='/img/logo.png', alt='yessay', width=200)
+        .nav-collapse.collapse
+          ul.nav.pull-right.nav-top-right
+            if (req.isAuthenticated())
+              .btn-group
+                a.btn(href='/users/'+req.user.id)=req.user.name + ' '
+                .btn.dropdown-toggle(data-toggle="dropdown", href="#")
+                  span.caret
+                ul.dropdown-menu.pull-right
+                  li
+                    a(href="/logout", title="logout") Logout
+            else
+              li
+                a(href="/login", title="login") Login
+              li
+                a(href="/signup", title="signup") Signup
