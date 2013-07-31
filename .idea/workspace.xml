@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/includes/show-essays.jade" afterPath="$PROJECT_DIR$/app/views/essays/includes/show-essays.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.jade" afterPath="$PROJECT_DIR$/app/views/home/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/header.jade" afterPath="$PROJECT_DIR$/app/views/includes/header.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/landing/header.jade" afterPath="$PROJECT_DIR$/app/views/includes/landing/header.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/landing/navbar.jade" afterPath="$PROJECT_DIR$/app/views/includes/landing/navbar.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/sidebar-left.jade" afterPath="$PROJECT_DIR$/app/views/includes/sidebar-left.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/footer.jade" afterPath="$PROJECT_DIR$/app/views/includes/footer.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.jade" afterPath="$PROJECT_DIR$/app/views/users/show.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/landing/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/css/landing/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/style.css" afterPath="$PROJECT_DIR$/public/css/landing/style.css" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,15 +28,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/includes/landing/header.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="54" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="head.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/includes/head.jade">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,16 +49,7 @@
       <file leaf-file-name="show.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../yessay-july-21-2013/app/views/users/show.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="238" selection-end="319" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/includes/header.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+            <state line="11" column="34" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +58,43 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="28" selection-start="2128" selection-end="2128" vertical-scroll-proportion="-6.0227275">
+            <state line="7" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/includes/landing/footer.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="12335" selection-end="12567" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/includes/footer.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="20" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="foot.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/includes/landing/foot.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/landing/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="4" selection-start="3036" selection-end="3167" vertical-scroll-proportion="-4.3846154">
               <folding />
             </state>
           </provider>
@@ -93,7 +103,7 @@
       <file leaf-file-name="show.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="425" selection-end="425" vertical-scroll-proportion="0.44715446">
+            <state line="10" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="0.40650406">
               <folding />
             </state>
           </provider>
@@ -103,24 +113,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/essays/includes/show-essays.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="77" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar-left.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/includes/sidebar-left.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="34" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/includes/landing/navbar.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/essays/organization/start.jade" />
         <option value="$PROJECT_DIR$/app/views/brainstorm/write-your-own.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/landing/footer.jade" />
         <option value="$PROJECT_DIR$/public/css/layout/bootstrap.css" />
@@ -153,6 +144,7 @@
         <option value="$PROJECT_DIR$/app/views/essays/includes/show-essays.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/sidebar-left.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/head.jade" />
+        <option value="$PROJECT_DIR$/app/views/includes/footer.jade" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/app/views/users/show.jade" />
       </list>
@@ -237,6 +229,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yessay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yessay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -600,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="28" selection-start="2128" selection-end="2128" vertical-scroll-proportion="-6.0227275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/includes/header.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="16" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
@@ -635,6 +642,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/landing/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="4" selection-start="3036" selection-end="3167" vertical-scroll-proportion="-4.3846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/foot.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/landing/footer.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="12335" selection-end="12567" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/footer.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="20" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../yessay-july-21-2013/app/views/includes/header.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="40" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
@@ -644,14 +686,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../yessay-july-21-2013/app/views/users/show.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="238" selection-end="319" vertical-scroll-proportion="0.0">
+        <state line="11" column="34" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="425" selection-end="425" vertical-scroll-proportion="0.44715446">
+        <state line="10" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="0.40650406">
           <folding />
         </state>
       </provider>

@@ -1,5 +1,12 @@
 body {
-  background-color: #f4f0ea; /* #009999; */
+  background-color: #009999;
+  background-image: url('../img/landing/diamond-pattern.png');
+  background-repeat: repeat;
+  background-position: center top;
+}
+
+.wrapper > .container {
+    margin-bottom: 10px;
 }
 
 .content {

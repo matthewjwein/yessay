@@ -8,6 +8,11 @@ block main
     a.btn.btn-primary(href='/brainstorm/write-your-own') Write on your own topic
     .clear-both
   else
+    .continue
+      a(href='/brainstorm/start') Continue Brainstorming
+    .write
+      a(href='/brainstorm/write-your-own') Write on your own topic
+    hr
     p Great job!  You've got #{count} awesome essays to work on!
     p(style="padding:0 150px") Choose one of your essays below to start writing. Don't worry, you can always come back to your Brainstorm page to try
       | out a different essay
