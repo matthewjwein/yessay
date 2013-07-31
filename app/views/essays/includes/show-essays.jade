@@ -1,10 +1,11 @@
 each essay in essays
-  .essay
-    a.title(href='/essays/'+essay._id+'/brainstorm/start', title=essay.title)=essay.title
+  .essay(onclick='window.location="/essays/'+essay._id+'/description/start"')
+    a.title(href='/essays/'+essay._id+'/description/start', title=essay.title)=essay.title
+    .preview=essay.brainstorm.q1.answer
     .author
       span Started on&nbsp;
       span= formatDate(essay.createdAt, "%b %d, %Y at %I:%M %p")
-    form.center.form-inline.confirm(action="/essays/"+essay.id, method="post")
+  //form.center.form-inline.confirm(action="/essays/"+essay.id, method="post")
       input(type="hidden", name="_method", value="DELETE")
       button.btn.btn-danger(type="submit")
         i.icon-trash.icon-white

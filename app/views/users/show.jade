@@ -2,21 +2,20 @@ extends ../layouts/default
 
 block main
   h1= user.name
-  p= user.email
-  hr
   if (!count)
+    p Hey #{req.user.name}, let's start off by either brainstorming or writing your own topic
     a.btn.btn-primary(href='/brainstorm/intro') Start Brainstorming
+    a.btn.btn-primary(href='/brainstorm/write-your-own') Write on your own topic
+    .clear-both
   else
-    a.btn.btn-primary(href='/brainstorm/start') Continue Brainstorming
-  hr
-  a.btn.btn-primary(href='/brainstorm/write-your-own') Write on your own topic
-  hr
-  p Your Essays
-  include ../essays/includes/show-essays
-  .clear-both
-  if (pages > 1)
-    .pagination
-      ul
-        != createPagination(pages, page)
+    p Great job!  You've got #{count} awesome essays to work on!
+    p(style="padding:0 150px") Choose one of your essays below to start writing. Don't worry, you can always come back to your Brainstorm page to try
+      | out a different essay
+    include ../essays/includes/show-essays
+    .clear-both
+    if (pages > 1)
+      .pagination
+        ul
+          != createPagination(pages, page)
 
 block content

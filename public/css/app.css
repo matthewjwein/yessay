@@ -15,7 +15,7 @@ body {
 }
 
 .container > .nav-collapse > .nav-top-right {
-    margin-top: 22px;
+    margin: 5px 5px 10px 0px;
 }
 
 .date {
@@ -92,6 +92,11 @@ body {
     outline: 1px solid #eee
 }
 
+.essay:hover {
+    background-color:#F5F5F5;
+    cursor: pointer;
+}
+
 textarea.org {
     width: 100%;
     box-sizing: border-box;
@@ -138,7 +143,10 @@ a.tag {
   margin: 0 10px 0 0;
 }
 
-.brand {font: 25px 'Lobster', cursive;}
+.brand {
+    font: 25px 'Lobster', cursive;
+    margin-top:8px;
+}
 
 .error {
   color: #FF2602;

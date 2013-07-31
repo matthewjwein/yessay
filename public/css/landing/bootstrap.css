@@ -209,7 +209,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #f5e7e7;
+  background-color: #ddd;
 }
 a {
   color: #0088cc;
@@ -2912,7 +2912,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
 }
 .navbar-inner {
-  min-height: 40px;
+  min-height: 30px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #fafafa;
@@ -2949,14 +2949,12 @@ input[type="submit"].btn.btn-mini {
   overflow: visible;
 }
 .navbar .brand {
-  float: left;
-  display: block;
-  padding: 10px 20px 10px;
-  margin-left: -20px;
-  font-size: 20px;
-  font-weight: 200;
-  color: #777777;
-  text-shadow: 0 1px 0 #ffffff;
+    float: left;
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    color: #777777;
+    text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .brand:hover {
   text-decoration: none;
@@ -5332,8 +5330,8 @@ button.close {
     *width: 65.75877432260411%;
   }
   .row-fluid .span7 {
-    width: 57.26495726495726%;
-    *width: 57.21176577559556%;
+      width: 59%;
+    *width: 59%;
   }
   .row-fluid .span6 {
     width: 48.717948717948715%;
@@ -5344,8 +5342,8 @@ button.close {
     *width: 40.11774868157847%;
   }
   .row-fluid .span4 {
-    width: 31.623931623931625%;
-    *width: 31.570740134569924%;
+    width: 35.623931623931625%;
+    *width: 35.570740134569924%;
   }
   .row-fluid .span3 {
     width: 23.076923076923077%;
@@ -5640,6 +5638,7 @@ button.close {
   .navbar .nav-collapse .nav.pull-right {
     float: none;
     margin-left: 0;
+    margin-top: 10px;
   }
   .nav-collapse,
   .nav-collapse.collapse {

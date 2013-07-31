@@ -37,15 +37,27 @@ a{color: #76858A;}
 }
 
 
-/*Navbar Customizations*/ 
+/*Navbar Customizations*/
 
-.navbar-inner{
-    background: #f5e7e7;
-    background-color: #f5e7e7 !important;
-	filter: none;
-    background-image: none;
-    border: none;
-    box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;
+.yessay-nav {
+    min-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ccc));
+    background-image: -webkit-linear-gradient(top, #ffffff, #ccc);
+    background-image: -o-linear-gradient(top, #ffffff, #ccc);
+    background-image: linear-gradient(to bottom, #ffffff, #ccc);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner{
@@ -55,10 +67,37 @@ a{color: #76858A;}
 }
 
 .well.signup-form {
-    background-color: #5ccccc !important;
+    background-color: rgba(139, 245, 245, 0.61) !important;
     border: 5px solid #1D7373!important;
     box-shadow: none;
     border-radius: 20px;
+    padding: 35px 28px;
+    margin: 0px 30px;
+}
+
+.sign-up-message {
+    font-weight: bold;
+    color: #003838;
+    font-size: 24px;
+}
+
+.btn-orange {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #FF7400;
+    background-image: -moz-linear-gradient(top, #FF7400, #BF7130);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF7400), to(#BF7130));
+    background-image: -webkit-linear-gradient(top, #FF7400, #BF7130);
+    background-image: -o-linear-gradient(top, #FF7400, #BF7130);
+    background-image: linear-gradient(to bottom, #FF7400, #BF7130);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+    border-color: #BF7130 #BF7130 #BF7129;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.btn-orange:hover, .btn-orange:active {
+    background-color: #BF7130;
 }
 
 #top {
@@ -143,9 +182,9 @@ section{position: relative;}
 
 
 .home h1{font-size: 70px; line-height: 60px; letter-spacing: -3px;color: #76858A;}
-.navbar .nav > li > a:hover{color: #000; background: none; box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
-.navbar .nav > li.active a{background: #009999;color: #fff; box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
-.navbar .nav > li.active a:hover{background:#009999;color: #fff;box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
+.navbar .nav > li > a:hover{color: #009999; background: none; box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
+.navbar .nav > li.active a{background: none;color: #009999; box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
+.navbar .nav > li.active a:hover{color:#009999; background:none;box-shadow:none; -webkit-box-shadow:none; -mox-box-shadow:none;}
 header{background: #009999; padding-top: 10px;}
 #main-media{padding-bottom: 10px;}
 
@@ -184,7 +223,7 @@ header{background: #009999; padding-top: 10px;}
     text-shadow: 0 1px 0 #fff;
 }
 
-.navbar .nav{margin-top: 10px;}
+.navbar .nav{margin-top: 0px;}
 
 /* class: .btn-landing,  color theme: Limekiln */
 .btn-landing { text-shadow: 0px -1px 0px #6c9a15; color: #ffffff; background-color: #8AB833; background-image: -moz-linear-gradient(top, #a8d651, #6c9a15); background-image: -ms-linear-gradient(top, #a8d651, #6c9a15); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a8d651), to(#6c9a15)); background-image: -webkit-linear-gradient(top, #a8d651, #6c9a15); background-image: -o-linear-gradient(top, #a8d651, #6c9a15); background-image: linear-gradient(top, #a8d651, #6c9a15); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8d651', endColorstr='#6c9a15', GradientType=0); border-color: #8AB833 #6c9a15 #6c9a15 #8AB833; border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25); }

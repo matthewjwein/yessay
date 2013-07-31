@@ -2,7 +2,7 @@
   h5.essay-title Your Essay
   ul.nav.nav-tabs.nav-stacked
     li.brainstorm-tab
-      a(href='../brainstorm/start') Brainstorm
+      a(href='/users/'+req.user.id) Brainstorm
 
     if (essay.brainstorm.q1.answer || essay.brainstorm.q2.answer || essay.brainstorm.q3.answer)
       li.description-tab
