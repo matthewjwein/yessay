@@ -121,7 +121,7 @@ a{color: #76858A;}
 }
 
 .well {
-    background-color: #eee !important;
+    background-color: rgba(238, 238, 238, 0.36) !important;
     border: 1px solid #bbb !important;
     font-weight: normal;
     margin-bottom: 30px;
