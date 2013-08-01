@@ -53,7 +53,7 @@ exports.answer = function(req, res){
 
   essay.save(function (err) {
     if (err) {
-      return res.redirect('brainstorm/question/'+req.id);
+      return res.redirect('brainstorm/start');
     }
 
     var id = req.body.id;
