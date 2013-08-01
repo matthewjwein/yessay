@@ -71,7 +71,7 @@ a{color: #76858A;}
     border: 5px solid #1D7373!important;
     box-shadow: none;
     border-radius: 20px;
-    padding: 35px 28px;
+    padding: 20px;
     margin: 0px 30px;
 }
 
@@ -121,8 +121,10 @@ a{color: #76858A;}
 }
 
 .well {
-    background-color: #ffffff !important;
+    background-color: #eee !important;
     border: 1px solid #bbb !important;
+    font-weight: normal;
+    margin-bottom: 30px;
 }
 
 input[type=text],input[type=password],input[type=email]{
@@ -155,9 +157,17 @@ section{position: relative;}
 
 }
 
+.howitworks {
+    padding: 15px;
+    background-color: #eee;
+    border: 3px solid #aaa;
+    border-radius: 8px;
+    min-height:350px !important;
+}
+
 #support .span4.center {
     width: 230px;
-    margin-left: 80px;
+    margin-left: 20px;
     background-color: #E6DEDE;
     padding: 17px;
     border-radius: 11px;
@@ -303,7 +313,6 @@ hr.line {
 
 h2{font-size: 50px; line-height: 47px;}
 
-footer img{height: 50px;}
 #scroll-to-top{position: fixed; bottom: 0; right: 1%;}
 .navbar-inner{padding: 5px 0 5px 0px;}
 .support-icon{font-size: 100px;

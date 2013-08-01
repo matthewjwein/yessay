@@ -1,26 +1,27 @@
 extends ../layouts/default
 
 block main
-  h1= user.name
   if (!count)
-    p Hey #{req.user.name}, let's start off by either brainstorming or writing your own topic
-    a.btn.btn-primary(href='/brainstorm/intro') Start Brainstorming
-    a.btn.btn-primary(href='/brainstorm/write-your-own') Write on your own topic
-    .clear-both
+    .welcome-wrapper
+      h4 Ok, let's get started. Do you already have an essay topic in mind?
+      hr
+      p
+        a.btn.btn-primary.yes(href='/brainstorm/write-your-own') Yes, I do.
+        a.btn.btn-primary.no(href='/brainstorm/intro') No, let's brainstorm.
+      .clear-both
   else
-    .continue
-      a(href='/brainstorm/start') Continue Brainstorming
-    .write
-      a(href='/brainstorm/write-your-own') Write on your own topic
+    h1= user.name
     hr
-    p Great job!  You've got #{count} awesome essays to work on!
+    h4 Nice, you've got #{count} great essays to work on!
     p(style="padding:0 150px") Choose one of your essays below to start writing. Don't worry, you can always come back to your Brainstorm page to try
       | out a different essay
     include ../essays/includes/show-essays
     .clear-both
-    if (pages > 1)
-      .pagination
-        ul
-          != createPagination(pages, page)
+    hr
+    p You can always keep brainstorming or write your own topic below.
+    .continue
+      a(href='/brainstorm/start') Continue Brainstorming
+    .write
+      a(href='/brainstorm/write-your-own') Write on your own topic
 
 block content

@@ -8,7 +8,7 @@ block content
   - var action = '../answer'
   style.
     #questions {
-      height: 0px;
+      height: 100px;
       overflow: hidden;
     }
     #next-question { display: none; }
@@ -30,15 +30,15 @@ block content
               input(type='hidden', name='title', value='#{q.title}')
               mixin question(q.prompt, q.q1, q.q2, q.q3, 140)
               .center
-                button#next-question.btn.btn-info(type='submit') Next Question
-                button#answer-question.btn.btn-info(href='#answer') Answer Question
+                button#next-question.btn.btn-info(type='submit') Save and Continue
               .clear-both
     // Carousel nav
     form#prev(method="post", action='../prev')
       input(type='hidden', name='id', value='#{q.id}')
-      a.carousel-control.left(onclick='$("form#prev").submit()', href='#prev') ‹
+      a.carousel-control.left(data-toggle="tooltip", title="previous question", onclick='$("form#prev").submit()', href='#prev') ‹
     form#next(method="post", action='../next')
       input(type='hidden', name='id', value='#{q.id}')
-      a.carousel-control.right(onclick='$("form#next").submit()', href='#next') ›
-    button#finish.btn.btn-info.pull-right(href='/users/'+req.user.id) Finish
+      a.carousel-control.right(data-toggle="tooltip", title="skip question", onclick='$("form#next").submit()', href='#next') ›
+
+    button#finish.btn.btn-info.pull-right(href='/users/'+req.user.id) Done brainstorming?
     .clear-both

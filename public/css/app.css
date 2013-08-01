@@ -9,6 +9,18 @@ body {
     margin-bottom: 10px;
 }
 
+.welcome-wrapper {
+    padding: 100px;
+}
+
+.yes, .no {
+    width: 133px;
+}
+
+.no {
+    margin-left: 15px;
+}
+
 .content {
     background: #fff;
     -webkit-border-radius: 3px;
@@ -91,17 +103,21 @@ body {
 }
 
 .essay, .comment {
-    padding: 15px 0;
-    border-top: 1px solid #e8e8e8;
-    float: left;
-    width: 50%;
+    padding-top: 10px;
     height: 100px;
-    outline: 1px solid #eee
+    outline: 1px solid #ddd;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .essay:hover {
-    background-color:#F5F5F5;
+    background-color:#F2F5FF;
     cursor: pointer;
+}
+
+.tooltip {
+    min-width: 125px;
 }
 
 textarea.org {
@@ -219,7 +235,7 @@ iframe {
     width: 500px;
     font-family: "MuseoSans300",sans-serif;
     font-size: 17px;
-    line-height: 36px;
+    line-height: 20px;
 }
 
 #email, #password, #name, #username {

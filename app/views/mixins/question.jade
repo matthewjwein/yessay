@@ -13,16 +13,16 @@ mixin question(prompt, q1, q2, q3, maxlength)
         span.muted.pull-right #{maxlength}
         .controls
           input(type='hidden', name='brainstorm[q1][question]', value='#{q1}')
-          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="brainstorm[q1][answer]")=a1
+          textarea.question.input-xlarge(id='q1', required, maxlength=140, rows=2, type='text', name="brainstorm[q1][answer]")=a1
       .control-group
         label.pull-left.control-label(for='brainstorm[q2][answer]') #{q2}
         span.muted.pull-right #{maxlength}
         .controls
           input(type='hidden', name='brainstorm[q2][question]', value='#{q2}')
-          textarea.question.input-xlarge(required, maxlength=140, rows=2, type='text', name="brainstorm[q2][answer]")=a2
+          textarea.question.input-xlarge(id='q2', required, maxlength=140, rows=2, type='text', name="brainstorm[q2][answer]")=a2
       .control-group
         label.pull-left.control-label(for='brainstorm[q3][answer]') #{q3}
         span.muted.pull-right #{maxlength}
         .controls
           input(type='hidden', name='brainstorm[q3][question]', value='#{q3}')
-          textarea.question.input-xlarge(maxlength=140, rows=2, type='text', name="brainstorm[q3][answer]")=a3
+          textarea.question.input-xlarge(id='q3', maxlength=140, rows=2, type='text', name="brainstorm[q3][answer]")=a3

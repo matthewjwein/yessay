@@ -1,6 +1,6 @@
 each essay in essays
-  .essay(onclick='window.location="/essays/'+essay._id+'/description/start"')
-    a.title(href='/essays/'+essay._id+'/description/start', title=essay.title)=essay.title
+  .essay(onclick='window.location="/essays/'+essay._id+'/description/intro"')
+    a.title(href='/essays/'+essay._id+'/description/intro', title=essay.title)=essay.title
     .preview=essay.brainstorm.q1.answer
     .author
       span Started on&nbsp;
