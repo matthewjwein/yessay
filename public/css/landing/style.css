@@ -165,8 +165,6 @@ section{position: relative;}
 .howitworks {
     padding: 15px;
     background-color: #eee;
-    border: 3px solid #aaa;
-    border-radius: 8px;
     min-height:350px !important;
 }
 
