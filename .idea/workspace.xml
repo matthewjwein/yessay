@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/brainstorm/intro.jade" afterPath="$PROJECT_DIR$/app/views/brainstorm/intro.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.jade" afterPath="$PROJECT_DIR$/app/views/users/show.jade" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,25 +92,25 @@
       <file leaf-file-name="question.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/mixins/question.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="60" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0">
+            <state line="21" column="58" selection-start="970" selection-end="978" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.jade" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="19" selection-start="389" selection-end="389" vertical-scroll-proportion="0.52845526">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/brainstorm/intro.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="55" selection-start="177" selection-end="177" vertical-scroll-proportion="0.35340315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/document.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="244" column="0" selection-start="5806" selection-end="5806" vertical-scroll-proportion="0.0">
+            <state line="9" column="55" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,7 +135,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/default.jade" />
         <option value="$PROJECT_DIR$/app/views/home/index.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/landing/header.jade" />
-        <option value="$PROJECT_DIR$/app/views/users/show.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/signup.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/login.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/landing/navbar.jade" />
@@ -144,6 +144,7 @@
         <option value="$PROJECT_DIR$/app/controllers/questions.js" />
         <option value="$PROJECT_DIR$/app/views/mixins/question.jade" />
         <option value="$PROJECT_DIR$/app/views/brainstorm/intro.jade" />
+        <option value="$PROJECT_DIR$/app/views/users/show.jade" />
       </list>
     </option>
   </component>
@@ -657,13 +658,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/passport/context/http/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2138" selection-end="2138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/passport/strategies/session.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="0" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.0">
@@ -741,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/brainstorm/question.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="50" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/questions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="44" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
@@ -755,16 +742,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mixins/question.jade">
+    <entry file="file://$PROJECT_DIR$/app/views/brainstorm/intro.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="60" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0">
+        <state line="9" column="55" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/brainstorm/intro.jade">
+    <entry file="file://$PROJECT_DIR$/app/views/brainstorm/question.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="55" selection-start="177" selection-end="177" vertical-scroll-proportion="0.35340315">
+        <state line="32" column="50" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mixins/question.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="58" selection-start="970" selection-end="978" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="389" selection-end="389" vertical-scroll-proportion="0.52845526">
           <folding />
         </state>
       </provider>

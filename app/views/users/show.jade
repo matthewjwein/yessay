@@ -12,7 +12,10 @@ block main
   else
     h1= user.name
     hr
-    h4 Nice, you've got #{count} great topics to work on!
+    if (count == 1)
+      h4 Nice, you've got #{count} great topic to work on!
+    else
+      h4 Nice, you've got #{count} great topics to work on!
     p(style="padding:0 150px") Choose one of your essays below to start writing. Don't worry, you can always come back to your Brainstorm page to try
       | out a different essay
     include ../essays/includes/show-essays
