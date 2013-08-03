@@ -86,7 +86,7 @@ exports.create = function (req, res) {
         from: 'jacqueline@yessay.com',
         fromname: 'Jacqueline Abrams',
         subject: 'Thanks for signing up with Yessay!',
-        text:'Thanks for signing up with Yessay! You’ve got a big year ahead of you with college applications, ' +
+        text:'\n\nThanks for signing up with Yessay! You’ve got a big year ahead of you with college applications, ' +
           'and we want to make the journey a little smoother. So, we’re sharing ' +
           'our best-kept secrets on writing a truly kickass admissions essay. ' +
           'These insights come from years of teaching writing at NYU and Emory University, ' +
@@ -96,7 +96,7 @@ exports.create = function (req, res) {
           '\n\nBest,' +
           '\n\nJacqueline Abrams' +
           '\n\nSign in to your account: www.yessay.com/login' +
-          'Username: ' + user.email
+          '\n\nUsername: ' + user.email
       }, function(success, message) {
         if (!success) {
           console.log(message)
