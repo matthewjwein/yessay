@@ -141,7 +141,7 @@ body {
 
 textarea.org {
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box;-moz-box-sizing: border-box;
 }
 
 /* quick fix until media queries are added */
@@ -211,7 +211,7 @@ iframe {
 
 .question {
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box;-moz-box-sizing: border-box;
 }
 
 .gsfn-widget-tab:hover {
@@ -246,7 +246,7 @@ iframe {
     margin: 0 auto;
     margin-bottom: 20px;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box;-moz-box-sizing: border-box;
 }
 
 .intro-content {
@@ -268,7 +268,7 @@ iframe {
 #editor .desc {
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box;-moz-box-sizing: border-box;
 }
 
 #editor .form-actions {
@@ -412,7 +412,9 @@ iframe {
 }
 
 .box-sizing {
+    width: 100%;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /* end dashboard */

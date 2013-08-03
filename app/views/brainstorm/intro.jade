@@ -3,7 +3,8 @@ extends ../layouts/default
 include ../mixins/video
 
 block main
-  p.prompt-title=title
+    p.prompt-title(style='margin-top:20px')=title
+    p (If you already watched this video on the homepage, feel free to skip it now.)
 
 block content
   .brainstorm-intro

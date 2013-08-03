@@ -2,7 +2,7 @@ form.well.signup(action="/users", method="post")
   if (!user)
     - var user = { name: '', email: '', username: '' }
   fieldset
-    a.btn.btn-primary.btn-large(href='/auth/facebook')
+    a.box-sizing.btn.btn-primary.btn-large(href='/auth/facebook')
       img.provider-signup-img(src='/img/facebook.png', height='24', width='24')
       span(style="margin-left:5px") Sign in with Facebook
   span.or or
@@ -39,7 +39,7 @@ form.well.signup(action="/users", method="post")
         input#password(required, type='password', name="password", placeholder='Password')
     .control-group
       .controls.signin-control
-        button#submit.btn.btn-large.btn-primary.btn-orange(style='width: 100%;box-sizing: border-box;', type='submit', data-loading-text='Loading...') Get Started Free
+        button#submit.btn.btn-large.btn-primary.btn-orange(style='width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;', type='submit', data-loading-text='Loading...') Get Started Free
         &nbsp;
         span.muted or&nbsp;
         a.show-signup(href="/login") sign in

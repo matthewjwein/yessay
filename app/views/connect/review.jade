@@ -10,14 +10,11 @@ block content
       if (!req.essay.isNew)
         input(type="hidden", name="_method", value="PUT")
       .control-group
-        h4 854 students have already revised their essay based on peer feedback!
-        hr
-        p johnnya13 wants YOUR help...
+        p The goal of description is to pull your reader in with images and details. Check out the student writing below and give your feedback.
         p.well I awake to the agonizing ring of my alarm clock. I tumble out of bed and try to force a smile onto my nervous face. It was the day I was dreading for the past few months: the first day of Rock n' Roll camp. It was to be the first time I ever spent time away from the comfort of my home and I was not happy about it.
-        p A great reader is one who can find a kernel of insight in any piece of writing.
-        p.well Find the moment in the passage above that feels particularly powerful to you as a reader. Why did it leave an impression on you. Find what works, not what doesn't!
+        p Does this excerpt capture your attention with specific imagery and details? Or is there a place you’d like the author to elaborate?
         .controls
           textarea.prompt-content.input-xlarge(rows=, type='text', name="review", placeholder="Enter your review here")
       .form-actions
-        a.btn.btn-info.pull-right(href='review2') Submit Impression
-        a.btn.btn-info.pull-left(href='review2') Next Student
+        a.btn.btn-info.pull-right(href='review2') Submit Feedback
+        a.btn.btn-info.pull-left(href='review2') Skip
