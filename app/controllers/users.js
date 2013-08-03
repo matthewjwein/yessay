@@ -99,7 +99,7 @@ exports.create = function (req, res) {
       }, function(success, message) {
         if (!success) {
           console.log(message)
-          return res.redirect('/users/'+user.id)
+          return success
         }
       });
 
