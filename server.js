@@ -40,6 +40,8 @@ require('./config/express')(app, config, passport);
 // Bootstrap routes
 require('./config/routes')(app, passport, auth);
 
+app.disable('quiet');
+
 // Start the app by listening on <port>
 var port = process.env.PORT || 3000;
 
