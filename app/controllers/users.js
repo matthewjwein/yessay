@@ -86,7 +86,8 @@ exports.create = function (req, res) {
         from: 'jacqueline@yessay.com',
         fromname: 'Jacqueline Abrams',
         subject: 'Thanks for signing up with Yessay!',
-        text:'\n\nThanks for signing up with Yessay! You’ve got a big year ahead of you with college applications, ' +
+        text:'Thanks for signing up with Yessay!' +
+          '\n\nYou’ve got a big year ahead of you with college applications, ' +
           'and we want to make the journey a little smoother. So, we’re sharing ' +
           'our best-kept secrets on writing a truly kickass admissions essay. ' +
           'These insights come from years of teaching writing at NYU and Emory University, ' +
