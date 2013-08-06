@@ -417,6 +417,10 @@ iframe {
     -moz-box-sizing: border-box;
 }
 
+.popover {
+    left: -262px !important;
+}
+
 /* end dashboard */
 
 /* essay top-nav */

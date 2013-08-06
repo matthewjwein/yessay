@@ -1,0 +1,3 @@
+mixin writing-tip(tip, description, example)
+  .well
+    a.writing-tip(href='#', data-toggle='popover', data-html=true, data-placement='left', data-content='#{description} <a class="btn">View Sample</a>', title='#{tip}', data-original-title='#{tip}') #{tip}
