@@ -1,3 +1,27 @@
-mixin writing-tip(tip, description, example)
+mixin writing-tip(name, tip, description, example)
   .well
-    a.writing-tip(href='#', data-toggle='popover', data-html=true, data-placement='left', data-content='#{description} <a class="btn">View Sample</a>', title='#{tip}', data-original-title='#{tip}') #{tip}
+    a.writing-tip(href='#', data-toggle='popover', data-html=true, data-placement='left', data-content='#{description} <button data-toggle="modal" data-target="##{name}" class="btn">View Sample</button>', title='#{tip}', data-original-title='#{tip}') #{tip}
+  .modal.hide.fade(id='#{name}', tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-header
+      button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      h3#myModalLabel #{tip}
+    .modal-body
+      h4 #{description}
+      hr
+      h5 #{example}
+    .modal-footer
+      button.btn(data-dismiss='modal', aria-hidden='true') Dismiss
+
+mixin writing-tip-version2(name, tip, description, example)
+  .well
+    a(data-toggle="modal", data-target="##{name}") #{tip}
+  .modal.hide.fade(id='#{name}', tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-header
+      button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      h3#myModalLabel #{tip}
+    .modal-body
+      h4 #{description}
+      hr
+      h5 #{example}
+    .modal-footer
+      button.btn(data-dismiss='modal', aria-hidden='true') Dismiss

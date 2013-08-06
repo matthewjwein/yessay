@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mixins/writing-tip.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/essays/description/start.jade" afterPath="$PROJECT_DIR$/app/views/essays/description/start.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/sidebar-right.jade" afterPath="$PROJECT_DIR$/app/views/includes/sidebar-right.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/mixins/writing-tip.jade" afterPath="$PROJECT_DIR$/app/views/mixins/writing-tip.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.min.js" afterPath="$PROJECT_DIR$/public/js/app.min.js" />
     </list>
     <ignored path="yessay.iws" />
@@ -30,28 +28,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="writing-tip.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="writing-tip.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/mixins/writing-tip.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="204" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+            <state line="16" column="57" selection-start="837" selection-end="837" vertical-scroll-proportion="0.38618925">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="28" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="start.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/essays/description/start.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.6905371">
+            <state line="22" column="44" selection-start="1684" selection-end="1688" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,7 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/connect/review.jade" />
         <option value="$PROJECT_DIR$/app/views/connect/review-two.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/head.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/landing/head.jade" />
@@ -91,10 +79,11 @@
         <option value="$PROJECT_DIR$/app/views/includes/connect-sidebar-right.jade" />
         <option value="$PROJECT_DIR$/app/views/layouts/essay.jade" />
         <option value="$PROJECT_DIR$/app/views/includes/sidebar-right.jade" />
-        <option value="$PROJECT_DIR$/public/js/app.min.js" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
-        <option value="$PROJECT_DIR$/app/views/mixins/writing-tip.jade" />
+        <option value="$PROJECT_DIR$/public/js/app.min.js" />
+        <option value="$PROJECT_DIR$/app/views/mixins/writing-tip-version2.jade" />
         <option value="$PROJECT_DIR$/app/views/essays/description/start.jade" />
+        <option value="$PROJECT_DIR$/app/views/mixins/writing-tip.jade" />
       </list>
     </option>
   </component>
@@ -450,13 +439,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/brainstorm/intro.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/includes/landing/head.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="146" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
@@ -541,23 +523,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mixins/writing-tip.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="204" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="28" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
+        <state line="57" column="46" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/essays/description/start.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.6905371">
+        <state line="22" column="44" selection-start="1684" selection-end="1688" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mixins/writing-tip.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="57" selection-start="837" selection-end="837" vertical-scroll-proportion="0.38618925">
           <folding />
         </state>
       </provider>
