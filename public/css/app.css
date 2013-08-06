@@ -399,12 +399,12 @@ iframe {
 }
 
 #samples-carousel {
-    line-height: 3;
+    line-height: 1.5;
     padding: 0 80px 20px 80px;
 }
 
 .sample-carousel-inner {
-    height: 475px;
+    height: 250px;
 }
 
 .brainstorm-carousel-inner {

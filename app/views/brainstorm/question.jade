@@ -30,7 +30,7 @@ block content
               input(type='hidden', name='title', value='#{q.title}')
               mixin question(q.prompt, q.q1, q.q2, q.q3, 140)
               .center
-                button#next-question.btn.btn-info(type='submit') Save and Continue
+                button#next-question.btn.btn-primary(type='submit') Save Topic &amp; Continue
               .clear-both
     // Carousel nav
     form#prev(method="post", action='../prev')
