@@ -86,16 +86,20 @@ exports.create = function (req, res) {
         from: 'jacqueline@yessay.com',
         fromname: 'Jacqueline Abrams',
         subject: 'Thanks for signing up with Yessay!',
-        text:'Thanks for signing up with Yessay!' +
-          '\n\nYou’ve got a big year ahead of you with college applications, ' +
-          'and we want to make the journey a little smoother. So, we’re sharing ' +
-          'our best-kept secrets on writing a truly kickass admissions essay. ' +
-          'These insights come from years of teaching writing at NYU and Emory University, ' +
-          'and they’re designed to help you tell your own story in the most compelling way possible. ' +
-          '\n\nWe’d love to hear from you, so feel free to email me directly with questions,' +
-          'concerns, or suggestions\n(jabrams@yessay.com).' +
-          '\n\nBest,' +
-          '\n\nJacqueline Abrams' +
+        text:'Dear ' + user.name.split(' ')[0] + ',' +
+          '\n\nWelcome to Yessay! Thanks for signing up to write your college application essay with us., ' +
+          '\n\nHere’s what you can expect from this point on:' +
+          '\n\nWe take you through a five-step process, where you’ll be shown videos, writing samples and prompts to do your own writing.' +
+          '\n\nDo it all in one sitting, or take your time and move at your own pace!' +
+          '\n\n<b>Step 1: Brainstorm:</b> Choose your best topic. (approx. 20 min.)' +
+          '\n\nStep 2: Description: Bring your memories to life. (approx. 25 min.)' +
+          '\n\nStep 3: Context: Tell your reader what they need to know. (approx. 20 min.)' +
+          '\n\nStep 4: Reflection: Make observations about your experiences. (approx. 30 min.)' +
+          '\n\nStep 5: Organization: Put it all together and send your draft to anyone you want for free. (approx. 30-45 min.)' +
+          '\n\nWe know what you’re thinking: “OMG, five steps! This is going to take forever!” Wrong. If you follow the Yessay process, you will write your essay faster, better, and without stress.' +
+          '\n\nAnd, if you want a professional review, you’ll have the option to purchase reviews of your essays once you finish the process.' +
+          '\n\nHappy writing!' +
+          '\nJacqueline Abrams + The Yessay Team' +
           '\n\nSign in to your account: www.yessay.com/login' +
           '\n\nUsername: ' + user.email
       }, function(success, message) {
