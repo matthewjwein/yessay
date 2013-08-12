@@ -5,69 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44c8cbe-c19d-4dce-b712-4b4e329fd38a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/landing/head-about.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/landing/navbar-about.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/landing/navbar-quick-tips.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/includes/landing/navbar-sample-essays.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/landing/about/index.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/landing/pricing/index.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/landing/quick-tips/index.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/landing/sample-essays/index.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/about.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/pricing.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/quick-tips.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/sample-essays.jade" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/charts.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/core.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/counter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/counter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/gauge.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery-1.9.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery-migrate-1.0.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery-ui-1.10.3.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.autosize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.chosen.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.cleditor.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.dataTables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.elfinder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.flot.resize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.flot.stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.flot.time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.gritter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.imagesloaded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.iphone.toggle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.knob.modified.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.masonry.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.noty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.placeholder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.raty.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.ui.touch-punch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.uniform.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/jquery.uploadify-3.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/justgage.1.0.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/raphael.2.1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/retina.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/layout/wizard.min.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/home/index.jade" afterPath="$PROJECT_DIR$/app/views/landing/home/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home.js" afterPath="$PROJECT_DIR$/app/controllers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/landing/head.jade" afterPath="$PROJECT_DIR$/app/views/includes/landing/head.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/landing/navbar.jade" afterPath="$PROJECT_DIR$/app/views/includes/landing/navbar.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.jade" afterPath="$PROJECT_DIR$/app/views/users/show.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/landing/style.css" afterPath="$PROJECT_DIR$/public/css/landing/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/landing/quick-tips/index.jade" afterPath="$PROJECT_DIR$/app/views/landing/quick-tips/index.jade" />
     </list>
     <ignored path="yessay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -171,7 +109,7 @@
       <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/landing/quick-tips/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="11" selection-start="2733" selection-end="2733" vertical-scroll-proportion="0.49086162">
+            <state line="63" column="23" selection-start="3054" selection-end="3054" vertical-scroll-proportion="0.6866841">
               <folding />
             </state>
           </provider>
@@ -828,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/landing/quick-tips/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="11" selection-start="2733" selection-end="2733" vertical-scroll-proportion="0.49086162">
+        <state line="63" column="23" selection-start="3054" selection-end="3054" vertical-scroll-proportion="0.6866841">
           <folding />
         </state>
       </provider>
