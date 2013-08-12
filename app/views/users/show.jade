@@ -9,6 +9,38 @@ block main
         a.btn.btn-primary.yes(href='/brainstorm/write-your-own') Yes, I do.
         a.btn.btn-primary.no(href='/brainstorm/intro') No, let's brainstorm.
       .clear-both
+    #sampleModal.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+        h3#myModalLabel Welcome to Yessay!
+      .modal-body(style="text-align: left")
+        p Here’s what you can expect from this point on:
+        p We take you through a five-step process, where you’ll be shown videos, writing samples and prompts to do your own writing.
+        p Do it all in one sitting, or take your time and move at your own pace!
+        p
+          b Step 1: Brainstorm:
+          |  Choose your best topic. (approx. 20 min.)
+        p
+          b Step 2: Description:
+          |  Bring your memories to life. (approx. 25 min.)
+        p
+          b Step 3: Context:
+          |  Tell your reader what they need to know. (approx. 20 min.)
+        p
+          b Step 4: Reflection:
+          |  Make observations about your experiences. (approx. 30 min.)
+        p
+          b Step 5: Organization:
+          |  Put it all together and send your draft to anyone you want for free. (approx. 30-45 min.)
+        p We know what you’re thinking: “OMG, five steps! This is going to take forever!”  Wrong. If you follow the Yessay process, you will write your essay faster, better, and without stress.
+        p And, if you want a professional review, you’ll have the option to purchase reviews of your essays once you finish the process.
+        p Happy writing!
+      .modal-footer
+        button.btn(data-dismiss='modal', aria-hidden='true') Dismiss
+    script.
+      window.onload = function() {
+        $("#sampleModal").modal('toggle')
+      }
   else
     h1= user.name
     hr

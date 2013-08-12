@@ -85,6 +85,11 @@ module.exports = function (app, passport, auth) {
   // home route
   var home = require('../app/controllers/home');
   app.get('/', home.index)
+  app.get('/About', home.about)
+  app.get('/SampleEssays', home.sample_essays)
+  app.get('/QuickTips', home.quick_tips)
+  app.get('/Pricing', home.pricing)
+
 
   // comment routes
   var comments = require('../app/controllers/comments')
