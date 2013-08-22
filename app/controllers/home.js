@@ -10,9 +10,7 @@ var mongoose = require('mongoose')
  */
 
 exports.index = function (req, res) {
-  res.render('landing/home/index', {
-    title: 'Welcome to Yessay'
-  })
+  res.redirect('/signup')
 }
 
 exports.about = function (req, res) {
