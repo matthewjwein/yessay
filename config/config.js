@@ -23,12 +23,12 @@ module.exports = {
     facebook: {
       clientID: "156025561245172",
       clientSecret: "bf2c40079c3dd26d1867e39d0f2e6c61",
-      callbackURL: "http://www.yessay.com/auth/facebook/callback"
+      callbackURL: "http://write.yessay.com/auth/facebook/callback"
     },
     twitter: {
       clientID: "0FY8lCz1NerOIu3sioPe2w",
       clientSecret: "b4kjkEpcA2Uf1sLRsQiI72n071DJGgNW92yjhy1lxjY",
-      callbackURL: "http://www.yessay.com/auth/twitter/callback"
+      callbackURL: "http://write.yessay.com/auth/twitter/callback"
     },
     github: {
       clientID: 'APP_ID',

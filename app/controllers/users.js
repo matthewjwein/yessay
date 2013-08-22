@@ -100,7 +100,7 @@ exports.create = function (req, res) {
           '\n\nAnd, if you want a professional review, you’ll have the option to purchase reviews of your essays once you finish the process.' +
           '\n\nHappy writing!' +
           '\n\nJacqueline Abrams + The Yessay Team' +
-          '\n\nSign in to your account: www.yessay.com/login' +
+          '\n\nSign in to your account: write.yessay.com/login' +
           '\n\nUsername: ' + user.email
       }, function(success, message) {
         if (!success) {
